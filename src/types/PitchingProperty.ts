@@ -1,0 +1,158 @@
+import { CalculationType } from "./enum/CalculationType"
+import type { StatisticProperty } from "./StatisticProperty"
+
+export const PitchingProperties: StatisticProperty[] = [
+    {
+        abbreviation: "W",
+        name: "Wins",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Win_(baseball)",
+    },
+    {
+        abbreviation: "L",
+        name: "Losses",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Loss_(baseball)",
+    },
+    {
+        abbreviation: "ERA",
+        name: "Earned Run Average",
+        type: CalculationType.AVG,
+        wiki: "https://en.wikipedia.org/wiki/Earned_run_average",
+    },
+    {
+        abbreviation: "G",
+        name: "Games pitched",
+        type: CalculationType.SUM,
+        alias: "APP",
+        wiki: "https://en.wikipedia.org/wiki/Games_pitched",
+    },
+    {
+        abbreviation: "GS",
+        name: "Games Started",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Games_started",
+    },
+    {
+        abbreviation: "CG",
+        name: "Complete Games",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Complete_game",
+    },
+    {
+        abbreviation: "SHO",
+        name: "Shutouts",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Shutout_(baseball)",
+    },
+    {
+        abbreviation: "SV",
+        name: "Saves",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Save_(baseball)",
+    },
+    {
+        abbreviation: "IP",
+        name: "Innings Pitched",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Innings_pitched",
+    },
+    {
+        abbreviation: "R",
+        name: "Runs allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Run_(baseball)",
+    },
+    {
+        abbreviation: "ER",
+        name: "Earned Runs",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Earned_run",
+    },
+    {
+        abbreviation: "H",
+        name: "Hits allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Hits_allowed",
+    },
+    {
+        abbreviation: "2B",
+        name: "Doubles allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Double_(baseball)",
+    },
+    {
+        abbreviation: "3B",
+        name: "Triples allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Triple_(baseball)",
+    },
+    {
+        abbreviation: "HR",
+        name: "Home Runs allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Home_runs_allowed",
+    },
+    {
+        abbreviation: "SH",
+        name: "Sacrifice Hits allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Sacrifice_hit",
+    },
+    {
+        abbreviation: "SF",
+        name: "Sacrifice Flies allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Sacrifice_fly",
+    },
+    {
+        abbreviation: "HB",
+        name: "Hit Batsmen",
+        alias: "HBP",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Hit_by_pitch",
+    },
+    {
+        abbreviation: "BB",
+        name: "Base on Balls allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Base_on_balls",
+    },
+    {
+        abbreviation: "IBB",
+        name: "Intentional Base on Balls allowed",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Intentional_base_on_balls",
+    },
+    {
+        abbreviation: "K",
+        alias: "SO",
+        name: "Strikeouts",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Strikeout",
+    },
+    {
+        abbreviation: "WP",
+        name: "Wild Pitches",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Wild_pitch",
+    },
+    {
+        abbreviation: "BK",
+        name: "Balks",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Balk",
+    },
+    {
+        abbreviation: "AB",
+        name: "Batters faced",
+        type: CalculationType.SUM,
+        wiki: "https://en.wikipedia.org/wiki/Batters_faced",
+    },
+    {
+        abbreviation: "BAVG",
+        name: "Opponents Batting Average",
+        type: CalculationType.AVG,
+        wiki: "https://en.wikipedia.org/wiki/Opponents_batting_average",
+    },
+]

@@ -1,0 +1,2682 @@
+/* roboto-700 - v20-latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-700.svg#Oswald') format('svg'); /* Legacy iOS */
+}/* roboto-300 - v20-latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-300.svg#Oswald') format('svg'); /* Legacy iOS */
+}/* roboto-900 - v20-latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.woff') format('woff'), /* Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-900.svg#Oswald') format('svg'); /* Legacy iOS */
+}/* roboto-regular - v20-latin_latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: regular;
+  src: url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/clubdesk/webpage/webfonts/roboto-v20-latin_latin-ext-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+}
+
+p {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	line-height: 1.4;
+	text-transform: none;
+	margin: 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light p, .cd-dark .cd-light p, .cd-light .cd-dark .cd-light p, .cd-dark .cd-dark .cd-light p, .cd-light .cd-light .cd-dark .cd-light p, .cd-dark .cd-light .cd-dark .cd-light p {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark p, .cd-light .cd-dark p, .cd-dark .cd-light .cd-dark p {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+html, td, div {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	line-height: 1.4;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light html, .cd-light td, .cd-light div, .cd-dark .cd-light html, .cd-dark .cd-light td, .cd-dark .cd-light div, .cd-light .cd-dark .cd-light html, .cd-light .cd-dark .cd-light td, .cd-light .cd-dark .cd-light div, .cd-dark .cd-dark .cd-light html, .cd-dark .cd-dark .cd-light td, .cd-dark .cd-dark .cd-light div, .cd-light .cd-light .cd-dark .cd-light html, .cd-light .cd-light .cd-dark .cd-light td, .cd-light .cd-light .cd-dark .cd-light div, .cd-dark .cd-light .cd-dark .cd-light html, .cd-dark .cd-light .cd-dark .cd-light td, .cd-dark .cd-light .cd-dark .cd-light div {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark html, .cd-dark td, .cd-dark div, .cd-light .cd-dark html, .cd-light .cd-dark td, .cd-light .cd-dark div, .cd-dark .cd-light .cd-dark html, .cd-dark .cd-light .cd-dark td, .cd-dark .cd-light .cd-dark div {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+h5 {
+	font-family: Roboto, sans-serif;
+	font-size: 120px;
+	font-weight: 900;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h5, .cd-dark .cd-light h5, .cd-light .cd-dark .cd-light h5, .cd-dark .cd-dark .cd-light h5, .cd-light .cd-light .cd-dark .cd-light h5, .cd-dark .cd-light .cd-dark .cd-light h5 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h5, .cd-light .cd-dark h5, .cd-dark .cd-light .cd-dark h5 {
+	color: rgba(255,255,255,1.0);
+}
+
+@media (max-width: 576px) {
+	h5 {
+		font-size: 16vmin;
+	}
+}
+
+
+h6 {
+	font-family: Roboto, sans-serif;
+	font-size: 56px;
+	font-weight: 300;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h6, .cd-dark .cd-light h6, .cd-light .cd-dark .cd-light h6, .cd-dark .cd-dark .cd-light h6, .cd-light .cd-light .cd-dark .cd-light h6, .cd-dark .cd-light .cd-dark .cd-light h6 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h6, .cd-light .cd-dark h6, .cd-dark .cd-light .cd-dark h6 {
+	color: rgba(238,238,238,1.0);
+}
+
+@media (max-width: 576px) {
+	h6 {
+		font-size: 8vmin;
+	}
+}
+
+
+
+h1 {
+	font-family: Roboto, sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 30px 0 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h1, .cd-dark .cd-light h1, .cd-light .cd-dark .cd-light h1, .cd-dark .cd-dark .cd-light h1, .cd-light .cd-light .cd-dark .cd-light h1, .cd-dark .cd-light .cd-dark .cd-light h1 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h1, .cd-light .cd-dark h1, .cd-dark .cd-light .cd-dark h1 {
+	color: rgba(204,204,204,1.0);
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 32px;
+	}
+}
+
+
+h2 {
+	font-family: Roboto, sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	letter-spacing: 2px;
+	text-transform: none;
+	margin: 20px 0 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h2, .cd-dark .cd-light h2, .cd-light .cd-dark .cd-light h2, .cd-dark .cd-dark .cd-light h2, .cd-light .cd-light .cd-dark .cd-light h2, .cd-dark .cd-light .cd-dark .cd-light h2 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h2, .cd-light .cd-dark h2, .cd-dark .cd-light .cd-dark h2 {
+	color: rgba(204,204,204,1.0);
+}
+
+@media (max-width: 576px) {
+	h2 {
+		font-size: 26px;
+	}
+}
+
+
+h3 {
+	font-family: Roboto, sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0 5px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h3, .cd-dark .cd-light h3, .cd-light .cd-dark .cd-light h3, .cd-dark .cd-dark .cd-light h3, .cd-light .cd-light .cd-dark .cd-light h3, .cd-dark .cd-light .cd-dark .cd-light h3 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h3, .cd-light .cd-dark h3, .cd-dark .cd-light .cd-dark h3 {
+	color: rgba(204,204,204,1.0);
+}
+
+
+h4 {
+	font-family: Roboto, sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: underline;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0 5px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light h4, .cd-dark .cd-light h4, .cd-light .cd-dark .cd-light h4, .cd-dark .cd-dark .cd-light h4, .cd-light .cd-light .cd-dark .cd-light h4, .cd-dark .cd-light .cd-dark .cd-light h4 {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark h4, .cd-light .cd-dark h4, .cd-dark .cd-light .cd-dark h4 {
+	color: rgba(204,204,204,1.0);
+}
+
+
+
+a, a:visited {
+	text-transform: none;
+	text-decoration: none;
+}
+
+.cd-light a, .cd-light a:visited, .cd-dark .cd-light a, .cd-dark .cd-light a:visited, .cd-light .cd-dark .cd-light a, .cd-light .cd-dark .cd-light a:visited, .cd-dark .cd-dark .cd-light a, .cd-dark .cd-dark .cd-light a:visited, .cd-light .cd-light .cd-dark .cd-light a, .cd-light .cd-light .cd-dark .cd-light a:visited, .cd-dark .cd-light .cd-dark .cd-light a, .cd-dark .cd-light .cd-dark .cd-light a:visited {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a, .cd-dark a:visited, .cd-light .cd-dark a, .cd-light .cd-dark a:visited, .cd-dark .cd-light .cd-dark a, .cd-dark .cd-light .cd-dark a:visited {
+	color: rgba(255,255,255,1);
+}
+
+a:hover, a:visited:hover {	text-decoration: underline;
+}
+
+.cd-light a:hover, .cd-light a:visited:hover, .cd-dark .cd-light a:hover, .cd-dark .cd-light a:visited:hover, .cd-light .cd-dark .cd-light a:hover, .cd-light .cd-dark .cd-light a:visited:hover, .cd-dark .cd-dark .cd-light a:hover, .cd-dark .cd-dark .cd-light a:visited:hover, .cd-light .cd-light .cd-dark .cd-light a:hover, .cd-light .cd-light .cd-dark .cd-light a:visited:hover, .cd-dark .cd-light .cd-dark .cd-light a:hover, .cd-dark .cd-light .cd-dark .cd-light a:visited:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a:hover, .cd-dark a:visited:hover, .cd-light .cd-dark a:hover, .cd-light .cd-dark a:visited:hover, .cd-dark .cd-light .cd-dark a:hover, .cd-dark .cd-light .cd-dark a:visited:hover {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+/* top align all columns */
+.cd-col div.cd-block:first-of-type > *:first-child {
+    margin-top: 0;
+}
+
+.cd-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.cd-section {
+    padding: 10px 10px 10px 10px;
+}
+
+.cd-col div.cd-block:first-of-type .cd-block-content {
+    padding-top: 20px;
+}
+
+.cd-brightness-glasspane {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.cd-backgroundPane {
+    position: absolute;
+    z-index: -2;
+}
+
+.cd-backgroundParallax {
+    background-attachment: fixed;
+}
+
+.cd-backgroundPosition_COVER {
+    background-position: center center;
+    background-size: cover;
+}
+
+.cd-backgroundPosition_TOP_LEFT {
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_TOP_CENTER {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_TOP_RIGHT {
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_CENTER_LEFT {
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_CENTER_CENTER {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_CENTER_RIGHT {
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_BOTTOM_LEFT {
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_BOTTOM_CENTER {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.cd-backgroundPosition_BOTTOM_RIGHT {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+@media (max-device-width: 1200px) {
+    .cd-backgroundParallax {
+        background-attachment: scroll;
+    }
+}
+
+.cd-block .cd-block-content {
+    padding: 0 20px;
+}
+
+.cd-block {
+    margin: 0 10px;
+}
+
+
+.cd-backgroundVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.cd-section-glasspane {
+    filter: none;
+}
+
+.cd-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 -5px;
+    background-color: transparent;
+}
+
+.cd-tile, .cd-tile-v-box, .cd-tile-h-box {
+    margin: 0 5px 10px 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cd-tile-width-1 {
+    width: calc(100% - 10px);
+}
+
+.cd-tile-width-2 {
+    width: calc(50% - 10px);
+}
+
+.cd-tile-width-3 {
+    width: calc(33.3333% - 10px);
+}
+
+.cd-tile-width-4 {
+    width: calc(25% - 10px);
+}
+
+.cd-tile-width-5 {
+    width: calc(20% - 10px);
+}
+
+.cd-tile-width-6 {
+    width: calc(16.6666% - 10px);
+}
+
+.cd-tile-width-7 {
+    width: calc(14.2857% - 10px);
+}
+
+.cd-tile-width-8 {
+    width: calc(12.5% - 10px);
+}
+
+.cd-tile-width-9 {
+    width: calc(11.1111% - 10px);
+}
+
+.cd-tile-width-10 {
+    width: calc(10% - 10px);
+}
+
+.cd-tile-width-11 {
+    width: calc(9.0909% - 10px);
+}
+
+.cd-tile-width-12 {
+    width: calc(8.3333% - 10px);
+}
+
+@media (max-width: 576px) {
+    .cd-tile-width-1,.cd-tile-width-2,.cd-tile-width-3 {
+        width: calc(100% - 10px);
+    }
+
+    .cd-tile-width-4,.cd-tile-width-5,.cd-tile-width-6 {
+        width: calc(50% - 10px);
+    }
+
+    .cd-tile-width-7,.cd-tile-width-8,.cd-tile-width-9 {
+        width: calc(33.3333% - 10px);
+    }
+
+    .cd-tile-width-10,.cd-tile-width-11,.cd-tile-width-12 {
+        width: calc(25% - 10px);
+    }
+}
+
+.cd-image-wrapper-1,
+.cd-image-wrapper-3_4,
+.cd-image-wrapper-4_3,
+.cd-image-wrapper-3_2,
+.cd-image-wrapper-2_3,
+.cd-image-wrapper-16_9,
+.cd-image-wrapper-16_10,
+.cd-image-wrapper-3_1,
+.cd-image-wrapper-6_1,
+.cd-image-wrapper-9_1 {
+    position: relative;
+}
+
+.cd-image-wrapper-1:after,
+.cd-image-wrapper-3_4:after,
+.cd-image-wrapper-4_3:after,
+.cd-image-wrapper-2_3:after,
+.cd-image-wrapper-3_2:after,
+.cd-image-wrapper-16_9:after,
+.cd-image-wrapper-16_10:after,
+.cd-image-wrapper-3_1:after,
+.cd-image-wrapper-6_1:after,
+.cd-image-wrapper-9_1:after {
+    content: "";
+    display: block;
+}
+
+.cd-image-wrapper-1:after {
+    padding-bottom: 100%;
+}
+
+.cd-image-wrapper-3_4:after {
+    padding-bottom: 133.33%;
+}
+
+.cd-image-wrapper-4_3:after {
+    padding-bottom: 75%;
+}
+
+.cd-image-wrapper-2_3:after {
+    padding-bottom: 150%;
+}
+
+.cd-image-wrapper-3_2:after {
+    padding-bottom: 66.66%;
+}
+
+.cd-image-wrapper-16_9:after {
+    padding-bottom: 56.25%;
+}
+
+.cd-image-wrapper-16_10:after {
+    padding-bottom: 62.5%;
+}
+
+.cd-image-wrapper-3_1:after {
+    padding-bottom: 33.33%;
+}
+
+.cd-image-wrapper-6_1:after {
+    padding-bottom: 16.66%;
+}
+
+.cd-image-wrapper-9_1:after {
+    padding-bottom: 11.11%;
+}
+
+.cd-image-content {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); /* Safari fix für abgerundete Ecken */
+}
+
+.cd-image-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.cd-image-content-circle {
+    border-radius: 100% !important;
+}
+
+.cd-image-cover {
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.cd-image-contain {
+    object-fit: contain;
+    vertical-align:middle;
+    font-family: 'object-fit: contain;';
+}
+
+/********** START: OWL CAROUSEL STYLES ********/
+
+.cd-carousel-container {
+    position: relative;
+}
+
+.cd-carousel-container .cd-carousel-nav {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    bottom: 35%;
+    width: 6vmax;
+    text-align: center;
+    font-size: 5vmax;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    cursor: pointer;
+}
+
+.cd-carousel-container .cd-carousel-nav:hover {
+    background-color: rgba(255,255,255,0.5);
+    transition: background-color .2s ease;
+}
+
+.cd-carousel-arrow {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    left: 25%;
+    right: 25%;
+}
+
+.cd-carousel-nav, .cd-carousel-dots, .cd-carousel-dots-mobile, .cd-carousel-description {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.cd-carousel-nav-always .cd-carousel-nav,
+.cd-carousel-nav-hover:hover .cd-carousel-nav,
+.cd-carousel-dots-always .cd-carousel-dots,
+.cd-carousel-dots-hover:hover .cd-carousel-dots,
+.cd-carousel-dots-always .cd-carousel-dots-mobile,
+.cd-carousel-dots-hover:hover .cd-carousel-dots-mobile,
+.cd-carousel-description-always .cd-carousel-description,
+.cd-carousel-description-hover:hover .cd-carousel-description {
+    opacity: 1;
+}
+
+.cd-carousel-nav-never .cd-carousel-nav,
+.cd-carousel-dots-never .cd-carousel-dots,
+.cd-carousel-dots-never .cd-carousel-dots-mobile {
+    display: none;
+}
+
+.cd-carousel-dots, .cd-carousel-dots-mobile {
+    position: absolute;
+    bottom: 10px;
+    margin: auto;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cd-carousel-dot {
+    color: white;
+    font-size: 12px;
+    text-shadow: 0 0 1px #333333;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.cd-carousel-dot.active {
+    color: #CCCCCC;
+}
+
+.cd-carousel-item {
+    position: relative;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.cd-carousel-dots-mobile {
+    display: none;
+}
+
+div[data-block-type="103"] .cd-carousel-dots-mobile,
+div[data-block-type="103"] .cd-carousel-dots {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .cd-carousel-dots {
+        display: none;
+    }
+
+    .cd-carousel-dots-mobile {
+        display: block;
+    }
+}
+
+/********** END: OWL CAROUSEL STYLES ********/
+
+.cd-back-anchor {
+    position: absolute;
+    transform: translateY(-30vh);
+}
+
+.cd-news-image-content {
+    position: absolute;
+    width: 100%;
+}
+
+.cd-news-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+div[data-block-type="0"] img,
+div[data-block-type="2"] img,
+div[data-block-type="4"] .cd-tile-v-detail-area p img,
+div[data-block-type="5"] .cd-group-detail p img,
+div[data-block-type="100"] .cd-news-text img,
+div[data-block-type="101"] img,
+div[data-block-type="104"] .cd-data-value img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cd-image-content span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("webpage/images/album/play.png") no-repeat 50% 50%;
+    background-size: 50%;
+    z-index: 1;
+}
+
+.cd-image-content:hover span {
+    z-index: 0;
+}
+
+.cd-image-content:hover .cd-blur {
+    filter: blur(8px);
+}
+
+@media (max-width: 576px) {
+    .cd-news-item-image-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 577px) {
+    .cd-news-item-image-wrapper {
+        float: right;
+        width: 30%;
+        margin-bottom: 0;
+        margin-left: 1em;
+    }
+}
+
+
+/********** START: ADDITIONAL ELEMENTS STYLES ********/
+
+.cd-additional-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-additional-subheading, .cd-dark .cd-light .cd-additional-subheading, .cd-light .cd-dark .cd-light .cd-additional-subheading, .cd-dark .cd-dark .cd-light .cd-additional-subheading, .cd-light .cd-light .cd-dark .cd-light .cd-additional-subheading, .cd-dark .cd-light .cd-dark .cd-light .cd-additional-subheading {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-additional-subheading, .cd-light .cd-dark .cd-additional-subheading, .cd-dark .cd-light .cd-dark .cd-additional-subheading {
+	color: rgba(255,255,255,1.0);
+}
+
+
+.cd-additional-teaser {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 20px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-additional-teaser, .cd-dark .cd-light .cd-additional-teaser, .cd-light .cd-dark .cd-light .cd-additional-teaser, .cd-dark .cd-dark .cd-light .cd-additional-teaser, .cd-light .cd-light .cd-dark .cd-light .cd-additional-teaser, .cd-dark .cd-light .cd-dark .cd-light .cd-additional-teaser {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-additional-teaser, .cd-light .cd-dark .cd-additional-teaser, .cd-dark .cd-light .cd-dark .cd-additional-teaser {
+	color: rgba(255,255,255,1.0);
+}
+
+
+.cd-additional-description {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 20px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-additional-description, .cd-dark .cd-light .cd-additional-description, .cd-light .cd-dark .cd-light .cd-additional-description, .cd-dark .cd-dark .cd-light .cd-additional-description, .cd-light .cd-light .cd-dark .cd-light .cd-additional-description, .cd-dark .cd-light .cd-dark .cd-light .cd-additional-description {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-additional-description, .cd-light .cd-dark .cd-additional-description, .cd-dark .cd-light .cd-dark .cd-additional-description {
+	color: rgba(255,255,255,1.0);
+}
+
+
+.cd-additional-errorText {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 20px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-additional-errorText, .cd-dark .cd-light .cd-additional-errorText, .cd-light .cd-dark .cd-light .cd-additional-errorText, .cd-dark .cd-dark .cd-light .cd-additional-errorText, .cd-light .cd-light .cd-dark .cd-light .cd-additional-errorText, .cd-dark .cd-light .cd-dark .cd-light .cd-additional-errorText {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-additional-errorText, .cd-light .cd-dark .cd-additional-errorText, .cd-dark .cd-light .cd-dark .cd-additional-errorText {
+	color: rgba(226,5,20,1.0);
+}
+
+
+.cd-additional-hiddenBlockText {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-additional-hiddenBlockText, .cd-dark .cd-light .cd-additional-hiddenBlockText, .cd-light .cd-dark .cd-light .cd-additional-hiddenBlockText, .cd-dark .cd-dark .cd-light .cd-additional-hiddenBlockText, .cd-light .cd-light .cd-dark .cd-light .cd-additional-hiddenBlockText, .cd-dark .cd-light .cd-dark .cd-light .cd-additional-hiddenBlockText {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-additional-hiddenBlockText, .cd-light .cd-dark .cd-additional-hiddenBlockText, .cd-dark .cd-light .cd-dark .cd-additional-hiddenBlockText {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+/********** END: ADDITIONAL ELEMENTS STYLES **********/
+/********** START: BUTTON STYLES ********/
+
+.cd-button {
+    display: inline-block;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.cd-light a.cd-button-primary, .cd-light input.cd-button-primary, .cd-light button.cd-button-primary, .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-primary, .cd-dark input.cd-button-primary, .cd-dark button.cd-button-primary, .cd-light .cd-dark a.cd-button-primary, .cd-light .cd-dark input.cd-button-primary, .cd-light .cd-dark button.cd-button-primary, .cd-dark .cd-light .cd-dark a.cd-button-primary, .cd-dark .cd-light .cd-dark input.cd-button-primary, .cd-dark .cd-light .cd-dark button.cd-button-primary {
+	background-color: rgba(51,51,51,1.0);
+}
+
+.cd-light a.cd-button-primary, .cd-light input.cd-button-primary, .cd-light button.cd-button-primary, .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary {
+	border-color: rgba(51,51,51,1.0);
+}
+
+.cd-dark a.cd-button-primary, .cd-dark input.cd-button-primary, .cd-dark button.cd-button-primary, .cd-light .cd-dark a.cd-button-primary, .cd-light .cd-dark input.cd-button-primary, .cd-light .cd-dark button.cd-button-primary, .cd-dark .cd-light .cd-dark a.cd-button-primary, .cd-dark .cd-light .cd-dark input.cd-button-primary, .cd-dark .cd-light .cd-dark button.cd-button-primary {
+	border-color: rgba(51,51,51,1.0);
+}
+
+a.cd-button-primary, input.cd-button-primary, button.cd-button-primary {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light a.cd-button-primary, .cd-light input.cd-button-primary, .cd-light button.cd-button-primary, .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-dark .cd-light button.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark a.cd-button-primary, .cd-dark input.cd-button-primary, .cd-dark button.cd-button-primary, .cd-light .cd-dark a.cd-button-primary, .cd-light .cd-dark input.cd-button-primary, .cd-light .cd-dark button.cd-button-primary, .cd-dark .cd-light .cd-dark a.cd-button-primary, .cd-dark .cd-light .cd-dark input.cd-button-primary, .cd-dark .cd-light .cd-dark button.cd-button-primary {
+	color: rgba(51,51,51,1.0);
+}
+
+
+
+a.cd-button-primary, input.cd-button-primary, button.cd-button-primary {
+border-width: 1px;
+border-style: solid;
+padding: 10px 30px;
+border-radius: 0px;
+margin: 20px 0;
+}
+
+.cd-light a.cd-button-primary:hover, .cd-light input.cd-button-primary:hover, .cd-light button.cd-button-primary:hover, .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary:hover {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-primary:hover, .cd-dark input.cd-button-primary:hover, .cd-dark button.cd-button-primary:hover, .cd-light .cd-dark a.cd-button-primary:hover, .cd-light .cd-dark input.cd-button-primary:hover, .cd-light .cd-dark button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark button.cd-button-primary:hover {
+	background-color: rgba(255,255,255,1.0);
+}
+
+.cd-light a.cd-button-primary:hover, .cd-light input.cd-button-primary:hover, .cd-light button.cd-button-primary:hover, .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a.cd-button-primary:hover, .cd-dark input.cd-button-primary:hover, .cd-dark button.cd-button-primary:hover, .cd-light .cd-dark a.cd-button-primary:hover, .cd-light .cd-dark input.cd-button-primary:hover, .cd-light .cd-dark button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark button.cd-button-primary:hover {
+	color: transparent;
+}
+
+.cd-light a.cd-button-primary:hover, .cd-light input.cd-button-primary:hover, .cd-light button.cd-button-primary:hover, .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-dark .cd-light button.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-primary:hover {
+	border-color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a.cd-button-primary:hover, .cd-dark input.cd-button-primary:hover, .cd-dark button.cd-button-primary:hover, .cd-light .cd-dark a.cd-button-primary:hover, .cd-light .cd-dark input.cd-button-primary:hover, .cd-light .cd-dark button.cd-button-primary:hover, .cd-dark .cd-light .cd-dark a.cd-button-primary:hover, .cd-dark .cd-light .cd-dark input.cd-button-primary:hover, .cd-dark .cd-light .cd-dark button.cd-button-primary:hover {
+	border-color: rgba(51,51,51,1.0);
+}
+
+
+.cd-light a.cd-button-secondary, .cd-light input.cd-button-secondary, .cd-light button.cd-button-secondary, .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-secondary, .cd-dark input.cd-button-secondary, .cd-dark button.cd-button-secondary, .cd-light .cd-dark a.cd-button-secondary, .cd-light .cd-dark input.cd-button-secondary, .cd-light .cd-dark button.cd-button-secondary, .cd-dark .cd-light .cd-dark a.cd-button-secondary, .cd-dark .cd-light .cd-dark input.cd-button-secondary, .cd-dark .cd-light .cd-dark button.cd-button-secondary {
+	background-color: transparent;
+}
+
+.cd-light a.cd-button-secondary, .cd-light input.cd-button-secondary, .cd-light button.cd-button-secondary, .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary {
+	border-color: rgba(51,51,51,1.0);
+}
+
+.cd-dark a.cd-button-secondary, .cd-dark input.cd-button-secondary, .cd-dark button.cd-button-secondary, .cd-light .cd-dark a.cd-button-secondary, .cd-light .cd-dark input.cd-button-secondary, .cd-light .cd-dark button.cd-button-secondary, .cd-dark .cd-light .cd-dark a.cd-button-secondary, .cd-dark .cd-light .cd-dark input.cd-button-secondary, .cd-dark .cd-light .cd-dark button.cd-button-secondary {
+	border-color: rgba(255,255,255,1.0);
+}
+
+a.cd-button-secondary, input.cd-button-secondary, button.cd-button-secondary {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light a.cd-button-secondary, .cd-light input.cd-button-secondary, .cd-light button.cd-button-secondary, .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-dark .cd-light button.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark a.cd-button-secondary, .cd-dark input.cd-button-secondary, .cd-dark button.cd-button-secondary, .cd-light .cd-dark a.cd-button-secondary, .cd-light .cd-dark input.cd-button-secondary, .cd-light .cd-dark button.cd-button-secondary, .cd-dark .cd-light .cd-dark a.cd-button-secondary, .cd-dark .cd-light .cd-dark input.cd-button-secondary, .cd-dark .cd-light .cd-dark button.cd-button-secondary {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+a.cd-button-secondary, input.cd-button-secondary, button.cd-button-secondary {
+border-width: 1px;
+border-style: solid;
+padding: 10px 30px;
+border-radius: 0px;
+margin: 20px 0;
+}
+
+.cd-light a.cd-button-secondary:hover, .cd-light input.cd-button-secondary:hover, .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary:hover {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-secondary:hover, .cd-dark input.cd-button-secondary:hover, .cd-dark button.cd-button-secondary:hover, .cd-light .cd-dark a.cd-button-secondary:hover, .cd-light .cd-dark input.cd-button-secondary:hover, .cd-light .cd-dark button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark button.cd-button-secondary:hover {
+	background-color: rgba(51,51,51,1.0);
+}
+
+.cd-light a.cd-button-secondary:hover, .cd-light input.cd-button-secondary:hover, .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary:hover {
+	color: transparent;
+}
+
+.cd-dark a.cd-button-secondary:hover, .cd-dark input.cd-button-secondary:hover, .cd-dark button.cd-button-secondary:hover, .cd-light .cd-dark a.cd-button-secondary:hover, .cd-light .cd-dark input.cd-button-secondary:hover, .cd-light .cd-dark button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark button.cd-button-secondary:hover {
+	color: rgba(255,255,255,1.0);
+}
+
+.cd-light a.cd-button-secondary:hover, .cd-light input.cd-button-secondary:hover, .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-dark .cd-light button.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-secondary:hover {
+	border-color: transparent;
+}
+
+.cd-dark a.cd-button-secondary:hover, .cd-dark input.cd-button-secondary:hover, .cd-dark button.cd-button-secondary:hover, .cd-light .cd-dark a.cd-button-secondary:hover, .cd-light .cd-dark input.cd-button-secondary:hover, .cd-light .cd-dark button.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark a.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark input.cd-button-secondary:hover, .cd-dark .cd-light .cd-dark button.cd-button-secondary:hover {
+	border-color: rgba(255,255,255,1.0);
+}
+
+
+.cd-light a.cd-button-tertiary, .cd-light input.cd-button-tertiary, .cd-light button.cd-button-tertiary, .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-tertiary, .cd-dark input.cd-button-tertiary, .cd-dark button.cd-button-tertiary, .cd-light .cd-dark a.cd-button-tertiary, .cd-light .cd-dark input.cd-button-tertiary, .cd-light .cd-dark button.cd-button-tertiary, .cd-dark .cd-light .cd-dark a.cd-button-tertiary, .cd-dark .cd-light .cd-dark input.cd-button-tertiary, .cd-dark .cd-light .cd-dark button.cd-button-tertiary {
+	background-color: transparent;
+}
+
+.cd-light a.cd-button-tertiary, .cd-light input.cd-button-tertiary, .cd-light button.cd-button-tertiary, .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary {
+	border-color: rgba(102,102,102,1.0);
+}
+
+.cd-dark a.cd-button-tertiary, .cd-dark input.cd-button-tertiary, .cd-dark button.cd-button-tertiary, .cd-light .cd-dark a.cd-button-tertiary, .cd-light .cd-dark input.cd-button-tertiary, .cd-light .cd-dark button.cd-button-tertiary, .cd-dark .cd-light .cd-dark a.cd-button-tertiary, .cd-dark .cd-light .cd-dark input.cd-button-tertiary, .cd-dark .cd-light .cd-dark button.cd-button-tertiary {
+	border-color: rgba(170,170,170,1.0);
+}
+
+a.cd-button-tertiary, input.cd-button-tertiary, button.cd-button-tertiary {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light a.cd-button-tertiary, .cd-light input.cd-button-tertiary, .cd-light button.cd-button-tertiary, .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-dark .cd-light button.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark a.cd-button-tertiary, .cd-dark input.cd-button-tertiary, .cd-dark button.cd-button-tertiary, .cd-light .cd-dark a.cd-button-tertiary, .cd-light .cd-dark input.cd-button-tertiary, .cd-light .cd-dark button.cd-button-tertiary, .cd-dark .cd-light .cd-dark a.cd-button-tertiary, .cd-dark .cd-light .cd-dark input.cd-button-tertiary, .cd-dark .cd-light .cd-dark button.cd-button-tertiary {
+	color: rgba(204,204,204,1.0);
+}
+
+
+
+a.cd-button-tertiary, input.cd-button-tertiary, button.cd-button-tertiary {
+border-width: 1px;
+border-style: solid;
+padding: 6px 12px;
+border-radius: 0px;
+margin: 10px 0;
+}
+
+.cd-light a.cd-button-tertiary:hover, .cd-light input.cd-button-tertiary:hover, .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover {
+	background-color: transparent;
+}
+
+.cd-dark a.cd-button-tertiary:hover, .cd-dark input.cd-button-tertiary:hover, .cd-dark button.cd-button-tertiary:hover, .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-light .cd-dark button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark button.cd-button-tertiary:hover {
+	background-color: rgba(102,102,102,1.0);
+}
+
+.cd-light a.cd-button-tertiary:hover, .cd-light input.cd-button-tertiary:hover, .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a.cd-button-tertiary:hover, .cd-dark input.cd-button-tertiary:hover, .cd-dark button.cd-button-tertiary:hover, .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-light .cd-dark button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark button.cd-button-tertiary:hover {
+	color: rgba(204,204,204,1.0);
+}
+
+.cd-light a.cd-button-tertiary:hover, .cd-light input.cd-button-tertiary:hover, .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-light .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark .cd-light button.cd-button-tertiary:hover {
+	border-color: rgba(226,5,20,1.0);
+}
+
+.cd-dark a.cd-button-tertiary:hover, .cd-dark input.cd-button-tertiary:hover, .cd-dark button.cd-button-tertiary:hover, .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-light .cd-dark button.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark a.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark input.cd-button-tertiary:hover, .cd-dark .cd-light .cd-dark button.cd-button-tertiary:hover {
+	border-color: rgba(170,170,170,1.0);
+}
+
+
+
+/********** END: BUTTON STYLES **********/
+/********** START: DATA STYLES ********/
+
+.cd-data-label {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0 0 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-data-label, .cd-dark .cd-light .cd-data-label, .cd-light .cd-dark .cd-light .cd-data-label, .cd-dark .cd-dark .cd-light .cd-data-label, .cd-light .cd-light .cd-dark .cd-light .cd-data-label, .cd-dark .cd-light .cd-dark .cd-light .cd-data-label {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-data-label, .cd-light .cd-dark .cd-data-label, .cd-dark .cd-light .cd-dark .cd-data-label {
+	color: rgba(204,204,204,1.0);
+}
+
+
+.cd-data-label {
+    display: inline-block;
+    width: 100%;
+}
+
+.cd-data-value {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-data-value, .cd-dark .cd-light .cd-data-value, .cd-light .cd-dark .cd-light .cd-data-value, .cd-dark .cd-dark .cd-light .cd-data-value, .cd-light .cd-light .cd-dark .cd-light .cd-data-value, .cd-dark .cd-light .cd-dark .cd-light .cd-data-value {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-data-value, .cd-light .cd-dark .cd-data-value, .cd-dark .cd-light .cd-dark .cd-data-value {
+	color: rgba(51,51,51,1.0);
+}
+
+
+
+.cd-data-value-link {
+    margin-top: 0.2em;
+    font-size: 90%;
+}
+
+.cd-value-html {
+    white-space: normal;
+}
+
+.cd-value-html *:first-child {
+    margin-top:0;
+}
+
+.cd-data-formfield {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 5px 0 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-data-formfield, .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-light .cd-data-formfield {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-data-formfield, .cd-light .cd-dark .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-data-formfield {
+	color: rgba(255,255,255,1.0);
+}
+
+
+.cd-light .cd-data-formfield, .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-light .cd-data-formfield {
+	background-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-data-formfield, .cd-light .cd-dark .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-data-formfield {
+	background-color: rgba(51,51,51,1.0);
+}
+
+.cd-light .cd-data-formfield, .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-dark .cd-light .cd-data-formfield, .cd-light .cd-light .cd-dark .cd-light .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-light .cd-data-formfield {
+	border-color: rgba(170,170,170,1.0);
+}
+
+.cd-dark .cd-data-formfield, .cd-light .cd-dark .cd-data-formfield, .cd-dark .cd-light .cd-dark .cd-data-formfield {
+	border-color: rgba(170,170,170,1.0);
+}
+
+.cd-data-formfield {
+	border-width: 1px;
+	border-style: SOLID;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+padding: 5px 10px;
+}
+
+
+
+.cd-detail-col {
+    padding-left: 10px;
+}
+
+.cd-detail-col:first-child {
+    padding-left: 0;
+}
+
+.cd-detail-area {
+    display: flex;
+    width: 100%;
+}
+
+.cd-detail-area ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cd-detail-area li {
+    padding: 3px;
+    text-align: left;
+    line-height: 1.3;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cd-detail-col .cd-data-value {
+    white-space: normal;
+}
+
+@media (max-width: 576px) {
+    .cd-detail-area {
+        display: block;
+    }
+    .cd-detail-image-col {
+        margin: auto;
+    }
+    .cd-detail-col {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+}
+
+/********** END: DATA STYLES **********/
+/********** START: LIST VIEW STYLES ********/
+
+.cd-zoom {
+    -moz-transition: all 0.5s ease-out 0.15s;
+    -webkit-transition: all 0.5s ease-out 0.15s;
+    transition: all 0.5s ease-out 0.15s;
+
+    -moz-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+
+/********** END: LIST VIEW STYLES **********/
+/********** START: TILE VIEW VERTICAL STYLES ********/
+
+.cd-light .cd-tile-v-main-area, .cd-dark .cd-light .cd-tile-v-main-area, .cd-light .cd-dark .cd-light .cd-tile-v-main-area, .cd-dark .cd-dark .cd-light .cd-tile-v-main-area, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-main-area, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-main-area {
+	background-color: transparent;
+}
+
+.cd-dark .cd-tile-v-main-area, .cd-light .cd-dark .cd-tile-v-main-area, .cd-dark .cd-light .cd-dark .cd-tile-v-main-area {
+	background-color: rgba(169,169,169,1.0);
+}
+
+.cd-light .cd-tile-v-main-area, .cd-dark .cd-light .cd-tile-v-main-area, .cd-light .cd-dark .cd-light .cd-tile-v-main-area, .cd-dark .cd-dark .cd-light .cd-tile-v-main-area, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-main-area, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-main-area {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-tile-v-main-area, .cd-light .cd-dark .cd-tile-v-main-area, .cd-dark .cd-light .cd-dark .cd-tile-v-main-area {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-tile-v-main-area {
+	border-width: 0;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+padding: 10px;
+}
+
+
+.cd-tile-v-main-heading {
+	font-family: Roboto, sans-serif;
+	font-size: x-large;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0px;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-main-heading, .cd-dark .cd-light .cd-tile-v-main-heading, .cd-light .cd-dark .cd-light .cd-tile-v-main-heading, .cd-dark .cd-dark .cd-light .cd-tile-v-main-heading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-main-heading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-main-heading {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-tile-v-main-heading, .cd-light .cd-dark .cd-tile-v-main-heading, .cd-dark .cd-light .cd-dark .cd-tile-v-main-heading {
+	color: rgba(226,5,20,1.0);
+}
+
+
+.cd-tile-v-main-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-main-subheading, .cd-dark .cd-light .cd-tile-v-main-subheading, .cd-light .cd-dark .cd-light .cd-tile-v-main-subheading, .cd-dark .cd-dark .cd-light .cd-tile-v-main-subheading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-main-subheading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-main-subheading {
+	color: rgba(102,102,102,1.0);
+}
+
+.cd-dark .cd-tile-v-main-subheading, .cd-light .cd-dark .cd-tile-v-main-subheading, .cd-dark .cd-light .cd-dark .cd-tile-v-main-subheading {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+.cd-tile-v-detail-heading {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-detail-heading, .cd-dark .cd-light .cd-tile-v-detail-heading, .cd-light .cd-dark .cd-light .cd-tile-v-detail-heading, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-heading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-heading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-heading {
+	color: rgba(204,204,204,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-heading, .cd-light .cd-dark .cd-tile-v-detail-heading, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-heading {
+	color: rgba(204,204,204,1.0);
+}
+
+
+.cd-tile-v-detail-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-detail-subheading, .cd-dark .cd-light .cd-tile-v-detail-subheading, .cd-light .cd-dark .cd-light .cd-tile-v-detail-subheading, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-subheading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-subheading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-subheading {
+	color: rgba(204,204,204,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-subheading, .cd-light .cd-dark .cd-tile-v-detail-subheading, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-subheading {
+	color: rgba(204,204,204,1.0);
+}
+
+
+.cd-tile-v-detail-label {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-detail-label, .cd-dark .cd-light .cd-tile-v-detail-label, .cd-light .cd-dark .cd-light .cd-tile-v-detail-label, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-label, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-label, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-label {
+	color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-label, .cd-light .cd-dark .cd-tile-v-detail-label, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-label {
+	color: rgba(169,169,169,1.0);
+}
+
+
+.cd-tile-v-detail-value, .cd-tile-v .cd-spacer {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-v-detail-value, .cd-light .cd-tile-v .cd-spacer, .cd-dark .cd-light .cd-tile-v-detail-value, .cd-dark .cd-light .cd-tile-v .cd-spacer, .cd-light .cd-dark .cd-light .cd-tile-v-detail-value, .cd-light .cd-dark .cd-light .cd-tile-v .cd-spacer, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-value, .cd-dark .cd-dark .cd-light .cd-tile-v .cd-spacer, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-value, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v .cd-spacer, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-value, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v .cd-spacer {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-value, .cd-dark .cd-tile-v .cd-spacer, .cd-light .cd-dark .cd-tile-v-detail-value, .cd-light .cd-dark .cd-tile-v .cd-spacer, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-value, .cd-dark .cd-light .cd-dark .cd-tile-v .cd-spacer {
+	color: rgba(51,51,51,1.0);
+}
+
+
+.cd-tile-v-detail-area a {
+	text-transform: none;
+	text-decoration: none;
+}
+
+.cd-light .cd-tile-v-detail-area a, .cd-dark .cd-light .cd-tile-v-detail-area a, .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-area a, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-area a, .cd-light .cd-dark .cd-tile-v-detail-area a, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-area a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-tile-v-detail-area a:hover {	text-decoration: underline;
+}
+
+.cd-light .cd-tile-v-detail-area a:hover, .cd-dark .cd-light .cd-tile-v-detail-area a:hover, .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a:hover, .cd-dark .cd-dark .cd-light .cd-tile-v-detail-area a:hover, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a:hover, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-detail-area a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-tile-v-detail-area a:hover, .cd-light .cd-dark .cd-tile-v-detail-area a:hover, .cd-dark .cd-light .cd-dark .cd-tile-v-detail-area a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+
+
+.cd-light .cd-tile-v-box, .cd-dark .cd-light .cd-tile-v-box, .cd-light .cd-dark .cd-light .cd-tile-v-box, .cd-dark .cd-dark .cd-light .cd-tile-v-box, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-box, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-box {
+	background-color: transparent;
+}
+
+.cd-dark .cd-tile-v-box, .cd-light .cd-dark .cd-tile-v-box, .cd-dark .cd-light .cd-dark .cd-tile-v-box {
+	background-color: rgba(238,238,238,1.0);
+}
+
+.cd-light .cd-tile-v-box, .cd-dark .cd-light .cd-tile-v-box, .cd-light .cd-dark .cd-light .cd-tile-v-box, .cd-dark .cd-dark .cd-light .cd-tile-v-box, .cd-light .cd-light .cd-dark .cd-light .cd-tile-v-box, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-v-box {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-tile-v-box, .cd-light .cd-dark .cd-tile-v-box, .cd-dark .cd-light .cd-dark .cd-tile-v-box {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-tile-v-box {
+	border-width: 0;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+padding: 0px;
+}
+
+
+
+.cd-tile-v-detail-area {
+    padding: 10px;
+}
+
+.cd-tile-v-group {
+    padding: 10px;
+}
+
+.cd-light .cd-tile-v-box:hover {
+     -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+     box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+.cd-dark .cd-tile-v-box:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+}
+
+  .cd-tile-v-main-heading {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+  }
+
+.cd-tile-v-box .cd-image-content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cd-tile-v-box {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.cd-tile-v-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cd-tile-v-detail-area ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cd-tile-v-detail-area li {
+    padding: 3px;
+    text-align: left;
+    line-height: 1.3;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+    .cd-tile-v-box {
+        margin-bottom: 20px;
+    }
+}
+
+/********** END: TILE VIEW VERTICAL STYLES **********/
+
+/********** START: TILE VIEW HORIZONTAL STYLES ********/
+
+.cd-light .cd-tile-h-main-area, .cd-dark .cd-light .cd-tile-h-main-area, .cd-light .cd-dark .cd-light .cd-tile-h-main-area, .cd-dark .cd-dark .cd-light .cd-tile-h-main-area, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-main-area, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-main-area {
+	background-color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-h-main-area, .cd-light .cd-dark .cd-tile-h-main-area, .cd-dark .cd-light .cd-dark .cd-tile-h-main-area {
+	background-color: rgba(169,169,169,1.0);
+}
+
+.cd-light .cd-tile-h-main-area, .cd-dark .cd-light .cd-tile-h-main-area, .cd-light .cd-dark .cd-light .cd-tile-h-main-area, .cd-dark .cd-dark .cd-light .cd-tile-h-main-area, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-main-area, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-main-area {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-tile-h-main-area, .cd-light .cd-dark .cd-tile-h-main-area, .cd-dark .cd-light .cd-dark .cd-tile-h-main-area {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-tile-h-main-area {
+	border-width: 0;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+padding: 10px;
+}
+
+
+.cd-tile-h-main-heading {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0 0 3px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-main-heading, .cd-dark .cd-light .cd-tile-h-main-heading, .cd-light .cd-dark .cd-light .cd-tile-h-main-heading, .cd-dark .cd-dark .cd-light .cd-tile-h-main-heading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-main-heading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-main-heading {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-tile-h-main-heading, .cd-light .cd-dark .cd-tile-h-main-heading, .cd-dark .cd-light .cd-dark .cd-tile-h-main-heading {
+	color: rgba(226,5,20,1.0);
+}
+
+
+.cd-tile-h-main-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 3px 0 0 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-main-subheading, .cd-dark .cd-light .cd-tile-h-main-subheading, .cd-light .cd-dark .cd-light .cd-tile-h-main-subheading, .cd-dark .cd-dark .cd-light .cd-tile-h-main-subheading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-main-subheading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-main-subheading {
+	color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-tile-h-main-subheading, .cd-light .cd-dark .cd-tile-h-main-subheading, .cd-dark .cd-light .cd-dark .cd-tile-h-main-subheading {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+.cd-tile-h-detail-heading {
+	font-family: Roboto, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 5px 0 10px 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-detail-heading, .cd-dark .cd-light .cd-tile-h-detail-heading, .cd-light .cd-dark .cd-light .cd-tile-h-detail-heading, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-heading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-heading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-heading {
+	color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-heading, .cd-light .cd-dark .cd-tile-h-detail-heading, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-heading {
+	color: rgba(169,169,169,1.0);
+}
+
+
+.cd-tile-h-detail-subheading {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-detail-subheading, .cd-dark .cd-light .cd-tile-h-detail-subheading, .cd-light .cd-dark .cd-light .cd-tile-h-detail-subheading, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-subheading, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-subheading, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-subheading {
+	color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-subheading, .cd-light .cd-dark .cd-tile-h-detail-subheading, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-subheading {
+	color: rgba(169,169,169,1.0);
+}
+
+
+.cd-tile-h-detail-label {
+	font-family: Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-detail-label, .cd-dark .cd-light .cd-tile-h-detail-label, .cd-light .cd-dark .cd-light .cd-tile-h-detail-label, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-label, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-label, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-label {
+	color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-label, .cd-light .cd-dark .cd-tile-h-detail-label, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-label {
+	color: rgba(169,169,169,1.0);
+}
+
+
+.cd-tile-h-detail-value, .cd-tile-h .cd-spacer {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-tile-h-detail-value, .cd-light .cd-tile-h .cd-spacer, .cd-dark .cd-light .cd-tile-h-detail-value, .cd-dark .cd-light .cd-tile-h .cd-spacer, .cd-light .cd-dark .cd-light .cd-tile-h-detail-value, .cd-light .cd-dark .cd-light .cd-tile-h .cd-spacer, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-value, .cd-dark .cd-dark .cd-light .cd-tile-h .cd-spacer, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-value, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h .cd-spacer, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-value, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h .cd-spacer {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-value, .cd-dark .cd-tile-h .cd-spacer, .cd-light .cd-dark .cd-tile-h-detail-value, .cd-light .cd-dark .cd-tile-h .cd-spacer, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-value, .cd-dark .cd-light .cd-dark .cd-tile-h .cd-spacer {
+	color: rgba(51,51,51,1.0);
+}
+
+
+.cd-tile-h-detail-area a {
+	text-transform: none;
+	text-decoration: none;
+}
+
+.cd-light .cd-tile-h-detail-area a, .cd-dark .cd-light .cd-tile-h-detail-area a, .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-area a, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-area a, .cd-light .cd-dark .cd-tile-h-detail-area a, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-area a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-tile-h-detail-area a:hover {	text-decoration: underline;
+}
+
+.cd-light .cd-tile-h-detail-area a:hover, .cd-dark .cd-light .cd-tile-h-detail-area a:hover, .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a:hover, .cd-dark .cd-dark .cd-light .cd-tile-h-detail-area a:hover, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a:hover, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-detail-area a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-tile-h-detail-area a:hover, .cd-light .cd-dark .cd-tile-h-detail-area a:hover, .cd-dark .cd-light .cd-dark .cd-tile-h-detail-area a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+
+
+.cd-light .cd-tile-h-row, .cd-dark .cd-light .cd-tile-h-row, .cd-light .cd-dark .cd-light .cd-tile-h-row, .cd-dark .cd-dark .cd-light .cd-tile-h-row, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-row, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-row {
+	background-color: rgba(169,169,169,1.0);
+}
+
+.cd-dark .cd-tile-h-row, .cd-light .cd-dark .cd-tile-h-row, .cd-dark .cd-light .cd-dark .cd-tile-h-row {
+	background-color: rgba(169,169,169,1.0);
+}
+
+
+
+.cd-light .cd-tile-h-box, .cd-dark .cd-light .cd-tile-h-box, .cd-light .cd-dark .cd-light .cd-tile-h-box, .cd-dark .cd-dark .cd-light .cd-tile-h-box, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-box, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-box {
+	background-color: rgba(238,238,238,1.0);
+}
+
+.cd-dark .cd-tile-h-box, .cd-light .cd-dark .cd-tile-h-box, .cd-dark .cd-light .cd-dark .cd-tile-h-box {
+	background-color: rgba(238,238,238,1.0);
+}
+
+.cd-light .cd-tile-h-box, .cd-dark .cd-light .cd-tile-h-box, .cd-light .cd-dark .cd-light .cd-tile-h-box, .cd-dark .cd-dark .cd-light .cd-tile-h-box, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-box, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-box {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-tile-h-box, .cd-light .cd-dark .cd-tile-h-box, .cd-dark .cd-light .cd-dark .cd-tile-h-box {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-tile-h-box {
+	border-width: 0;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+padding: 0;
+}
+
+
+
+.cd-light .cd-tile-h-main-area i, .cd-dark .cd-light .cd-tile-h-main-area i, .cd-light .cd-dark .cd-light .cd-tile-h-main-area i, .cd-dark .cd-dark .cd-light .cd-tile-h-main-area i, .cd-light .cd-light .cd-dark .cd-light .cd-tile-h-main-area i, .cd-dark .cd-light .cd-dark .cd-light .cd-tile-h-main-area i {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-tile-h-main-area i, .cd-light .cd-dark .cd-tile-h-main-area i, .cd-dark .cd-light .cd-dark .cd-tile-h-main-area i {
+	color: rgba(226,5,20,1.0);
+}
+
+
+
+.cd-tile-h-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.cd-tile-h-image-col {
+    padding: calc(10px / 2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cd-tile-h-detail-area {
+    padding: 10px;
+}
+
+.cd-tile-h-detail-area ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cd-tile-h-detail-area li {
+    padding: 3px;
+    text-align: left;
+    line-height: 1.3;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cd-tile-h-row {
+    display: flex;
+}
+
+.cd-tile-h-detail-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cd-newslist-tile-h .cd-tile-h-detail-area, .cd-albumlist-tile-h  .cd-tile-h-detail-area {
+    display: block;
+}
+
+.cd-tile-h-image-col-left {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.cd-tile-h-image-col-right {
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.cd-tile-h-detail-col {
+    padding: calc(10px / 2);
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 0.9;
+}
+
+.cd-tile-width-1 .cd-tile-h-detail-col,
+.cd-tile-width-2 .cd-tile-h-detail-col,
+.cd-tile-width-3 .cd-tile-h-detail-col {
+    min-width: 50px;
+}
+
+.cd-tile-width-4 .cd-tile-h-detail-col,
+.cd-tile-width-5 .cd-tile-h-detail-col,
+.cd-tile-width-6 .cd-tile-h-detail-col {
+    min-width: 200px;
+}
+
+.cd-tile-h-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cd-tile-h-main-heading {
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+}
+
+.cd-light .cd-tile-h-box:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.cd-dark .cd-tile-h-box:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+    .cd-tile-h-box {
+        margin-bottom: 20px;
+    }
+
+    .cd-tile-h-detail-col {
+        padding-left: 0;
+        width: 100% !important;
+        padding-top: 10px;
+    }
+
+    .cd-tile-h-detail-area {
+        display: block;
+    }
+
+    .cd-tile-h-image-col {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .cd-tile-h-image-col-left {
+        padding-right: 0;
+    }
+
+    .cd-tile-h-image-col-right {
+        padding-left: 0;
+    }
+}
+/********** END: TILE VIEW HORIZONTAL STYLES **********/
+
+/********** START: TABLE VIEW STYLES ********/
+.cd-table {
+    overflow-y: hidden;
+}
+
+.cd-table th, .cd-table td {
+    white-space: nowrap;
+}
+
+.cd-table .cd-icon {
+    min-width: 40px;
+}
+
+.cd-light .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-dark .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header {
+	background-color: transparent;
+}
+
+.cd-dark .cd-table tr.cd-table-header, .cd-light .cd-dark .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-dark .cd-table tr.cd-table-header {
+	background-color: rgba(169,169,169,1.0);
+}
+
+
+.cd-light .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-dark .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-table tr.cd-table-header, .cd-light .cd-dark .cd-table tr.cd-table-header, .cd-dark .cd-light .cd-dark .cd-table tr.cd-table-header {
+	border-color: rgba(255,255,255,1.0);
+}
+
+.cd-table tr.cd-table-header {
+	border-width: 0;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+
+.cd-table .cd-table-header {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	padding: 15px 10px;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-table .cd-table-header, .cd-dark .cd-light .cd-table .cd-table-header, .cd-light .cd-dark .cd-light .cd-table .cd-table-header, .cd-dark .cd-dark .cd-light .cd-table .cd-table-header, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-table-header, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-table-header {
+	color: transparent;
+}
+
+.cd-dark .cd-table .cd-table-header, .cd-light .cd-dark .cd-table .cd-table-header, .cd-dark .cd-light .cd-dark .cd-table .cd-table-header {
+	color: rgba(226,5,20,1.0);
+}
+
+
+.cd-light .cd-table tr.cd-table-header th, .cd-dark .cd-light .cd-table tr.cd-table-header th, .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header th, .cd-dark .cd-dark .cd-light .cd-table tr.cd-table-header th, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header th, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-table-header th {
+	border-right: 0 SOLID rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-table tr.cd-table-header th, .cd-light .cd-dark .cd-table tr.cd-table-header th, .cd-dark .cd-light .cd-dark .cd-table tr.cd-table-header th {
+	border-right: 0 SOLID rgba(226,5,20,1.0);
+}
+
+
+
+.cd-light .cd-table .cd-tr-value:hover, .cd-dark .cd-light .cd-table .cd-tr-value:hover, .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover, .cd-dark .cd-dark .cd-light .cd-table .cd-tr-value:hover, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover {
+	background-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-table .cd-tr-value:hover, .cd-light .cd-dark .cd-table .cd-tr-value:hover, .cd-dark .cd-light .cd-dark .cd-table .cd-tr-value:hover {
+	background-color: rgba(51,51,51,1.0);
+}
+
+
+.cd-light .cd-table .cd-tr-value:hover td, .cd-dark .cd-light .cd-table .cd-tr-value:hover td, .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td, .cd-dark .cd-dark .cd-light .cd-table .cd-tr-value:hover td, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-table .cd-tr-value:hover td, .cd-light .cd-dark .cd-table .cd-tr-value:hover td, .cd-dark .cd-light .cd-dark .cd-table .cd-tr-value:hover td {
+	color: rgba(255,255,255,1.0);
+}
+
+
+.cd-table .cd-tr-value:hover td a {
+	text-transform: none;
+	text-decoration: none;
+}
+
+.cd-light .cd-table .cd-tr-value:hover td a, .cd-dark .cd-light .cd-table .cd-tr-value:hover td a, .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a, .cd-dark .cd-dark .cd-light .cd-table .cd-tr-value:hover td a, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-table .cd-tr-value:hover td a, .cd-light .cd-dark .cd-table .cd-tr-value:hover td a, .cd-dark .cd-light .cd-dark .cd-table .cd-tr-value:hover td a {
+	color: rgba(255,255,255,1.0);
+}
+
+.cd-table .cd-tr-value:hover td a:hover {	text-decoration: underline;
+}
+
+.cd-light .cd-table .cd-tr-value:hover td a:hover, .cd-dark .cd-light .cd-table .cd-tr-value:hover td a:hover, .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a:hover, .cd-dark .cd-dark .cd-light .cd-table .cd-tr-value:hover td a:hover, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a:hover, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-tr-value:hover td a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-table .cd-tr-value:hover td a:hover, .cd-light .cd-dark .cd-table .cd-tr-value:hover td a:hover, .cd-dark .cd-light .cd-dark .cd-table .cd-tr-value:hover td a:hover {
+	color: rgba(226,5,20,1.0);
+}
+
+
+.cd-table .cd-table-value {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	padding: 5px 10px;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-table .cd-table-value, .cd-dark .cd-light .cd-table .cd-table-value, .cd-light .cd-dark .cd-light .cd-table .cd-table-value, .cd-dark .cd-dark .cd-light .cd-table .cd-table-value, .cd-light .cd-light .cd-dark .cd-light .cd-table .cd-table-value, .cd-dark .cd-light .cd-dark .cd-light .cd-table .cd-table-value {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-table .cd-table-value, .cd-light .cd-dark .cd-table .cd-table-value, .cd-dark .cd-light .cd-dark .cd-table .cd-table-value {
+	color: rgba(51,51,51,1.0);
+}
+
+
+.cd-table a {
+	text-transform: none;
+	text-decoration: none;
+}
+
+.cd-light .cd-table a, .cd-dark .cd-light .cd-table a, .cd-light .cd-dark .cd-light .cd-table a, .cd-dark .cd-dark .cd-light .cd-table a, .cd-light .cd-light .cd-dark .cd-light .cd-table a, .cd-dark .cd-light .cd-dark .cd-light .cd-table a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-table a, .cd-light .cd-dark .cd-table a, .cd-dark .cd-light .cd-dark .cd-table a {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-table a:hover {	text-decoration: none;
+}
+
+
+.cd-light .cd-table tr.cd-tr-value td, .cd-dark .cd-light .cd-table tr.cd-tr-value td, .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value td, .cd-dark .cd-dark .cd-light .cd-table tr.cd-tr-value td, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value td, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value td {
+	border-right: 0 SOLID rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-table tr.cd-tr-value td, .cd-light .cd-dark .cd-table tr.cd-tr-value td, .cd-dark .cd-light .cd-dark .cd-table tr.cd-tr-value td {
+	border-right: 0 SOLID rgba(226,5,20,1.0);
+}
+
+
+.cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value {
+	border-bottom: 0 SOLID rgba(226,5,20,1.0);
+}
+
+.cd-dark .cd-table tr.cd-tr-value, .cd-light .cd-dark .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-dark .cd-table tr.cd-tr-value {
+	border-bottom: 0 SOLID rgba(226,5,20,1.0);
+}
+
+
+.cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-light .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-dark .cd-light .cd-table tr.cd-tr-value {
+	background-color: rgba(255,255,255,1.0);
+}
+
+.cd-dark .cd-table tr.cd-tr-value, .cd-light .cd-dark .cd-table tr.cd-tr-value, .cd-dark .cd-light .cd-dark .cd-table tr.cd-tr-value {
+	background-color: rgba(238,238,238,1.0);
+}
+
+
+
+.cd-table tr.cd-table-header th:last-child, .cd-table tr.cd-tr-value td:last-child {
+    border-right: none;
+}
+
+.cd-table tr.cd-table-header th:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.cd-table tr.cd-table-header th:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.cd-table tr.cd-last-tr-value {
+    border-bottom:none;
+}
+
+
+.cd-table-date {
+   width: 13em;
+}
+
+.cd-table table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.cd-table tr td {
+    vertical-align: TOP;
+}
+
+.cd-table .cd-image-column {
+    height: 1px; /* Hack für korrektes Handling des Bildes */
+}
+
+.cd-contactlist-table tr td:last-child {
+    width: 100%;
+}
+
+/********** END: TABLE VIEW STYLES **********/
+
+.icsFooter {
+    padding-top: 20px;
+}
+
+/* Problem der Kalender-Ansicht, da wird ansonsten der rechte Rand abgeschnitten */
+div[data-block-type="2"] .dhx_cal_container {
+    margin-right: 10px;
+}
+
+/********** START: VIDEO STYLES ********/
+
+.cd-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+}
+
+.cd-video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/********** END: VIDEO STYLES **********/
+
+/********** START: AUDIO ********/
+
+.cd-audio-player {
+    width: 100%;
+}
+
+.cd-audio-caption {
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-transform: none;
+	margin: 10px 0 20px 47px;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-audio-caption, .cd-dark .cd-light .cd-audio-caption, .cd-light .cd-dark .cd-light .cd-audio-caption, .cd-dark .cd-dark .cd-light .cd-audio-caption, .cd-light .cd-light .cd-dark .cd-light .cd-audio-caption, .cd-dark .cd-light .cd-dark .cd-light .cd-audio-caption {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-audio-caption, .cd-light .cd-dark .cd-audio-caption, .cd-dark .cd-light .cd-dark .cd-audio-caption {
+	color: rgba(255,255,255,1.0);
+}
+
+
+
+/* Safari Problem mit Lautstärkeregler, welcher nach oben sichtbar wird */
+div[data-block-type="15"] {
+    overflow: visible;
+}
+
+/********** END: AUDIO STYLES **********/
+
+/********** START: HORIZONTAL RULER STYLES ********/
+
+hr {
+	margin-left: 10%;
+	margin-right: 10%;
+	border-top: 2px SOLID;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+}
+
+.cd-light hr, .cd-dark .cd-light hr, .cd-light .cd-dark .cd-light hr, .cd-dark .cd-dark .cd-light hr, .cd-light .cd-light .cd-dark .cd-light hr, .cd-dark .cd-light .cd-dark .cd-light hr {
+	border-color: rgba(51,51,51,1.0);
+}
+
+.cd-dark hr, .cd-light .cd-dark hr, .cd-dark .cd-light .cd-dark hr {
+	border-color: rgba(204,204,204,1.0);
+}
+
+
+
+/********** END: HORIZONTAL RULER STYLES **********/
+
+/********** START: IMAGE STYLES ********/
+
+.cd-image-block {
+    position: relative;
+}
+
+.cd-image-block img.cd-image-contain {
+    width: 100%;
+}
+
+.cd-image-caption-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 1.4s ease;
+    -moz-transition : opacity 1.4s ease;
+    transition : opacity 1.4s ease;
+    opacity: 1;
+}
+
+.cd-image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+}
+
+.cd-carousel-dots-hover:hover .cd-image-caption-container {
+    -webkit-transition: opacity 1.4s ease;
+    -moz-transition : opacity 1.4s ease;
+    transition : opacity 1.4s ease;
+    opacity: 0;
+}
+
+.cd-image-caption {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-image-caption, .cd-dark .cd-light .cd-image-caption, .cd-light .cd-dark .cd-light .cd-image-caption, .cd-dark .cd-dark .cd-light .cd-image-caption, .cd-light .cd-light .cd-dark .cd-light .cd-image-caption, .cd-dark .cd-light .cd-dark .cd-light .cd-image-caption {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-image-caption, .cd-light .cd-dark .cd-image-caption, .cd-dark .cd-light .cd-dark .cd-image-caption {
+	color: rgba(51,51,51,1.0);
+}
+
+
+
+@media (max-width: 576px) {
+    .cd-image-caption-container {
+        display: none;
+    }
+}
+
+/********** END: IMAGE STYLES **********/
+
+/********** START: IMAGE CAROUSEL STYLES ********/
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 3em;
+    font-weight: bold;
+    color: #869791;
+    margin: 0 10px;
+    line-height: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    color: #333333;
+}
+
+/********** END: IMAGE CAROUSEL STYLES **********/
+
+/********** START: FORM STYLES **********/
+
+.cd-form-row, .cd-form-checkbox-container {
+    display: flex;
+}
+
+.cd-form-row-hp {
+    display: none;
+}
+
+.cd-form-submit-row {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1em;
+}
+
+.cd-form-item {
+    width: 49%;
+}
+
+.cd-form-checkbox-container {
+    margin-bottom: 1em;
+}
+
+.cd-form-item input[type="radio"], .cd-form-item-row input[type="radio"] {
+    margin-right: 0.2em;
+}
+
+.cd-form-item input[type="checkbox"], .cd-form-item-row input[type="checkbox"] {
+    margin-top: 0.2em;
+    margin-right: 0.5em;
+}
+
+.cd-form-item input[type="checkbox"], .cd-form-item-row input[type="checkbox"],
+.cd-form-item input[type="radio"], .cd-form-item-row input[type="radio"] {
+    flex-shrink: 0;
+}
+
+.cd-data-formfield {
+    width: 100%;
+    height: 2em;
+}
+
+.cd-form-item textarea,
+.cd-form-item-row textarea {
+    height: 8em;
+    resize:none;
+}
+
+.cd-form-option {
+    display: inline-block;
+}
+
+.cd-form-options-horizontal, .cd-form-options-vertical {
+    width: 100%;
+}
+
+.cd-form-options-vertical .cd-form-option {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .cd-form-options-horizontal .cd-form-option {
+        display: block;
+    }
+}
+
+.cd-form-options-vertical, .cd-form-options-horizontal, .cd-form-checkbox-container {
+    padding: 5px 0;
+    margin: 5px 0 10px 0;
+}
+
+.cd-form-option {
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.cd-filler {
+    width: 1em;
+}
+
+.cd-form-captcha {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.cd-form-captcha-image {
+    margin-left: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+.cd-form-captcha-input {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.cd-form-validation {
+    width: 100%;
+    margin: 2em 0 1em 0;
+}
+
+.cd-form-validation ul {
+    padding-left: 0;
+}
+
+.cd-form-validation li {
+    list-style: none;
+}
+
+.cd-validation-error, .cd-mandatory-field-missing {
+    border: 1px solid red !important;
+}
+
+.cd-form-options-horizontal.cd-mandatory-field-missing,
+.cd-form-options-vertical.cd-mandatory-field-missing,
+.cd-form-checkbox-container.cd-mandatory-field-missing {
+    padding-left: 5px;
+}
+
+.cd-form-submit-row input {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .cd-section .cd-form-row {
+        display: block;
+    }
+    .cd-section .cd-form-item {
+        width: 100%;
+    }
+    .cd-section .cd-filler {
+        display: none;
+    }
+}
+
+/********** END: FORM STYLES **********/
+
+
+/********** START: LEGACY SPONSOR STYLES **********/
+
+.layout-mode-narrow.sponsor-items-container,
+.layout-mode-footer.sponsor-items-container {
+    margin: auto;
+}
+
+.sponsor-items-container a {
+    text-decoration: none;
+}
+
+.layout-mode-footer .sponsor-items {
+    text-align: center;
+}
+
+/*** FIX jquery.cycle with new juery version  ***/
+.sponsor-items {
+    background-color: rgba(255,255,255,0);
+}
+
+.sponsor-item {
+    margin: 20px 0;
+}
+
+.layout-mode-footer .sponsor-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.layout-mode-wide .sponsor-item {
+    margin: 25px 0;
+}
+
+.sponsor-logo {
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+.layout-mode-wide .sponsor-logo {
+    float: left;
+    margin: 0 60px 10px 0;
+}
+
+.sponsor-logo img {
+    vertical-align: middle;
+    margin: auto;
+}
+
+.sponsor-logo-text {
+    line-height: 1em;
+}
+
+.no-logo {
+    height: 50px;
+    border: 1px solid #DDDDDD;
+    background: white;
+    color: #AAAAAA;
+}
+
+.no-logo a:visited, .no-logo a:visited {
+    color: #AAAAAA;
+}
+
+.no-logo a:hover {
+    color: #DDDDDD;
+}
+
+.text-logo {
+    height: 50px;
+    border: 1px solid #DDDDDD;
+    color: #444444;
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+.text-logo a, .text-logo a:visited {
+    color: #444444;
+}
+
+.text-logo a:hover {
+    color: #888888;
+}
+
+.sponsor-detail {
+    float: left;
+    max-width: 400px;
+}
+
+.sponsor-detail p {
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-clear {
+    clear: both;
+}
+
+/********** END: LEGACY SPONSOR STYLES **********/
+
+
+/********** START: SPONSOR STYLES **********/
+
+.cd-light .cd-sponsors-item, .cd-dark .cd-light .cd-sponsors-item, .cd-light .cd-dark .cd-light .cd-sponsors-item, .cd-dark .cd-dark .cd-light .cd-sponsors-item, .cd-light .cd-light .cd-dark .cd-light .cd-sponsors-item, .cd-dark .cd-light .cd-dark .cd-light .cd-sponsors-item {
+	background-color: transparent;
+}
+
+.cd-dark .cd-sponsors-item, .cd-light .cd-dark .cd-sponsors-item, .cd-dark .cd-light .cd-dark .cd-sponsors-item {
+	background-color: transparent;
+}
+
+.cd-light .cd-sponsors-item, .cd-dark .cd-light .cd-sponsors-item, .cd-light .cd-dark .cd-light .cd-sponsors-item, .cd-dark .cd-dark .cd-light .cd-sponsors-item, .cd-light .cd-light .cd-dark .cd-light .cd-sponsors-item, .cd-dark .cd-light .cd-dark .cd-light .cd-sponsors-item {
+	border-color: rgba(238,238,238,1.0);
+}
+
+.cd-dark .cd-sponsors-item, .cd-light .cd-dark .cd-sponsors-item, .cd-dark .cd-light .cd-dark .cd-sponsors-item {
+	border-color: rgba(238,238,238,1.0);
+}
+
+.cd-sponsors-item {
+	border-width: 0px;
+	border-style: SOLID;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+padding: 5px;
+}
+
+
+
+.cd-sponsors-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.cd-sponsors-logo img.cd-image-contain {
+    max-width: 100%;
+}
+
+/********** END: SPONSOR STYLES **********/
+/********** START: FLICKR ALBUM STYLES **********/
+
+.cd-album-slideshow-infos {
+    display: flex;
+    margin: 15px 0;
+}
+
+.cd-album-slide-description, .cd-album-slide-number {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	overflow-wrap: break-word;
+}
+
+.cd-light .cd-album-slide-description, .cd-light .cd-album-slide-number, .cd-dark .cd-light .cd-album-slide-description, .cd-dark .cd-light .cd-album-slide-number, .cd-light .cd-dark .cd-light .cd-album-slide-description, .cd-light .cd-dark .cd-light .cd-album-slide-number, .cd-dark .cd-dark .cd-light .cd-album-slide-description, .cd-dark .cd-dark .cd-light .cd-album-slide-number, .cd-light .cd-light .cd-dark .cd-light .cd-album-slide-description, .cd-light .cd-light .cd-dark .cd-light .cd-album-slide-number, .cd-dark .cd-light .cd-dark .cd-light .cd-album-slide-description, .cd-dark .cd-light .cd-dark .cd-light .cd-album-slide-number {
+	color: rgba(51,51,51,1.0);
+}
+
+.cd-dark .cd-album-slide-description, .cd-dark .cd-album-slide-number, .cd-light .cd-dark .cd-album-slide-description, .cd-light .cd-dark .cd-album-slide-number, .cd-dark .cd-light .cd-dark .cd-album-slide-description, .cd-dark .cd-light .cd-dark .cd-album-slide-number {
+	color: rgba(51,51,51,1.0);
+}
+
+
+
+.cd-album-slide-description {
+    flex-grow: 1;
+    margin: 0 20px 0 0;
+}
+
+.cd-album-slide-number {
+    margin: 0;
+    text-align: right;
+}
+
+.cd-slideshow-glasspane {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+}
+
+.cd-slideshow-videobox {
+    display: none;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    border: 2px solid #FFF;
+    background-color: black;
+    z-index: 3;
+    height:100%;
+}
+
+/********** END: FLICKR ALBUM STYLES **********/
+/********** START: TOOLTIP STYLES **********/
+.cd-tooltip {
+  position: relative;
+  text-decoration: none;
+}
+
+.cd-tooltip:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 0.5em;
+    right: 1.1em;
+    background: #dddddddd;
+    padding: 5px 15px;
+    color: black;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius : 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity:0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition : all 0.4s ease;
+    transition : all 0.4s ease;
+}
+
+.cd-tooltip:hover:after {
+  opacity: 1;
+}
+/********** END: TOOLTIP STYLES **********/
+
+
+
+.cd-vgap-larger .cd-data-value {
+    margin-bottom: 5px;
+}
+
+.cd-form-pane {
+    border: 1px solid rgba(128,128,128,0.3);
+    padding: 0 10px;
+}
+
+@media print {
+.cd-screen-only { display: none; }
+}
+
+@media screen {
+.cd-print-only { display: none; }
+}
+
+
+/********** START: SOCIAL MEDIA **********/
+
+.cd-social-media-icon {
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+/********** END: SOCIAL MEDIA **********/
+
+
+/********** START: GROUP INFO STYLES **********/
+@media (min-width: 577px) {
+    .cd-group-image {
+        width: 50%;
+        float: right;
+        margin: 0 0 10px 20px;
+    }
+}
+@media (max-width: 576px) {
+    .cd-group-image {
+        width: 100%;
+    }
+}
+
+/********** END: GROUP INFO STYLES **********/

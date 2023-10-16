@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hauptfeld",
+    "icon": "main_field.svg"
+  },
+  {
+    "name": "Nachwuchsfeld",
+    "icon": "youth_field.svg"
+  },
+  {
+    "name": "Zwei Tribünen",
+    "icon": "tribune.svg"
+  },
+  {
+    "name": "Doppelter und beleuchteter Cage",
+    "icon": "bat.svg"
+  },
+  {
+    "name": "Clubheim",
+    "icon": "clubhouse.svg"
+  },
+  {
+    "name": "Merchandise-Shop",
+    "icon": "shop.svg"
+  }
+]

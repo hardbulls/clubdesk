@@ -1,0 +1,25 @@
+.field-map {
+    width: 1485px;
+    height: 941px;
+    object-fit: contain;
+}
+
+.overlay-map{
+    position: absolute;
+    width: 1485px;
+    height: 941px;
+}
+
+.map-wrapper {
+    width: min-content;
+}
+
+.overlay-map-item {
+    position: absolute;
+    background-color: rgb(255 255 255 / 60%);
+    width: min-content;
+    white-space: nowrap;
+    padding: 4px;
+    font-size: 18px;
+    
+}

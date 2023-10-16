@@ -1,0 +1,93 @@
+div.hardbulls-player-container {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.hardbulls-player-card {
+    padding: 15px;
+    margin: 15px;
+    box-shadow: var(--light-box-shadow);
+    min-width: 320px;
+    position: relative;
+}
+
+
+.hardbulls-player-card-image-container {
+    text-align: center;
+}
+
+.hardbulls-player-card-image-container img {
+    filter: grayscale(0.2);
+}
+
+div.hardbulls-player-card-name {
+    text-align: center;
+    color: var(--color-bulls-red);
+    text-shadow: 1px 1px 2px var(--color-very-light-gray);
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+div.hardbulls-player-card-content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div.hardbulls-player-card-content h3,
+div.hardbulls-player-card-content div,
+div.hardbulls-player-card-content p {
+    text-align: center;
+}
+
+
+div.hardbulls-player-card-number {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-weight: bolder;
+    font-size: 40px;
+    color: var(--color-bulls-red);
+    width: 46px;
+    text-align: center;
+}
+
+div.hardbulls-player-card-statistics a {
+    color:revert;
+}
+
+div.hardbulls-player-card-statistics {
+    color: var(--color-light-gray);
+}
+
+.hardbulls-player-card-icons {
+    position: absolute;
+
+    left: 15px;
+    bottom: 0;
+}
+.hardbulls-player-card-icons > div
+{
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+div.hardbulls-player-card-cooperation {
+    color: var(--color-light-blue);
+}
+
+div.hardbulls-player-card-import {
+    color: var(--color-light-green);
+}
+
+div.hardbulls-player-card-flag {
+    right: 15px;
+    position: absolute;
+    bottom: 46px;
+    width: 46px;
+    text-align: center;
+}
+
+div.hardbulls-player-card-footer {
+}
+

@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/next-strictest/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2020",
+    "sourceMap": true,
+    "noEmit": false,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "jsxFactory": "DOMcreateElement",
+  },
+  "exclude": ["game"]
+}

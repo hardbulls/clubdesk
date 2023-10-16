@@ -1,0 +1,86 @@
+[
+  {
+    "teams": ["Hard Bulls"],
+    "venue": "Ballpark am See",
+    "location": "Hard",
+    "image": "ballpark_am_see.jpg",
+    "keywords": ["Hard"]
+  },
+  {
+    "teams": ["Traiskirchen Grasshoppers"],
+    "venue": "Hoppersfield",
+    "location": "Traiskirchen",
+    "image": "hoppersfield.jpg",
+    "keywords": ["Traiskrichen"]
+  },
+  {
+    "teams": ["Vienna Metrostars"],
+    "venue": "Ballpark Freudenau",
+    "location": "Wien",
+    "image": "freudenau.jpg",
+    "keywords": ["Freudenau"]
+  },
+  {
+    "teams": ["Diving Ducks"],
+    "venue": "Ducksfield",
+    "location": "Wiener Neustadt",
+    "image": "ducksfield.jpg",
+    "keywords": ["Wr. Neustadt"]
+  },
+  {
+    "teams": ["Dornbirn Indians"],
+    "venue": "Sportanlage Rohrbach",
+    "location": "Dornbirn",
+    "image": "rohrbach.png",
+    "keywords": ["Rohrbach", "Dornbirn"]
+  },
+  {
+    "teams": ["Blue Bats"],
+    "venue": "Batsfield",
+    "location": "Schwechat",
+    "image": "batsfield.png",
+    "keywords": ["Schwechat"]
+  },
+  {
+    "teams": ["Vienna Wanderers"],
+    "venue": "Ballpark Spenadlwiese",
+    "location": "Wien",
+    "image": "spenadlwiese.png",
+    "keywords": ["Spenadlwiese", "Vienna", "Wien"]
+  },
+  {
+    "teams": ["Kufstein Vikings"],
+    "venue": "Erich-Silverio-Field",
+    "location": "Kufstein",
+    "image": "kufstein.png",
+    "keywords": ["Kufstein"]
+  },
+  {
+    "teams": ["Schwaz Tigers"],
+    "venue": "Tigersfield",
+    "location": "Schwaz",
+    "image": "schwaz.jpg",
+    "keywords": ["Schwaz", "Tigers"]
+  },
+  {
+    "teams": ["Feldkirch Cardinals"],
+    "venue": "Ballpark Feldkirch",
+    "location": "Feldkirch",
+    "image": "feldkirch.png",
+    "keywords": ["Feldkirch", "Cardinals"]
+  },
+  {
+    "teams": ["Stockerau Cubs"],
+    "venue": "Stock City Cubs Field",
+    "location": "Stockerau",
+    "image": "stockerau.jpg",
+    "keywords": ["Stockerau", "Stock City Cubs", "Cubs"]
+  },
+  {
+    "teams": ["Attnang-Puchheim Athletics"],
+    "venue": "Athletics Ballpark",
+    "location": "Attnang-Puchheim",
+    "image": "attnang.png",
+    "keywords": ["Attnang", "Athletics", "Attnang-Puchheim Athletics"]
+  }
+]

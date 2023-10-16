@@ -1,0 +1,15 @@
+a.cd-button.cd-button-tertiary {
+    border-width: 0 !important;
+    border-style: none !important;
+    padding: revert !important;
+    border-radius: 0 !important;
+    margin: 10px 0 !important;
+    font-family: 'Neue Aachen Bold', sans-serif !important;
+    font-size: 24px !important;
+    color: var(--color-bulls-dark-red) !important;
+    text-align: revert !important;
+}
+
+a.cd-button.cd-button-tertiary:hover {
+    color: var(--color-bulls-red) !important;
+}

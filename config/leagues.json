@@ -1,0 +1,66 @@
+[
+  {
+    "fullName": "Baseball Bundesliga",
+    "name": "BBL",
+    "id": "bbl",
+    "table": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/standings",
+    "battingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/batting",
+    "pitchingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/pitching",
+    "fieldingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/fielding",
+    "isActive": true
+  },
+  {
+    "fullName": "Baseball Bundesliga/Nationalliga Postseason",
+    "name": "BBL/NL Postseason",
+    "id": "bbl-nl",
+    "isActive": true
+  },
+  {
+    "fullName": "2. Bundesliga West",
+    "name": "2. BLW",
+    "id": "2blw",
+    "isActive": true
+  },
+  {
+    "fullName": "Landesliga Vorarlberg",
+    "name": "LLV",
+    "id": "llv",
+    "isActive": true
+  },
+  {
+    "fullName": "Jugendliga Vorarlberg U16",
+    "name": "U16",
+    "id": "u16",
+    "isActive": true
+  },
+  {
+    "fullName": "Ponyliga Vorarlberg U14",
+    "name": "U14",
+    "id": "u14",
+    "isActive": true
+  },
+  {
+    "fullName": "Schülerliga Vorarlberg U13",
+    "name": "U13",
+    "id": "u13",
+    "isActive": true
+  },
+  {
+    "fullName": "Schülerliga Vorarlberg U10",
+    "name": "U10",
+    "id": "u10",
+    "isActive": true
+  },
+  {
+    "fullName": "Beeball Vorarlberg U8",
+    "name": "U8",
+    "id": "u8",
+    "isActive": true
+  },
+  {
+    "fullName": "Vorarlberger Slowpitch League",
+    "name": "VSL",
+    "id": "vsl",
+    "isActive": true
+  }
+]

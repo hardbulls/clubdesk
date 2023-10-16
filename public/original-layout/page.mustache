@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{{baseHref}}}
+{{{fragmentHeadStart}}}
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{title}}</title>
+    {{{headIncludes}}}
+    <link rel="stylesheet" href="/clubdesk/webpage/cookieconsent/cookieconsent-3.1.1.min.css">
+<link rel="stylesheet" href="genwwwfiles/page.css?v=1672139022272">
+
+{{{fragmentHeadEnd}}}
+</head>
+<body class="{{{bodyClasses}}}">
+{{{fragmentBodyStart}}}
+{{{pageBackground}}}
+<nav>
+    <div class="cd-navigation-bar-container">
+        <div class="cd-navigation-bar">
+            <div class="cd-navigation-bar-content">
+                <div class="cd-club-logo-and-name">
+<a class="cd-club-logo-link" href="{{{homePath}}}"><img class="cd-club-logo" src="{{logoUrl}}"></a>
+
+</div>
+
+                <div class="cd-filler"></div>
+                <div class="cd-login-link-desktop">
+    {{#loggedIn}}
+    <a class="cd-link-login" href="{{{logOutUrl}}}"></a>
+    {{/loggedIn}}
+    {{^loggedIn}}
+    <a class="cd-link-login" href="{{{logInUrl}}}"></a>
+    {{/loggedIn}}
+</div>
+                <a class="cd-megamenu-button">
+    <i class="fas fa-bars"></i> Menü
+</a>
+            </div>
+            <div class="scroll-offset-desktop scroll-offset-mobile">
+            <div class="cd-megamenu-container cd-menu">
+    <div class="cd-megamenu">
+        <div class="cd-megamenu-content">
+            <div class="cd-menu-level-1">
+                <ul>
+                    {{#menuItems}}
+                        <li>
+                            <a href="{{url}}{{params}}" {{#inNewWindow}}target="_blank"{{/inNewWindow}} data-id="{{id}}" data-parent-id="{{parentId}}" class="cd-menu-item {{#active}}cd-menu-active{{/active}} {{#selected}}cd-menu-selected{{/selected}}">{{title}}</a>
+                            {{^children.empty}}
+                                <div class="cd-menu-level-2">
+                                    <ul>
+                                        {{#children}}
+                                            <li>
+                                                <a href="{{url}}{{params}}" {{#inNewWindow}}target="_blank"{{/inNewWindow}} data-id="{{id}}" data-parent-id="{{parentId}}" class="cd-menu-item {{#active}}cd-menu-active{{/active}} {{#selected}}cd-menu-selected{{/selected}}">{{title}}</a>
+                                                {{^children.empty}}
+                                                    <div class="cd-menu-level-3">
+                                                        <ul>
+                                                            {{#children}}
+                                                                <li>
+                                                                    <a href="{{url}}{{params}}" {{#inNewWindow}}target="_blank"{{/inNewWindow}} data-id="{{id}}" data-parent-id="{{parentId}}" class="cd-menu-item {{#active}}cd-menu-active{{/active}} {{#selected}}cd-menu-selected{{/selected}}">{{title}}</a>
+                                                                </li>
+                                                            {{/children}}
+                                                        </ul>
+                                                    </div>
+                                                {{/children.empty}}
+                                            </li>
+                                        {{/children}}
+                                    </ul>
+                                </div>
+                            {{/children.empty}}
+                        </li>
+                    {{/menuItems}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main {{{mainClasses}}}">
+
+        <div class="cd-totop-button" onclick="topFunction()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+    <div class="header-wrapper">
+    {{{header}}}
+    </div>
+
+{{#sidebar}}
+<div class="columns-wrapper">
+    <div class="columns-margins"></div>
+    <div class="columns">
+        <div class="content-wrapper">
+            {{{content}}}
+        </div>
+
+        <aside class="sidebar-wrapper">
+            {{{sidebar}}}
+        </aside>
+    </div>
+    <div class="columns-margins"></div>
+</div>
+{{/sidebar}}
+
+{{^sidebar}}
+<div class="content-wrapper">
+{{{content}}}
+</div>
+{{/sidebar}}
+
+<footer>
+    {{{footer}}}
+</footer>
+</div>
+{{{bodyEndIncludes}}}
+<script src="/clubdesk/webpage/cookieconsent/cookieconsent-3.1.1.min.js" type="text/javascript"></script>
+<script src="genwwwfiles/page.js?v=1672139022272" type="text/javascript"></script>
+
+{{#cookieConsent.enabled}}
+<script>
+function deleteAllCookies() {
+    var cookies = document.cookie.split("; ");
+    for (var c = 0; c < cookies.length; c++) {
+        var d = window.location.hostname.split(".");
+        while (d.length > 0) {
+            var cookieBase = encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=' + d.join('.') + ' ;path=';
+            var p = location.pathname.split('/');
+            document.cookie = cookieBase + '/';
+            while (p.length > 0) {
+                document.cookie = cookieBase + p.join('/');
+                p.pop();
+            };
+            d.shift();
+        }
+    }
+}
+
+window.cookieconsent.initialise({
+    palette: null,
+    "content": {
+        "message": "{{cookieConsent.message}}",
+        "dismiss": "{{cookieConsent.dismissLabel}}",
+        "allow": "{{cookieConsent.allowLabel}}",
+        "deny": "{{cookieConsent.denyLabel}}",
+        "link": "{{cookieConsent.linkLabel}}",
+        "href": "{{cookieConsent.linkUrl}}"
+    },
+    position: "{{cookieConsent.position}}",
+    type: "{{cookieConsent.type}}",
+    revokable: true,
+    onStatusChange: function(status) {
+        if (!this.hasConsented()) {
+            deleteAllCookies();
+        }
+        location.reload();
+    },
+    cookie: {
+        name: "{{cookieConsent.cookieName}}"
+    }
+});
+</script>
+{{/cookieConsent.enabled}}
+{{{fragmentBodyEnd}}}
+</body>
+</html>

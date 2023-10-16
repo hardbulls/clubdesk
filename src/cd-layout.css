@@ -1,0 +1,15 @@
+.cd-block .cd-block-content {
+    padding: 0;
+}
+
+div.cd-block-content:has(table) {
+    overflow-x: auto;
+}
+
+a {
+    white-space: nowrap;
+}
+
+strong {
+    text-shadow: 0px 0px 0px currentColor;
+}

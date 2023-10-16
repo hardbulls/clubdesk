@@ -1,0 +1,56 @@
+.page-button {
+    box-shadow: var(--light-box-shadow);
+    margin: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    min-width: 200px;
+    text-decoration: none;
+    transition: transform 250ms ease-in-out 0s;
+    transform: perspective(1px) translateZ(0px);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+a.page-button, a:visited.page-button, a:hover.page-button {
+    color: var(--text-color) !important;
+    text-decoration: none;
+}
+
+.page-button>.button-arrow {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--color-bulls-red);
+    border-bottom: 2px solid var(--color-bulls-red);
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 8px;
+    transition: all .3s ease;
+}
+
+.page-button>.button-arrow::before {
+    display: block;
+    background-color: var(--color-bulls-red);
+    width: 4px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.page-button:hover>.button-arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.page-button:hover>.button-arrow::before {
+    opacity: 1;
+    width: 10px;
+}

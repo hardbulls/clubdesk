@@ -1,0 +1,355 @@
+[
+  {
+    "name": "Anthony Bennett",
+    "nickname": "AB",
+    "positions": [],
+    "isCoach": true,
+    "image": "Anthony Bennett.png",
+    "nationality": "us"
+  },
+  {
+    "name": "Clayton Carson",
+    "nickname": "Clay",
+    "positions": [
+      "3rd. Base",
+      "Shortstop"
+    ],
+    "number": 11,
+    "yearOfBirth": 1983,
+    "hits": "S",
+    "throws": "R",
+    "image": "Clayton Carson.png",
+    "nationality": "us"
+  },
+  {
+    "name": "Marcel Winder",
+    "nickname": "Speedy",
+    "positions": [
+      "Pitcher",
+      "Utility"
+    ],
+    "yearOfBirth": 1989,
+    "number": 24,
+    "hits": "R",
+    "throws": "R",
+    "image": "Marcel Winder.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Leon Nöbl",
+    "nickname": "Lion",
+    "positions": [
+      "Outfield",
+      "1st. Base"
+    ],
+    "number": 9,
+    "hits": "R",
+    "throws": "R",
+    "image": "Leon Noebl.png",
+    "yearOfBirth": 2000,
+    "nationality": "at"
+  },
+  {
+    "name": "Daniel Hotz",
+    "nickname": "Hotz",
+    "positions": [
+      "Pitcher"
+    ],
+    "hits": "R",
+    "throws": "R",
+    "yearOfBirth": 1994,
+    "nationality": "at",
+    "number": 50,
+    "active": false
+  },
+  {
+    "name": "Gregor Paterno",
+    "nickname": "Gregy",
+    "positions": [
+      "Utility"
+    ],
+    "hits": "R",
+    "yearOfBirth": 1996,
+    "throws": "R",
+    "nationality": "at",
+    "number": 51,
+    "active": false
+  },
+  {
+    "name": "Richard Kranabetter",
+    "nickname": "Richy",
+    "positions": [
+      "Outfield"
+    ],
+    "number": 25,
+    "active": false,
+    "nationality": "at",
+    "hits": "R",
+    "throws": "R"
+  },
+  {
+    "name": "Nick Jäger",
+    "positions": [
+      "1st. Base",
+      "Outfield"
+    ],
+    "hits": "R",
+    "yearOfBirth": 2006,
+    "throws": "R",
+    "nationality": "at",
+    "image": "Nick Jaeger.png",
+    "number": 99
+  },
+  {
+    "name": "Jakob Gruber",
+    "positions": [
+      "Outfield"
+    ],
+    "hits": "R",
+    "yearOfBirth": 2006,
+    "throws": "R",
+    "nationality": "at",
+    "number": 6,
+    "image": "Jakob Gruber.png"
+  },
+  {
+    "name": "Pascal Campregher",
+    "nickname": "Basc",
+    "positions": [
+      "Pitcher",
+      "1st. Base",
+      "Outfield"
+    ],
+    "number": 4,
+    "yearOfBirth": 2001,
+    "hits": "R",
+    "throws": "R",
+    "image": "Pascal Campregher.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Patrick Küng",
+    "nickname": "Pat",
+    "positions": [
+      "Outfield"
+    ],
+    "hits": "R",
+    "throws": "R",
+    "nationality": "at",
+    "image": "Patrick Kueng.png",
+    "yearOfBirth": 2001,
+    "number": 5
+  },
+  {
+    "name": "Laurin Schedler",
+    "positions": [
+      "2nd. Base"
+    ],
+    "number": 17,
+    "hits": "R",
+    "yearOfBirth": 2006,
+    "throws": "R",
+    "image": "Laurin Schedler.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Levin Maier",
+    "nickname": "Lele",
+    "positions": [
+      "Pitcher",
+      "2nd. Base"
+    ],
+    "number": 10,
+    "hits": "R",
+    "yearOfBirth": 2005,
+    "throws": "R",
+    "nationality": "at"
+  },
+  {
+    "name": "Matthias Lutter",
+    "nickname": "Lutti",
+    "positions": [
+      "Outfield",
+      "Catcher"
+    ],
+    "number": 18,
+    "hits": "R",
+    "throws": "R",
+    "image": "Matthias Lutter.png",
+    "yearOfBirth": 2003,
+    "nationality": "at"
+  },
+  {
+    "name": "Yanik Mäser",
+    "positions": [
+      "2nd. Base",
+      "3nd. Base",
+      "Shortstop"
+    ],
+    "number": 3,
+    "hits": "S",
+    "yearOfBirth": 2003,
+    "throws": "R",
+    "image": "Yanik Maeser.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Luca Mäser",
+    "positions": [
+      "Catcher",
+      "Outfield"
+    ],
+    "number": 29,
+    "hits": "R",
+    "throws": "R",
+    "image": "Luca Maeser.png",
+    "yearOfBirth": 2001,
+    "nationality": "at"
+  },
+  {
+    "name": "Marvin Glassen",
+    "nickname": "Marvo",
+    "positions": [
+      "Outfield"
+    ],
+    "number": 13,
+    "hits": "R",
+    "throws": "R",
+    "yearOfBirth": 2000,
+    "image": "Marvin Glassen.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Jonas Zimmermann",
+    "nickname": "JZ",
+    "positions": [
+      "Pitcher"
+    ],
+    "number": 16,
+    "hits": "R",
+    "throws": "R",
+    "yearOfBirth": 2004,
+    "image": "Jonas Zimmermann.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Erwin Frias",
+    "nickname": "La Máquina",
+    "positions": [
+      "Shortstop"
+    ],
+    "number": 23,
+    "hits": "S",
+    "throws": "R",
+    "yearOfBirth": 1988,
+    "image": "Erwin Frias.png",
+    "nationality": "do"
+  },
+  {
+    "name": "Hubert Böhler",
+    "nickname": "Hubi",
+    "positions": [
+      "Pitcher",
+      "Catcher",
+      "1st. Base"
+    ],
+    "number": 19,
+    "hits": "R",
+    "throws": "R",
+    "yearOfBirth": 1986,
+    "image": "Hubert Boehler.png",
+    "nationality": "at"
+  },
+  {
+    "name": "Arjan Frans",
+    "nickname": "Fiets",
+    "positions": [
+      "Outfield"
+    ],
+    "number": 21,
+    "hits": "R",
+    "yearOfBirth": 1993,
+    "throws": "R",
+    "image": "Arjan Frans.png",
+    "nationality": "nl",
+    "active": false
+  },
+  {
+    "name": "Hannes Schnetzer",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "at",
+    "yearOfBirth": 2007,
+    "number": 70,
+    "positions": [
+      "Pitcher"
+    ]
+  },
+  {
+    "name": "Pearce Howard",
+    "hits":"L",
+    "throws": "R",
+    "nationality": "us",
+    "yearOfBirth": 1997,
+    "number": 32,
+    "isImport": true,
+    "positions": [
+      "Pitcher",
+      "Outfield"
+    ]
+  },
+  {
+    "name": "Jackson Murphy",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "us",
+    "number": 20,
+    "isImport": true,
+    "image": "Jackson Murphy.png",
+    "yearOfBirth": 1998,
+    "positions": [
+      "Catcher",
+      "1st. Base"
+    ]
+  },
+  {
+    "name": "Kelvis Palma",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "ve",
+    "image": "Kelvis Palma.png",
+    "number": 12,
+    "yearOfBirth": 1998,
+    "isImport": true,
+    "positions": [
+      "Pitcher"
+    ]
+  },
+  {
+    "name": "Moritz Widemschek",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "at",
+    "cooperationPlayer": "Feldkirch Cardinals",
+    "yearOfBirth": 1997,
+    "image": "Moritz Widemschek.png",
+    "number": 55,
+    "positions": [
+      "Pitcher",
+      "2nd. Base",
+      "Outfield"
+    ]
+  },
+  {
+    "name": "Joe Kirby",
+    "hits":"L",
+    "throws": "R",
+    "yearOfBirth": 1979,
+    "nationality": "ca",
+    "number": 33,
+    "positions": [
+      "Utility",
+      "2nd. Base"
+    ]
+  }
+]

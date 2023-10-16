@@ -1,0 +1,28 @@
+.has-tooltip {
+    position: relative;
+}
+
+.has-tooltip::before {
+    content: attr(title);
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    background: var(--text-color);
+    color: #FFF;
+    padding: 0 6px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    font-size: var(--font-size-normal);
+    pointer-events: none;
+    width: max-content;
+    max-width: 200px;
+    z-index: 1;
+}
+
+.has-tooltip:hover::before {
+    opacity: 1;
+    bottom: 100%;
+}

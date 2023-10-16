@@ -1,0 +1,32 @@
+video#hardbulls-banner-video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+#hardbulls-banner-video-wrapper {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#hardbulls-banner-video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+
+.cd-header:has(.hardbulls-hero-banner) {
+    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/pitch_poster.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}

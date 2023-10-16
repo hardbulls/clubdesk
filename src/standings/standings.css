@@ -1,0 +1,12 @@
+table.hardbulls-standings-table {
+    min-width: 220px;
+}
+
+table.hardbulls-standings-table td, table.hardbulls-standings-table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.hardbulls-standings-table td > img {
+    vertical-align: middle;
+}

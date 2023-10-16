@@ -1,0 +1,130 @@
+[
+  {
+    "name": "SG Indians/Vikings",
+    "abbreviation": "DI/KV",
+    "keywords": ["SG Indians/Vikings","Indians", "Vikings"],
+    "isCooperation": true,
+    "logo": "logo_di.png+logo_kv.png"
+  },
+  {
+    "name": "Hard Bulls",
+    "abbreviation": "HB",
+    "keywords": ["Hard Bulls"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Hard Barons",
+    "abbreviation": "HB",
+    "keywords": ["Hard Barons"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Hard Bullets",
+    "abbreviation": "HB",
+    "keywords": ["Hard Bullets"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Hard Bandidas",
+    "abbreviation": "HB",
+    "keywords": ["Hard Bandidas"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Hard Bandidos",
+    "abbreviation": "HB",
+    "keywords": ["Hard Bandidos"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Dornbirn Indians",
+    "abbreviation": "DI",
+    "keywords": ["Dornbirn Indians", "Dornbirn Little Indians", "Dornbirn indians Minis"],
+    "logo": "logo_di.png"
+  },
+  {
+    "name": "Dornbirn Legends",
+    "abbreviation": "DI",
+    "keywords": ["Dornbirn Legends"],
+    "logo": "logo_di.png"
+  },
+  {
+    "name": "Dornbirn Redhawks",
+    "abbreviation": "DI",
+    "keywords": ["Dornbirn Redhawks"],
+    "logo": "logo_di.png"
+  },
+  {
+    "name": "Dornbirn Bears",
+    "abbreviation": "DI",
+    "keywords": ["Dornbirn Bears"],
+    "logo": "logo_di.png"
+  },
+  {
+    "name": "Kufstein Vikings",
+    "abbreviation": "KV",
+    "keywords": ["Kufstein Vikings"],
+    "logo": "logo_kv.png"
+  },
+  {
+    "name": "Feldkirch Cardinals",
+    "abbreviation": "FC",
+    "keywords": ["Feldkirch Cardinals"],
+    "logo": "logo_fc.png"
+  },
+  {
+    "name": "Feldkirch Angry Balls",
+    "abbreviation": "FC",
+    "keywords": ["Feldkirch Angry Balls"],
+    "logo": "logo_fc.png"
+  },
+  {
+    "name": "Schwaz Tigers",
+    "abbreviation": "ST",
+    "keywords": ["Schwaz Tigers"],
+    "logo": "logo_st.png"
+  },
+  {
+   "name": "Diving Ducks",
+    "abbreviation": "DD",
+    "keywords": ["Diving Ducks", "Wr. Neustadt Diving Ducks"],
+    "logo": "logo_dd.png"
+  },
+  {
+    "name": "Vienna Wanderers",
+    "abbreviation": "VW",
+    "keywords": ["Vienna Wanderers"],
+    "logo": "logo_vw.png"
+  },
+  {
+   "name": "Blue Bats",
+    "abbreviation": "BB",
+    "keywords": ["Blue Bats"],
+    "logo": "logo_bb.png"
+  },
+  {
+    "name": "Vienna Metrostars",
+    "abbreviation": "VM",
+    "keywords": ["Vienna Metrostars"],
+    "logo": "logo_vm.png"
+
+  },
+  {
+    "name": "Traiskirchen Grasshoppers",
+    "abbreviation": "GH",
+    "keywords": ["Traiskirchen Grasshoppers"],
+    "logo": "logo_gh.png"
+  },
+  {
+    "name": "Stock City Cubs",
+    "abbreviation": "CU",
+    "keywords": ["Stockerau Cubs", "Stock City Cubs"],
+    "logo": "logo_cu.png"
+  },
+  {
+    "name": "Attnang-Puchheim Athletics",
+    "abbreviation": "AA",
+    "keywords": ["Attnang-Puchheim Athletics", "Attnang Athletics"],
+    "logo": "logo_aa.png"
+  }
+]

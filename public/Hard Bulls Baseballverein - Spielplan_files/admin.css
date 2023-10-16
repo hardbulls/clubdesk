@@ -1,0 +1,61 @@
+table.admin td.label {
+    padding-right: 20px;
+    width:140px;
+    white-space: nowrap;    
+    vertical-align: middle;
+}
+
+input#password, input#password-confirm, input#newPassword, input#newPasswordConfirm {
+    font-family: Arial, sans-serif;
+}
+
+table.admin td.buttons {
+    text-align: right;
+}
+
+table.admin td.field {
+    text-align: left;
+    padding-right:8px;
+    width: 100%;
+}
+
+table.admin td.field input {
+    width:100%;
+}
+
+table.admin td.message {
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+table.admin td.comment {
+    margin: 10px;
+    font-size: 85%;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+table.admin td.error {
+    color: #D12F19;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.infoAreaSpacer {
+    padding-top: 130px;
+}
+
+.infoArea {
+    border-top: 1px solid #444444;
+    padding-top: 15px;
+    font-size: 85%;
+}
+
+.adArea {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.smallerText {
+    font-size: 12px;
+}

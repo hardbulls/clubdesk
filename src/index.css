@@ -1,0 +1,207 @@
+@import "cd-button.css";
+@import "cd-layout.css";
+@import "tooltip.css";
+
+:root {
+    --light-box-shadow: rgb(0 0 0 / 12%) 0px 0.125rem 0.25rem 0px;
+    --heavy-box-shadow: rgb(0 0 0 / 42%) 0px 0.125rem 0.25rem 0px;
+    --card-box-shadow: rgb(0 0 0 / 10%) 0px 0.08rem 0.1rem 0px;
+    --color-bulls-red: rgba(226, 5, 20, 1.0);
+    --color-warning: #ff9a00;
+    --color-bulls-dark-red: rgb(166, 0, 41);
+    --color-bulls-light-red: rgba(226, 5, 20, 0.3);
+    --color-bulls-very-light-red: rgba(226, 5, 20, 0.05);
+    --color-light-gray: rgba(204, 204, 204, 1.0);
+    --color-light-blue: rgb(110, 190, 217);
+    --color-light-green: rgb(117, 217, 110);
+    --color-very-light-gray: rgb(243, 243, 243);
+    --carousel-item-max-height: 150px;
+    --carousel-item-max-width: 150px;
+    --container-width: 1200px;
+    --news-container-width: 820px;
+    --owl-carousel-width: 600px;
+    --text-color: rgba(51, 51, 51, 1.0);
+    --nav-bar-height: 90px;
+    --font-size-normal: 18px;
+}
+
+html, body, td, div, p {
+    font-family: Neue Aachen Book, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Neue Aachen Regular, sans-serif !important;
+}
+
+.hardbulls-game-card {
+    box-shadow: var(--card-box-shadow);
+    padding-bottom: 15px;
+    margin: 15px;
+}
+
+.hardbulls-game-card-away {
+    background-color: var(--color-very-light-gray);
+}
+
+.hardbulls-game-table table {
+    width: 100%;
+}
+
+
+
+#section_1000049:before {
+    content: "";
+    background-image: url(./assets/baseballer_hit.png?as=webp), url(./assets/baseballer_throw.png?as=webp);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+div.bulls-banner-logo {
+    text-align: center;
+}
+
+div.bulls-banner-logo img {
+    filter: drop-shadow(0px 3px 0px #000);
+}
+
+h1 {
+    font-family: 'Neue Aachen Regular', sans-serif;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--color-bulls-red), transparent 50%);
+    border-image-slice: 1;
+}
+
+h2 {
+    font-family: 'Neue Aachen Regular', sans-serif;
+}
+
+div.cd-tile-v-detail-area li {
+    padding: 0;
+}
+
+div.cd-tile-v-main-area {
+    padding-bottom: 0;
+}
+
+.bulls-social-links {
+    font-size: 48px;
+    text-align: right;
+}
+
+@media (max-width: 576px) {
+    .bulls-social-links {
+        text-align: center;
+    }
+}
+
+.bulls-social-links a {
+    text-decoration: none;
+}
+
+.bulls-social-links span {
+    color: var(--color-bulls-red);
+}
+
+span.bulls-club-name {
+    color: var(--color-bulls-dark-red);
+    margin-left: 15px;
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+@media (max-width: 400px) {
+    span.bulls-club-name {
+        display: none;
+    }
+}
+
+@media (max-width: var(--container-width)) and (min-width: 401px) {
+    span.bulls-club-name {
+        display: none;
+    }
+}
+
+@media (max-width: 1019px) and (min-width: 401px) {
+    span.bulls-club-name {
+        display: block;
+    }
+}
+
+div.cd-tile-v-main-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cd-button:has(.button-arrow) {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cd-button > .button-arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid var(--color-bulls-red);
+    border-bottom: 2px solid var(--color-bulls-red);
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.cd-button > .button-arrow::before {
+    display: block;
+    background-color: var(--color-bulls-red);
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.cd-button:hover > .button-arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.cd-button:hover > .button-arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+ul.unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul.horizontal-list li {
+    display: inline-block;
+    padding-left: 0.5em;
+}
+
+footer p, footer span {
+    font-family: 'Neue Aachen Regular', sans-serif;
+}
+
+.bulls-script {
+    font-family: 'Brush Script Std', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0;
+}
+
+.hard-script {
+    font-family: 'Neue Aachen Regular', sans-serif;
+}

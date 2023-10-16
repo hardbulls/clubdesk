@@ -1,0 +1,122 @@
+.cd-megamenu-button {
+    font-size: 32px;
+}
+
+.cd-menu-level-1 {
+    font-weight: normal !important;
+}
+
+.cd-menu-level-1 > ul > li {
+    transition: opacity 0.25s ease-in-out;
+}
+
+.cd-menu-level-1 > ul:hover li {
+    opacity: 0.65;
+}
+
+.cd-menu-level-1 > ul > li:hover {
+    opacity: 1;
+}
+
+.cd-navigation-bar-content {
+    margin: 20px 10px 20px 20px !important;
+}
+
+.cd-megamenu .cd-menu-level-1 a  {
+    font-family: 'Neue Aachen Bold', sans-serif;
+    margin: 10px 11px !important;
+}
+
+@media (min-width: 993px) {
+    .cd-megamenu-content {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1019px) {
+    .cd-megamenu-content {
+        float: right !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .cd-megamenu ul li {
+        width: revert !important;
+    }
+}
+
+@media (max-width: 1019px) {
+    .cd-megamenu ul li {
+        width: 100% !important;
+    }
+}
+
+
+
+.cd-navigation-bar-container {
+    box-shadow: var(--light-box-shadow);
+    height: var(--nav-bar-height);
+}
+
+.cd-navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--container-width);
+}
+
+.cd-login-link-desktop {
+    display: none;
+}
+
+@media (max-width: 1019px) {
+    .cd-navigation-bar-content {
+        width: 100%;
+    }
+
+    .cd-megamenu-button {
+        display: block;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .cd-megamenu {
+        display: none;
+        position: fixed;
+        background: rgba(255, 255, 255, 0.91);
+        z-index: 1;
+        height: 100vh;
+    }
+
+    .cd-megamenu .cd-menu-level-1 {
+        text-align: center;
+        font-size: 54px;
+    }
+
+    body.cd-megamenu-open nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+
+    body.cd-megamenu-open div.main {
+        margin-top: var(--nav-bar-height);
+    }
+
+    body.cd-megamenu-open div.cd-totop-button {
+        display: none;
+    }
+}
+
+@media (min-width: 1020px) {
+    .cd-megamenu-button {
+        display: none;
+    }
+
+    .cd-megamenu {
+        display: block;
+    }
+}
