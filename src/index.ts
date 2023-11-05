@@ -30,6 +30,7 @@ import { notFoundGame } from "./cd-extensions/not-found-game"
 import { Ballpark } from "./ballpark/Ballpark"
 import { addCanonicalLink } from "./cd-extensions/add-canonical-link"
 import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
+import { STATIC_BASE_URL } from "./config"
 
 const bullLogos = loadFiles(require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg)/))
 const filteredLeagues = leagues.filter((league) => league.isActive)
@@ -68,17 +69,21 @@ const addBullsLogo = () => {
 
     if (container) {
         const date = new Date()
+        console.log(date)
         const img = new Image()
 
-        if (date.getMonth() == 3 && date.getDate() > 6 && date.getDate() < 11) {
+        if (date.getMonth() === 3 && date.getDate() > 6 && date.getDate() < 11) {
             if (bullLogos["./easter_bull.png"]) {
                 img.src = bullLogos["./easter_bull.png"]
             }
+        } else if (date.getMonth() === 11) {
+            img.src = `${STATIC_BASE_URL}/images/logos/santa_bull_white.svg`
         } else {
-            if (bullLogos["./normal_bull_white.png"]) {
-                img.src = bullLogos["./normal_bull_white.png"]
-            }
+            img.src = `${STATIC_BASE_URL}/images/logos/regular_bull_white.svg`
         }
+
+        img.width = 160
+        img.height = 150
 
         container.appendChild(img)
     }

@@ -1,3 +1,5 @@
+import { STATIC_BASE_URL } from "../config"
+
 export const notFoundGame = () => {
     if ((document.querySelector("h1") as HTMLElement)?.textContent === "Seite nicht gefunden.") {
         const container = document.querySelector(
@@ -10,7 +12,7 @@ export const notFoundGame = () => {
 
         const frame = document.createElement("iframe") as HTMLIFrameElement
 
-        frame.src = "https://static.hardbulls.com/game/"
+        frame.src = `${STATIC_BASE_URL}/game/`
 
         frame.style.minHeight = "600px"
         frame.style.height = "100%"
