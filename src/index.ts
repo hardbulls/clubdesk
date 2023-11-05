@@ -70,10 +70,15 @@ const addBullsLogo = () => {
         const date = new Date()
         const img = new Image()
 
-        if (date.getMonth() == 3 && date.getDate() > 6 && date.getDate() < 11) {
+        if (date.getMonth() === 3 && date.getDate() > 6 && date.getDate() < 11) {
             if (bullLogos["./easter_bull.png"]) {
                 img.src = bullLogos["./easter_bull.png"]
             }
+        if (date.getMonth() === 11) {
+            if (bullLogos["./santa_bull.png"]) {
+                img.src = bullLogos["./easter_bull.png"]
+            }
+        
         } else {
             if (bullLogos["./normal_bull_white.png"]) {
                 img.src = bullLogos["./normal_bull_white.png"]
