@@ -4,7 +4,7 @@
     "venue": "Ballpark am See",
     "location": "Hard",
     "image": "ballpark_am_see.jpg",
-    "keywords": ["Hard"]
+    "keywords": ["Hard", "Ballpark am See, Hard"]
   },
   {
     "teams": ["Traiskirchen Grasshoppers"],
@@ -18,7 +18,7 @@
     "venue": "Ballpark Freudenau",
     "location": "Wien",
     "image": "freudenau.jpg",
-    "keywords": ["Freudenau"]
+    "keywords": ["Freudenau", "Freudenau, Vienna"]
   },
   {
     "teams": ["Diving Ducks"],
@@ -51,9 +51,9 @@
   {
     "teams": ["Kufstein Vikings"],
     "venue": "Erich-Silverio-Field",
-    "location": "Kufstein",
+    "location": "Ebbs",
     "image": "kufstein.png",
-    "keywords": ["Kufstein"]
+    "keywords": ["Kufstein", "Erich Silverio Field, Ebbs"]
   },
   {
     "teams": ["Schwaz Tigers"],

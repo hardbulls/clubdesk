@@ -1,0 +1,29 @@
+.hb-tabs-component-tab-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hb-tabs-component-tab {
+    border-bottom: 1px solid var(--color-light-gray);
+    font-family: 'Neue Aachen Book', sans-serif;
+}
+
+.hb-tabs-component-tab-content.inactive-tab {
+    display: none;
+}
+
+.hb-tabs-component-tab-content.active-tab {
+    display: block;
+}
+
+.hb-tabs-component-tab-link {
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hb-tabs-component-tab-link.active-tab {
+    text-decoration: underline;
+}

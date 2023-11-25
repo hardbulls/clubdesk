@@ -30,7 +30,6 @@ jobs:
         npm run download-games
         npm run build
         npm run generate-sitemap
-        npm run generate-ics
         npm run fetch-api
       env:
         NODE_ENV: 'production'

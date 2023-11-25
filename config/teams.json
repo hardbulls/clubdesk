@@ -2,7 +2,7 @@
   {
     "name": "SG Indians/Vikings",
     "abbreviation": "DI/KV",
-    "keywords": ["SG Indians/Vikings","Indians", "Vikings"],
+    "keywords": ["SG Indians/Vikings", "SG Indians - Vikings U16"],
     "isCooperation": true,
     "logo": "logo_di.png+logo_kv.png"
   },
@@ -63,7 +63,7 @@
   {
     "name": "Kufstein Vikings",
     "abbreviation": "KV",
-    "keywords": ["Kufstein Vikings"],
+    "keywords": ["Kufstein Vikings", "Pirmoser Vikings"],
     "logo": "logo_kv.png"
   },
   {
@@ -124,7 +124,7 @@
   {
     "name": "Attnang-Puchheim Athletics",
     "abbreviation": "AA",
-    "keywords": ["Attnang-Puchheim Athletics", "Attnang Athletics"],
+    "keywords": ["Attnang-Puchheim Athletics", "Attnang Athletics", "ASAK Athletics"],
     "logo": "logo_aa.png"
   }
 ]

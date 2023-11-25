@@ -27,6 +27,11 @@ export const UpcomingGames = (leagues: League[]) => {
                 <strong>{league.fullName}</strong>
                 {games.map(game => {
                     const field = findField(game.home, game.venue);
+
+                    if (!field) {
+                        throw new Error(`Field ${game.venue} / ${game.home} not found.`)
+                    }
+
                     const home = findTeam(game.home)
                     const away = findTeam(game.away)
 

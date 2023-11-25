@@ -1,0 +1,51 @@
+.hb-league-component {
+    width: 100%;
+}
+
+.hb-league-component-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-md);
+}
+
+.hb-league-component-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: var(--gap-sm);
+    column-gap: var(--gap-sm);
+    width: 100%;
+}
+
+.hb-league-component-description,
+.hb-league-component-standings {
+    flex-direction: column;
+}
+
+.hb-league-component-standings {
+    min-width: 300px;
+    max-width: 460px;
+    display: flex;
+}
+
+.hb-league-component-games {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--gap-sm);
+    column-gap: var(--gap-sm);
+    justify-content: space-evenly;
+}
+
+.hb-league-component-standings-tab-link {
+    font-size: var(--font-size-md);
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hb-league-component-standings-tab-link.active-tab {
+    color: var(--color-bulls-red);
+    text-decoration: underline;
+}

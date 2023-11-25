@@ -1,12 +1,6 @@
 import fields from "../config/fields.json"
+import type {Field} from "./model/Field";
 
-export interface Field {
-    venue?: string | null
-    location: string
-    teams: Array<string>
-    image: string
-    keywords: string[]
-}
 
 export const getFields = (): Field[] => {
     return fields as Field[]
@@ -14,7 +8,7 @@ export const getFields = (): Field[] => {
 
 const fieldCache: { [key: string]: Field } = {}
 
-export const findField = (team: string, search: string): Field => {
+export const findField = (team: string, search: string): Field|undefined => {
     let cachedField = fieldCache[search]
 
     if (cachedField) {
@@ -48,10 +42,6 @@ export const findField = (team: string, search: string): Field => {
 
         return false
     })
-
-    if (!cachedField) {
-        throw new Error(`Field ${search} not found.`)
-    }
 
     return cachedField
 }

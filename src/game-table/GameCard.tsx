@@ -58,6 +58,10 @@ export const GameCard = ({ entry }: Props): JSX.Element => {
     const venue = entry.venue;
     const field = findField(homeTeam.name, venue);
 
+    if (!field) {
+        throw new Error(`Field ${venue} / ${homeTeam.name} not found.`)
+    }
+
     const awayClass = field.location !== "Hard" ? "hardbulls-game-card-away" : "";
 
     const image = fieldImageMapping[`./${field?.image}`];

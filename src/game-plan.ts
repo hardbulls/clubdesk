@@ -90,9 +90,6 @@ export const getGamesForTeam = (
                 mergedGame.venue === game.Spielort &&
                 !(mergedGame.isCanceled || mergedGame.isDelayed || mergedGame.isContinuation)
             ) {
-                if (mergedGame.isDelayed) {
-                    console.log(mergedGame)
-                }
                 return mergedGame
             }
         }

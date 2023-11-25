@@ -1,0 +1,72 @@
+.hb-game-card-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 380px;
+    max-width: 480px;
+    flex-grow: 1;
+    box-shadow: var(--light-box-shadow);
+    padding-block: 8px;
+    row-gap: 8px;
+}
+
+.hb-game-card-component-grayed {
+    filter: grayscale(0.9);
+}
+
+.hb-game-card-component-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hb-game-card-component-header-logos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    padding-inline: 12px;
+    padding-bottom: 46px;
+    height: 152px;
+}
+
+.hb-game-card-component-location {
+    display: flex;
+    justify-content: center;
+}
+
+.hb-game-card-component-overlay-wrapper {
+    position: relative;
+}
+
+.hb-game-card-component-score {
+    background: var(--background-gray-transparent);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-md);
+    top: -64px;
+}
+
+.hb-game-card-component-canceled {
+    background: var(--background-gray-transparent);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-md);
+    top: -64px;
+}
+
+.hb-game-card-component-canceled span {
+    color: var(--text-dark-red);
+}
+
+.hb-game-card-component-date {
+    display: flex;
+    justify-content: center;
+}
+
+.hb-game-card-component-date-canceled {
+   text-decoration: line-through;
+}

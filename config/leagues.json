@@ -12,13 +12,13 @@
   {
     "fullName": "Baseball Bundesliga/Nationalliga Postseason",
     "name": "BBL/NL Postseason",
-    "id": "bbl-nl",
+    "id": "nl-bbl-playoffs",
     "isActive": true
   },
   {
     "fullName": "2. Bundesliga West",
     "name": "2. BLW",
-    "id": "2blw",
+    "id": "2-blw",
     "isActive": true
   },
   {

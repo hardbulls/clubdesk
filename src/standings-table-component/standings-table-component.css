@@ -1,0 +1,14 @@
+.hb-standings-table-component-table {
+    min-width: 220px;
+    table-layout: fixed;
+}
+
+
+.hb-standings-table-component-table td, .hb-standings-table-component-table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hb-standings-table-component-table td > img {
+    vertical-align: middle;
+}

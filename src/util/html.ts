@@ -1,4 +1,4 @@
-export const replaceElementChildren = (element: HTMLElement, nodes: JSX.Element | Array<JSX.Element>): void => {
+export const replaceElementChildren = (element: HTMLElement|JSX.Element, nodes: JSX.Element | Array<JSX.Element>): void => {
     if (!Array.isArray(nodes)) {
         nodes = [nodes]
     }
