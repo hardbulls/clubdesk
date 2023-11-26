@@ -16,6 +16,7 @@ import {TabsComponent} from "../tabs-component/tabs-component";
 import {StandingsRepository} from "../repository/standings-repository";
 import type {Standing} from "../model/Standing";
 import {StandingsTableComponent} from "../standings-table-component/standings-table-component";
+import {TagComponent} from "../tag-component/tag-component";
 
 
 type Props = {
@@ -83,10 +84,10 @@ export const LeagueComponent = ({season, league}: Props) => {
                             <div className={`${CN}-standings`}>
                                 <h3>{STANDINGS_HEADER}</h3>
                                 {standings.length > 1 ? (
-                                        <TabsComponent linkClass={`${CN}-standings-tab-link`} tabs={standings.map(standing => {
+                                        <TabsComponent tabs={standings.map(standing => {
                                             return {
                                                 id: standing.type.toLowerCase(),
-                                                title: (<span>{getStandingsTitle(standing)}</span>),
+                                                title: <TagComponent text={getStandingsTitle(standing)} size={'small'}/>,
                                                 content: () => <StandingsTableComponent standing={standing}/>
                                             }
                                         })}/>)

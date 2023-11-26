@@ -10,33 +10,26 @@ import "./table.css"
 import "./icons.css"
 import "./flags.css"
 import "./font.css"
-import {NextGame} from "./game-table/NextGame"
-import {PlayerCardsContainer} from "./PlayerCardsContainer"
-import {appendToElement} from "./util/html"
-import {loadFiles} from "./util/files"
-import {optimizeSponsorImages} from "./cd-extensions/optimize-sponsor-images"
-import {alwaysShowMenuOnDesktop} from "./cd-extensions/always-show-menu-on-desktop"
-import {addNameToHeader} from "./cd-extensions/add-name-to-header"
-import {shuffleSponsors} from "./cd-extensions/shuffle-sponsors"
-import {moveNewsSubheading, newsOverviewAuthorSubheading} from "./cd-extensions/news"
-import {addImageFallback} from "./cd-extensions/add-image-fallback"
-import {removeMenuText} from "./cd-extensions/remove-menu-text"
-import {GamePlanTabs} from "./game-table/GamePlanTabs"
-import {FieldSection} from "./field-section/FieldSection"
-import {UpcomingGames} from "./game-table/UpcomingGames"
-import leagues from "../config/leagues.json"
-import {Standings} from "./standings/Standings"
-import {notFoundGame} from "./cd-extensions/not-found-game"
-import {Ballpark} from "./ballpark/Ballpark"
-import {addCanonicalLink} from "./cd-extensions/add-canonical-link"
-import {replaceLogoLink} from "./cd-extensions/replace-logo-link"
-import {STATIC_BASE_URL} from "./config"
-import {LeagueComponent} from "./league-component/league-component";
-import type {League} from "./model/League";
-import {LeagueContainerComponent} from "./league-container-component/league-container-component";
+import { PlayerCardsContainer } from "./PlayerCardsContainer"
+import { appendToElement } from "./util/html"
+import { loadFiles } from "./util/files"
+import { optimizeSponsorImages } from "./cd-extensions/optimize-sponsor-images"
+import { alwaysShowMenuOnDesktop } from "./cd-extensions/always-show-menu-on-desktop"
+import { addNameToHeader } from "./cd-extensions/add-name-to-header"
+import { shuffleSponsors } from "./cd-extensions/shuffle-sponsors"
+import { moveNewsSubheading, newsOverviewAuthorSubheading } from "./cd-extensions/news"
+import { addImageFallback } from "./cd-extensions/add-image-fallback"
+import { removeMenuText } from "./cd-extensions/remove-menu-text"
+import { FieldSection } from "./field-section/FieldSection"
+import { notFoundGame } from "./cd-extensions/not-found-game"
+import { Ballpark } from "./ballpark/Ballpark"
+import { addCanonicalLink } from "./cd-extensions/add-canonical-link"
+import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
+import { STATIC_BASE_URL } from "./config"
+import { LeagueContainerComponent } from "./league-container-component/league-container-component"
+import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-games-component"
 
 const bullLogos = loadFiles(require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg)/))
-const filteredLeagues = leagues.filter((league) => league.isActive) as League[]
 
 const addBannerVideo = () => {
     if (window.location.host.includes("hardbulls.com")) {
@@ -181,14 +174,10 @@ export const theBulls = () => {
     addImageFallback()
     moveNewsSubheading()
 
-    appendToElement(".hardbulls-card-game-table", () => GamePlanTabs())
-    appendToElement(".hardbulls-next-game", () => NextGame())
     appendToElement(".hardbulls-player-container", () => PlayerCardsContainer())
     appendToElement(".hardbulls-ballpark-info-container", () => FieldSection())
-    appendToElement(".hardbulls-upcoming-games-container", () => UpcomingGames(filteredLeagues))
-
-    appendToElement('.hardbulls-league-container', () => LeagueContainerComponent())
-    appendToElement(".hardbulls-standings-container", () => Standings())
+    appendToElement(".hardbulls-upcoming-games-container", () => UpcomingGamesComponent())
+    appendToElement(".hardbulls-league-container", () => LeagueContainerComponent())
     appendToElement(".hardbulls-ballpark-container", () => Ballpark())
 
     newsOverviewAuthorSubheading()

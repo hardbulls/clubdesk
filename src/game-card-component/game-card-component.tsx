@@ -4,9 +4,9 @@ import {loadFiles} from "../util/files";
 import type {Game} from "../model/Game";
 import {GoogleMapsLink} from "../GoogleMapsLink";
 import {dateTimeFormatter} from "../util/date";
-import {CooperationLogo} from "../game-table/CoorperationLogo";
-import {TeamLogo} from "../game-table/TeamLogo";
 import {GAME_CANCELED} from "../translations";
+import {CooperationTeamLogoComponent} from "../team-logo-component/cooperation-team-logo-component";
+import {TeamLogoComponent} from "../team-logo-component/team-logo-component";
 
 const fieldImageMapping = loadFiles(
     require.context("../../config/images/fields/?as=webp&width=260&height=200", false, /\.(png|jpg)$/)
@@ -35,8 +35,8 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
             }}>
                 <div className={`${CN}-header-logos`}>
                     {
-                        game.away ? (game.away.isCooperation ? <CooperationLogo team={game.away}/> :
-                            <TeamLogo team={game.away}/>) : '?'
+                        game.away ? (game.away.isCooperation ? <CooperationTeamLogoComponent team={game.away}/> :
+                            <TeamLogoComponent team={game.away}/>) : '?'
                     }
                     <div style={{
                         fontSize: '32px',
@@ -48,8 +48,8 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
                         -
                     </div>
                     {
-                        game.home ? (game.home.isCooperation ? <CooperationLogo team={game.home}/> :
-                            <TeamLogo team={game.home}/>) : '?'
+                        game.home ? (game.home.isCooperation ? <CooperationTeamLogoComponent team={game.home}/> :
+                            <TeamLogoComponent team={game.home}/>) : '?'
                     }
                 </div>
             </div>

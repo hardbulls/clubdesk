@@ -1,5 +1,5 @@
 import teams from "../../config/teams.json"
-import type {Team} from "../model/Team"
+import type { Team } from "../model/Team"
 import bullsTeams from "../../config/bulls_teams.json"
 
 export const BULLS_TEAMS: string[] = bullsTeams

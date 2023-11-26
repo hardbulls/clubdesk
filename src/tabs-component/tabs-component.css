@@ -1,7 +1,15 @@
+.hb-tabs-component {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-md);
+}
+
 .hb-tabs-component-tab-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
+    row-gap: var(--gap-xs);
+    column-gap: var(--gap-xs);
 }
 
 .hb-tabs-component-tab {
@@ -18,12 +26,6 @@
 }
 
 .hb-tabs-component-tab-link {
-    margin-left: 6px;
-    margin-right: 6px;
-    padding: 4px;
+    /* margin-inline: 6px; */
     cursor: pointer;
-}
-
-.hb-tabs-component-tab-link.active-tab {
-    text-decoration: underline;
 }

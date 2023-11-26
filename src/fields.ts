@@ -1,6 +1,5 @@
 import fields from "../config/fields.json"
-import type {Field} from "./model/Field";
-
+import type { Field } from "./model/Field"
 
 export const getFields = (): Field[] => {
     return fields as Field[]
@@ -8,7 +7,7 @@ export const getFields = (): Field[] => {
 
 const fieldCache: { [key: string]: Field } = {}
 
-export const findField = (team: string, search: string): Field|undefined => {
+export const findField = (team: string, search: string): Field | undefined => {
     let cachedField = fieldCache[search]
 
     if (cachedField) {

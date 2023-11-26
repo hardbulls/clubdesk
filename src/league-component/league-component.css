@@ -10,8 +10,7 @@
 
 .hb-league-component-info {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     row-gap: var(--gap-sm);
     column-gap: var(--gap-sm);

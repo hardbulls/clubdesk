@@ -4,16 +4,15 @@ import {replaceElementChildren} from "../util/html";
 
 type Tab = {
     id: string,
-    title: JSX.Element|string,
+    title: JSX.Element,
     content: (() => JSX.Element)
 }
 
 type Props = {
-    linkClass: string,
     tabs: Tab[]
 }
 
-export const TabsComponent = ({linkClass, tabs}: Props) => {
+export const TabsComponent = ({tabs}: Props) => {
     const componentId = (Math.random() + 1).toString(36).substring(7);
     const CN = "hb-tabs-component";
 
@@ -67,7 +66,7 @@ export const TabsComponent = ({linkClass, tabs}: Props) => {
 
         linkElements.push(
             <span
-                className={`${CN}-tab-link ${linkClass} ${tab.id === currentActive ? `active-tab` : `inactive-tab`}`}
+                className={`${CN}-tab-link ${tab.id === currentActive ? `active-tab` : `inactive-tab`}`}
                 onClick={(event) => switchTab(event.currentTarget, elementId, tab)}
                 >{tab.title}</span>
         )
@@ -75,13 +74,13 @@ export const TabsComponent = ({linkClass, tabs}: Props) => {
         tabElements.push(
             <div id={elementId}
                  className={`${CN}-tab-content ${tab.id === currentActive ? "active-tab" : 'inactive-tab'}`}>
-                {tab.id === currentActive ? tab.content() : undefined}
+                {tab.id === currentActive && tab.content()}
             </div>
         )
     }
 
     return (
-        <div>
+        <div className={CN}>
             <div id={`${CN}-${componentId}-tab-links`} className={`${CN}-tab-links`}>
                 {linkElements}
             </div>

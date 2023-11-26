@@ -1,0 +1,8 @@
+.hb-upcoming-games-components-team-logo {
+    display: inline-block;
+}
+
+.hb-upcoming-games-components-game {
+    display: flex;
+    align-items: center;
+}

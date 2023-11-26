@@ -8,10 +8,10 @@ type Props = {
     height?: number
 }
 
-export const TeamLogo = ({team, width, height}: Props) => {
+export const TeamLogoComponent = ({team, width, height}: Props) => {
     const logo = findTeamLogo(team)
 
     return (
-        <img src={logo} width={width} height={height} title={team.name} className="hardbulls-team-logo"  alt={team.name}></img>
+        <img src={logo} width={width} height={height} title={team.name} alt={team.name}></img>
     )
 }

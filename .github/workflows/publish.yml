@@ -27,7 +27,6 @@ jobs:
     - name: Build Website
       run: |
         npm ci
-        npm run download-games
         npm run build
         npm run generate-sitemap
         npm run fetch-api

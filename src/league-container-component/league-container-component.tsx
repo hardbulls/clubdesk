@@ -1,20 +1,20 @@
 import {DOMcreateElement} from "../jsx";
-import leagues from '../../config/leagues.json';
 import {TabsComponent} from "../tabs-component/tabs-component";
 import {LeagueComponent} from "../league-component/league-component";
 import {getCurrentSeason} from "../current-season";
-
-const filteredLeagues = leagues.filter(league => league.isActive)
+import {TagComponent} from "../tag-component/tag-component";
+import {LeagueRepository} from "../repository/league-repository";
 
 export const LeagueContainerComponent = () => {
     const CN = 'hb-league-container-component'
+    const leagues = LeagueRepository.findAll();
 
     return (
         <div className={CN}>
-            <TabsComponent linkClass={`${CN}-standings-tab-link`} tabs={filteredLeagues.map(league => {
+            <TabsComponent tabs={leagues.map(league => {
                 return {
                     id: league.id.toLowerCase(),
-                    title: (<span title={league.fullName}>{league.name}</span>),
+                    title: <TagComponent text={league.name} size={'large'}/>,
                     content: () => <LeagueComponent season={getCurrentSeason()} league={league}/>
                 }
             })}/>

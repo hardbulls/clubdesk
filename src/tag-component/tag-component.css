@@ -1,0 +1,29 @@
+.hb-tag-component {
+    align-items: center;
+    border: 1px solid var(--stroke-gray);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+    padding-inline: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: background-color .1s,color .1s,border-color .1s;
+    white-space: nowrap;
+    width: max-content;
+    font-size: var(--font-size-sm);
+}
+
+.hb-tag-component-large {
+    font-size: var(--font-size-md);
+    padding-block: 7px;
+    padding-inline: 18px;
+}
+
+.active-tab > .hb-tag-component,
+.hb-tag-component:hover
+{
+    color: var(--text-inverted);
+    background-color: var(--color-bulls-red);
+}
