@@ -25,7 +25,6 @@ import { notFoundGame } from "./cd-extensions/not-found-game"
 import { Ballpark } from "./ballpark/Ballpark"
 import { addCanonicalLink } from "./cd-extensions/add-canonical-link"
 import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
-import { STATIC_BASE_URL } from "./config"
 import { LeagueContainerComponent } from "./league-container-component/league-container-component"
 import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-games-component"
 
@@ -71,10 +70,24 @@ const addBullsLogo = () => {
             if (bullLogos["./easter_bull.png"]) {
                 img.src = bullLogos["./easter_bull.png"]
             }
-        } else if (date.getMonth() === 11) {
-            img.src = `${STATIC_BASE_URL}/images/logos/santa_bull_white.svg`
+        } else if (date.getMonth() === 11 && date.getDate() < 29) {
+            (async () => {
+                const SantaBull = await import("./assets/bulls_logos/santa_bull.svg")
+
+                img.src = SantaBull.default
+
+                img.width = 160
+                img.height = 150
+                img.style.filter = "drop-shadow(0 7px 8px #fff)"
+
+                container.appendChild(img)
+            })()
+
+            return
         } else {
-            img.src = `${STATIC_BASE_URL}/images/logos/regular_bull_white.svg`
+            if (bullLogos["./normal_bull_white.png"]) {
+                img.src = bullLogos["./normal_bull_white.png"]
+            }
         }
 
         img.width = 160
