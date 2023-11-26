@@ -35,7 +35,7 @@ export class GamesRepository {
     }
 
     public static async findWeeklyGames(): Promise<Game[]> {
-        return (await fetchV2Api(`weekly-games.json`) as ApiGame[]).map(game => {
+        return ((await fetchV2Api(`weekly-games.json`)) as ApiGame[]).map((game) => {
             return {
                 season: game.season,
                 league: LeagueRepository.findById(game.league),

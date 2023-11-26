@@ -1,5 +1,7 @@
 export const GAME_CANCELED = "Abgesagt"
 export const CALENDAR_IMPORT = "Termine im Kalender importieren"
+export const SELECT_SEASON = "Saison auswählen"
+export const SEASON = "Saison"
 
 export const STANDINGS_FINAL = "Endklassement"
 export const STANDINGS_PLAYOFFS = "Play-offs"

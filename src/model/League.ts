@@ -3,4 +3,5 @@ export interface League {
     name: string
     id: string
     table?: string
+    seasons: number[]
 }

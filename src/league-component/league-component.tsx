@@ -6,7 +6,7 @@ import {API_V2_BASE_URL} from "../config";
 import {GamesRepository} from "../repository/games-repository";
 import {GameCardComponent} from "../game-card-component/game-card-component";
 import {
-    CALENDAR_IMPORT, GAME_SCHEDULE,
+    CALENDAR_IMPORT, GAME_SCHEDULE, SEASON, SELECT_SEASON,
     STANDINGS_FINAL,
     STANDINGS_GROUP, STANDINGS_HEADER,
     STANDINGS_PLAYOFFS,
@@ -17,11 +17,15 @@ import {StandingsRepository} from "../repository/standings-repository";
 import type {Standing} from "../model/Standing";
 import {StandingsTableComponent} from "../standings-table-component/standings-table-component";
 import {TagComponent} from "../tag-component/tag-component";
+import {SelectComponent} from "../select-component/select-component";
+import {getCurrentSeason} from "../current-season";
+import {LogoMapping} from "../logos";
 
 
 type Props = {
     season: number,
     league: League
+    handleSeasonChange: (season: number, league: League, container: JSX.Element) => void
 }
 
 const getStandingsTitle = (standing: Standing) => {
@@ -52,7 +56,7 @@ const getStandingsTitle = (standing: Standing) => {
     return `${STANDINGS_UNKNOWN}`
 }
 
-export const LeagueComponent = ({season, league}: Props) => {
+export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => {
     const CN = 'hb-league-component'
     const container = <div className={CN}></div>
 
@@ -69,16 +73,37 @@ export const LeagueComponent = ({season, league}: Props) => {
             <div>
                 <h2>{league.fullName} ({league.name})</h2>
                 <div className={`${CN}-content`}>
-                    <div>
-                        <h3>{GAME_SCHEDULE}</h3>
-                        <div className={`${CN}-games`}>
-                            {games.map(game => <GameCardComponent game={game}/>)}
-                        </div>
-                    </div>
                     <div className={`${CN}-info`}>
                         <div className={`${CN}-description`}>
-                            <span className="fa fa-calendar-alt"></span>&nbsp;
-                            <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
+                            {
+                                league.seasons.length > 1 ?
+                                    (<SelectComponent
+                                    selected={season}
+                                    onChange={(selectedSeason) => {
+                                        handleSeasonChange(Number.parseInt(selectedSeason), league, container)
+                                    }}
+                                    label={SELECT_SEASON}
+                                    options={league.seasons.map(leagueSeason => {
+                                            return {value: leagueSeason, label: leagueSeason}
+                                        }
+                                    )}/>) : (
+                                        <span className={`${CN}-season`}>{SEASON} {season}</span>
+                                    )
+                            }
+                            {
+                                season === getCurrentSeason() &&
+                                <div>
+                                    <span className="fa fa-calendar-alt"></span>&nbsp;
+                                    <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
+                                </div>
+                            }
+                            {
+                                LogoMapping[`${league.id}.svg`] && (
+                                    <div className={`${CN}-logo`}>
+                                        <img alt={`${league.name} Logo`} src={LogoMapping[`${league.id}.svg`]}/>
+                                    </div>
+                                )
+                            }
                         </div>
                         {standings.length > 0 && (
                             <div className={`${CN}-standings`}>
@@ -96,6 +121,13 @@ export const LeagueComponent = ({season, league}: Props) => {
                             </div>
                         )}
                     </div>
+                    <div>
+                        <h3>{GAME_SCHEDULE}</h3>
+                        <div className={`${CN}-games`}>
+                            {games.map(game => <GameCardComponent game={game}/>)}
+                        </div>
+                    </div>
+
                 </div>
             </div>
         );

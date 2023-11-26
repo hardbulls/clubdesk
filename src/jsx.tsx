@@ -62,7 +62,7 @@ function DOMparseNode(element: string, properties: { [key: string]: string }, ch
         const value = properties[key];
 
         if (booleanAttributes.includes(key.toLowerCase())) {
-            el.setAttribute(key.toLowerCase(), '');
+            el.setAttribute(key.toLowerCase(), key.toLowerCase());
         } else if (value) {
             if (key.startsWith("on") && key.toLowerCase() in window && typeof value === 'function') {
                 el.addEventListener(key.toLowerCase().substring(2, key.length), value);

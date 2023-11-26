@@ -1,9 +1,19 @@
 import { API_BASE_URL, API_V2_BASE_URL } from "./config"
 
+const CACHE: { [key: string]: any } = {}
+
 export const fetchApi = async (url: string) => {
     return await fetch(`${API_BASE_URL}${url}`).then((response) => response.json())
 }
 
 export const fetchV2Api = async (url: string) => {
-    return await fetch(`${API_V2_BASE_URL}${url}`).then((response) => response.json())
+    let response = CACHE[url]
+
+    if (!response) {
+        response = await fetch(`${API_V2_BASE_URL}${url}`).then((response) => response.json())
+
+        CACHE[url] = response
+    }
+
+    return response
 }

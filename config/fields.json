@@ -82,5 +82,12 @@
     "location": "Attnang-Puchheim",
     "image": "attnang.png",
     "keywords": ["Attnang", "Athletics", "Attnang-Puchheim Athletics"]
+  },
+  {
+    "teams": ["Centurions Wels"],
+    "venue": "Chickensfield",
+    "location": "Wels",
+    "image": "wels.png",
+    "keywords": ["Chickensfield, Wels", "Wels"]
   }
 ]

@@ -31,8 +31,11 @@
     --font-size-md: 22px;
     --font-size-lg: 32px;
     --background-gray-transparent: rgba(220, 220, 220, 0.7);
+    --background-inverted-transparent: rgb(86, 86, 86);
     --stroke-gray: rgba(220, 220, 220);
     --text-dark-red: rgb(166, 0, 41);
+    --icon-dark-red: rgb(166, 0, 41);
+    --text-default: rgba(51,51,51,1.0);
     --text-inverted: rgb(255, 255, 255);
 }
 
