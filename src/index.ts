@@ -28,7 +28,9 @@ import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
 import { LeagueContainerComponent } from "./league-container-component/league-container-component"
 import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-games-component"
 
-const bullLogos = loadFiles(require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg)/))
+const bullLogos = loadFiles(
+    require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg|svg)/)
+)
 
 const addBannerVideo = () => {
     if (window.location.host.includes("hardbulls.com")) {
@@ -71,19 +73,10 @@ const addBullsLogo = () => {
                 img.src = bullLogos["./easter_bull.png"]
             }
         } else if (date.getMonth() === 11 && date.getDate() < 29) {
-            (async () => {
-                const SantaBull = await import("./assets/bulls_logos/santa_bull.svg")
-
-                img.src = SantaBull.default
-
-                img.width = 160
-                img.height = 150
-                img.style.filter = "drop-shadow(0 7px 8px #fff)"
-
-                container.appendChild(img)
-            })()
-
-            return
+            if (bullLogos["./santa_bull.svg"]) {
+                img.src = bullLogos["./santa_bull.svg"]
+                img.style.filter = "drop-shadow(0 2px 3px #fff)"
+            }
         } else {
             if (bullLogos["./normal_bull_white.png"]) {
                 img.src = bullLogos["./normal_bull_white.png"]
