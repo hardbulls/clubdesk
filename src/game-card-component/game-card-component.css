@@ -8,6 +8,11 @@
     box-shadow: var(--light-box-shadow);
     padding-block: 8px;
     row-gap: 8px;
+
+    @media only screen and (max-width: 756px) {
+        min-width: 100%;
+    }
+
 }
 
 .hb-game-card-component-grayed {

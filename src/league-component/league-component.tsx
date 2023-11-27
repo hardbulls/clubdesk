@@ -63,7 +63,10 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
     (async () => {
         const games = await GamesRepository.findByLeagueAndSeason(league, season);
         const standings = await StandingsRepository.findByLeagueAndSeason(league, season);
-        const calendarUrl = `${API_V2_BASE_URL}seasons/${season}/bbl/games.ics`
+        const now = new Date();
+
+        const hasFutureGames = games.some(game => game.date > now)
+        const calendarUrl = `${API_V2_BASE_URL}seasons/${season}/${league.id}/games.ics`
 
         if (!container) {
             return;
@@ -91,16 +94,16 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                     )
                             }
                             {
-                                season === getCurrentSeason() &&
+                                season === getCurrentSeason() && hasFutureGames &&
                                 <div>
                                     <span className="fa fa-calendar-alt"></span>&nbsp;
                                     <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
                                 </div>
                             }
                             {
-                                LogoMapping[`${league.id}.svg`] && (
+                                LogoMapping[`./${league.id}.svg`] && (
                                     <div className={`${CN}-logo`}>
-                                        <img alt={`${league.name} Logo`} src={LogoMapping[`${league.id}.svg`]}/>
+                                        <img alt={`${league.name} Logo`} src={LogoMapping[`./${league.id}.svg`]}/>
                                     </div>
                                 )
                             }

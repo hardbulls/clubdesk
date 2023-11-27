@@ -1,8 +1,12 @@
 .hb-standings-table-component-table {
     min-width: 220px;
     table-layout: fixed;
-}
+    overflow: hidden;
 
+    @media only screen and (max-width: 756px) {
+        min-width: 100%;
+    }
+}
 
 .hb-standings-table-component-table td, .hb-standings-table-component-table th {
     text-align: center;

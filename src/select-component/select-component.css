@@ -33,6 +33,10 @@
     height: 2em;
     border-radius: .25em;
     overflow: hidden;
+
+    @media only screen and (max-width: 756px) {
+        max-width: 100%;
+    }
 }
 
 .hb-select-component-select::after {
