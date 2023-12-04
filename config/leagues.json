@@ -14,7 +14,7 @@
     "fullName": "Baseball Bundesliga/Nationalliga Postseason",
     "name": "BBL/NL Postseason",
     "id": "nl-bbl-playoffs",
-    "isActive": true,
+    "isActive": false,
     "seasons": [2023]
   },
   {

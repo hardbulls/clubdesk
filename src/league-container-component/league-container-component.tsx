@@ -1,3 +1,4 @@
+import './league-container.component.css'
 import {DOMcreateElement} from "../jsx";
 import {TabsComponent} from "../tabs-component/tabs-component";
 import {LeagueComponent} from "../league-component/league-component";
@@ -15,7 +16,6 @@ export const LeagueContainerComponent = () => {
         const component = <LeagueComponent handleSeasonChange={handleSeasonChange} season={selectedSeason} league={league}/>
 
         replaceElement(container, component)
-
     }
 
     return (

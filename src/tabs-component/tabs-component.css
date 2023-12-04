@@ -23,9 +23,9 @@
 
 .hb-tabs-component-tab-content.active-tab {
     display: block;
+    animation: fade-in 0.25s ease-in-out;
 }
 
 .hb-tabs-component-tab-link {
-    /* margin-inline: 6px; */
     cursor: pointer;
 }

@@ -1,6 +1,7 @@
 @import "cd-button.css";
 @import "cd-layout.css";
 @import "tooltip.css";
+@import "animations.css";
 
 :root {
     --light-box-shadow: rgb(0 0 0 / 12%) 0px 0.125rem 0.25rem 0px;
