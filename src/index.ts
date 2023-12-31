@@ -17,7 +17,7 @@ import { optimizeSponsorImages } from "./cd-extensions/optimize-sponsor-images"
 import { alwaysShowMenuOnDesktop } from "./cd-extensions/always-show-menu-on-desktop"
 import { addNameToHeader } from "./cd-extensions/add-name-to-header"
 import { shuffleSponsors } from "./cd-extensions/shuffle-sponsors"
-import { moveNewsSubheading, newsOverviewAuthorSubheading } from "./cd-extensions/news"
+import { moveNewsSubheading, newsOverviewAuthorSubheading, replaceAlternateLinks } from "./cd-extensions/news"
 import { addImageFallback } from "./cd-extensions/add-image-fallback"
 import { removeMenuText } from "./cd-extensions/remove-menu-text"
 import { FieldSection } from "./field-section/FieldSection"
@@ -27,6 +27,7 @@ import { addCanonicalLink } from "./cd-extensions/add-canonical-link"
 import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
 import { LeagueContainerComponent } from "./league-container-component/league-container-component"
 import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-games-component"
+import { redirectAlternatePage } from "./cd-extensions/redirect-alternate-page"
 
 const bullLogos = loadFiles(
     require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg|svg)/)
@@ -172,6 +173,8 @@ const iconsAfterButtons = () => {
 
 export const theBulls = () => {
     addCanonicalLink()
+    redirectAlternatePage()
+    replaceAlternateLinks()
     replaceLogoLink()
     optimizeSponsorImages()
     alwaysShowMenuOnDesktop()
