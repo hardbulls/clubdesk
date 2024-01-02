@@ -9,7 +9,7 @@ import { getAllActivePlayers } from "../src/player/players"
 import type { StatisticProperty } from "../src/types/StatisticProperty"
 import { PitchingProperties } from "../src/types/PitchingProperty"
 import { FieldingProperties } from "../src/types/FieldingProperties"
-import { CURRENT_YEAR } from "../src/util/date"
+const CURRENT_YEAR = 2023;
 
 interface TableConfig {
     [key: string | number]: (text: string | undefined | null, result: any) => void

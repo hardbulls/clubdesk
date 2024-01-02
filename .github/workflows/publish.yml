@@ -29,7 +29,6 @@ jobs:
         npm ci
         npm run build
         npm run generate-sitemap
-        npm run fetch-api
       env:
         NODE_ENV: 'production'
     - name: Build Game
