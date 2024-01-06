@@ -10,7 +10,7 @@
   "scripts": {
     "build": "rm -rf ./dist && NODE_ENV=production webpack && npm run copy-public",
     "start": "NODE_ENV=development webpack --watch",
-    "copy-public": "cp ./public/manifest.json ./dist/ && cp ./public/favicon.ico ./dist/ && cp -r ./public/images ./dist/ && cp -r ./public/api ./dist",
+    "copy-public": "cp ./public/manifest.json ./dist/ && cp ./public/favicon.ico ./dist/ && cp -r ./public/images ./dist/",
     "download-games": "ts-node -P ./tsconfig.cli.json ./bin/download-games.ts",
     "generate-sitemap": "ts-node -P ./tsconfig.cli.json ./bin/generate-sitemap.ts",
     "cs-ts": "eslint src bin --ext ts,tsx --fix",
