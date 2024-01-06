@@ -1,4 +1,5 @@
 import type { PlayerStats } from "./PlayerStats"
+import type { Award } from "./Award"
 
 export interface Player {
     name: string
@@ -15,4 +16,5 @@ export interface Player {
     cooperationPlayer?: string | undefined
     stats?: PlayerStats | undefined
     active?: boolean | undefined
+    awards?: Award[]
 }

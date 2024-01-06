@@ -1,0 +1,186 @@
+{
+  "Erwin Frias": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2017,
+      "title": "Gold Glove Shortstop (West)"
+    },
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2018,
+      "title": "Gold Glove Shortstop (West)"
+    },
+    {
+      "type": "2_batter",
+      "league": "bbl",
+      "season": 2020,
+      "title": "2. Best Batter"
+    },
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2022,
+      "title": "Gold Glove Shortstop"
+    },
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2022,
+      "title": "All Star Shortstop"
+    }
+  ],
+  "Hokuto Kanai": [
+    {
+      "type": "2_pitcher",
+      "league": "bbl",
+      "season": 2022,
+      "title": "2. Best Pitcher"
+    }
+  ],
+  "Kirian Pichler": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2022,
+      "title": "Gold Glove Rightfield"
+    }
+  ],
+  "Zeke Holt": [
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2022,
+      "title": "All Star Outfield"
+    }
+  ],
+  "Clayton Carson": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2020,
+      "title": "Gold Glove 2nd Base"
+    },
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2021,
+      "title": "Gold Glove 3rd Base"
+    },
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2023,
+      "title": "Gold Glove Shortstop"
+    }
+  ],
+  "Kelvis Palma": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2023,
+      "title": "Gold Glove Pitcher"
+    },
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2023,
+      "title": "All Star Pitcher"
+    }
+  ],
+  "Jackson Murphy": [
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2023,
+      "title": "All Star Catcher"
+    }
+  ],
+  "Pearce Howard": [
+    {
+      "type": "2_batter",
+      "league": "bbl",
+      "season": 2023,
+      "title": "2. Best Batter"
+    }
+  ],
+  "Yodai Nakamura": [
+    {
+      "type": "3_batter",
+      "league": "bbl",
+      "season": 2021,
+      "title": "3. Best Batter"
+    }
+  ],
+  "Richard Kranabetter": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2017,
+      "title": "Gold Glove Rightfield (West)"
+    }
+  ],
+  "Jose Ruiz": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2017,
+      "title": "Gold Glove 2nd Base (West)"
+    },
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2017,
+      "title": "All Star 2nd Base (West)"
+    },
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2018,
+      "title": "Gold Glove 2nd Base (West)"
+    },
+    {
+      "type": "3_batter",
+      "league": "bbl",
+      "season": 2018,
+      "title": "3. Best Batter (West)"
+    },
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2018,
+      "title": "All Star 2nd Base (West)"
+    },
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2018,
+      "title": "All Star 3nd Base (West)"
+    }
+  ],
+  "Roldan Ochoa": [
+    {
+      "type": "3_picher",
+      "league": "bbl",
+      "season": 2017,
+      "title": "3. Best Pitcher (West)"
+    }
+  ],
+  "Carlos Gabriel": [
+    {
+      "type": "all_star",
+      "league": "bbl",
+      "season": 2017,
+      "title": "All Star Leftfield (West)"
+    }
+  ],
+  "Takuro Sugio": [
+    {
+      "type": "2_picher",
+      "league": "bbl",
+      "season": 2018,
+      "title": "2. Best Pitcher (West)"
+    }
+  ]
+}

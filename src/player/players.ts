@@ -3,6 +3,8 @@ import type { PlayerData } from "../PlayerCardsContainer"
 import type { Player } from "../model/Player"
 import { StatisticsRepository } from "../repository/statistics-repository"
 import type { PlayerStats } from "../model/PlayerStats"
+import AWARDS_BY_PLAYER from "../../config/awards.json"
+import { LeagueRepository } from "../repository/league-repository"
 
 const playerDataByName: { [key: string]: PlayerData } = playerData.reduce(
     (result: { [key: string]: PlayerData }, player) => {
@@ -111,6 +113,12 @@ const getPlayer = async (name: string): Promise<Player | undefined> => {
         isImport: playerData.isImport,
         stats: playerStats,
         active: playerData.active,
+        awards: (AWARDS_BY_PLAYER[playerData.name] || []).map((award) => {
+            return {
+                ...award,
+                league: LeagueRepository.findById(award.league),
+            }
+        }),
     }
 
     playerCache[name] = player

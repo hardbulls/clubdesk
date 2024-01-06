@@ -11,5 +11,5 @@
     "jsx": "react",
     "jsxFactory": "DOMcreateElement",
   },
-  "exclude": ["game"]
+  "include": ["src", "config", "bin"]
 }
