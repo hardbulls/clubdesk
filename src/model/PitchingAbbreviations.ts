@@ -1,0 +1,34 @@
+export type PitchingAbbreviations = {
+    w?: number
+    era?: number
+    g?: number
+    gs?: number
+    cg?: number
+    sho?: number
+    sv?: number
+    ip?: number
+    r?: number
+    er?: number
+    h?: number
+    "2b"?: number
+    "3b"?: number
+    hr?: number
+    sh?: number
+    sf?: number
+    hb?: number
+    bb?: number
+    ibb?: number
+    k?: number
+    wp?: number
+    bk?: number
+    ab?: number
+    bavg?: number
+    l?: number
+    app?: number
+    so?: number
+    hbp?: number
+    sfa?: number
+    sha?: number
+    go?: number
+    fo?: number
+}

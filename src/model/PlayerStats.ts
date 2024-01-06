@@ -1,10 +1,11 @@
+import type { PitchingAbbreviations } from "./PitchingAbbreviations"
+import type { BattingAbbreviations } from "./BattingAbbreviations"
+import type { FieldingAbbreviations } from "./FieldingAbbreviations"
+
 export interface PlayerStats {
     [key: string]: {
-        pitching?: {
-            [key: string]: string | number
-        }
-        batting?: {
-            [key: string]: string | number
-        }
+        pitching?: PitchingAbbreviations
+        batting?: BattingAbbreviations
+        fielding?: FieldingAbbreviations
     }
 }

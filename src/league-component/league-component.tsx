@@ -2,7 +2,7 @@ import './league-component.css'
 import {replaceElementChildren} from "../util/html";
 import {DOMcreateElement} from "../jsx";
 import type {League} from "../model/League";
-import {API_V2_BASE_URL} from "../config";
+import {API_BASE_URL} from "../config";
 import {GamesRepository} from "../repository/games-repository";
 import {GameCardComponent} from "../game-card-component/game-card-component";
 import {
@@ -66,7 +66,7 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
         const now = new Date();
 
         const hasFutureGames = games.some(game => game.date > now)
-        const calendarUrl = `${API_V2_BASE_URL}seasons/${season}/${league.id}/games.ics`
+        const calendarUrl = `${API_BASE_URL}seasons/${season}/${league.id}/games.ics`
 
         if (!container) {
             return;

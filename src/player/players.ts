@@ -1,10 +1,7 @@
 import playerData from "../../config/players.json"
-import statsJson from "../assets/bulls_stats.json"
 import type { PlayerData } from "../PlayerCardsContainer"
-import type { PlayerMapping } from "../types/player-mapping"
 import type { Player } from "../model/Player"
-import { fetchApi } from "../api"
-import { CURRENT_YEAR } from "../util/date"
+import { StatisticsRepository } from "../repository/statistics-repository"
 import type { PlayerStats } from "../model/PlayerStats"
 
 const playerDataByName: { [key: string]: PlayerData } = playerData.reduce(
@@ -16,8 +13,6 @@ const playerDataByName: { [key: string]: PlayerData } = playerData.reduce(
     {}
 )
 
-const allStats = statsJson as PlayerMapping
-
 const playerCache: { [key: string]: Player } = {}
 
 export const getTotalPlayTimeValue = (player: Player): number => {
@@ -25,8 +20,8 @@ export const getTotalPlayTimeValue = (player: Player): number => {
         ? 0
         : Object.values(player.stats).reduce((result, value) => {
               const ipStat =
-                  value.pitching && value.pitching["IP"] ? Number.parseInt(value.pitching["IP"]?.toString()) : 0
-              const paStat = value.batting && value.batting["PA"] ? Number.parseInt(value.batting["PA"]?.toString()) : 0
+                  value.pitching && value.pitching["ip"] ? Number.parseInt(value.pitching["ip"]?.toString()) : 0
+              const paStat = value.batting && value.batting["pa"] ? Number.parseInt(value.batting["pa"]?.toString()) : 0
 
               return result + ipStat + paStat
           }, 0)
@@ -36,8 +31,8 @@ export const getPlayTimeValueForYear = (player: Player, year: number): number =>
     const value = player.stats?.[year]
 
     if (value) {
-        const ipStat = value.pitching && value.pitching["IP"] ? Number.parseInt(value.pitching["IP"]?.toString()) : 0
-        const paStat = value.batting && value.batting["PA"] ? Number.parseInt(value.batting["PA"]?.toString()) : 0
+        const ipStat = value.pitching && value.pitching["ip"] ? Number.parseInt(value.pitching["ip"]?.toString()) : 0
+        const paStat = value.batting && value.batting["pa"] ? Number.parseInt(value.batting["pa"]?.toString()) : 0
 
         return ipStat + paStat
     }
@@ -45,17 +40,36 @@ export const getPlayTimeValueForYear = (player: Player, year: number): number =>
     return 0
 }
 
-let currentStats: PlayerStats | undefined
+const enhanceStats = (playerStatistics: PlayerStats): PlayerStats => {
+    for (const stats of Object.values(playerStatistics)) {
+        if (stats.batting && stats.batting["g"] === undefined) {
+            if (stats.fielding && stats.fielding["g"]) {
+                stats.batting.g = stats.fielding["g"]
+            }
+        }
+
+        if (stats.pitching && stats.pitching["g"] === undefined && stats.pitching["app"]) {
+            stats.pitching["g"] = stats.pitching["app"]
+        }
+
+        if (stats.batting && stats.batting["pa"] === undefined) {
+            stats.batting.pa =
+                Number.parseInt(stats.batting?.["ab"]?.toString() || "0") +
+                Number.parseInt(stats.batting?.["sf"]?.toString() || "0") +
+                Number.parseInt(stats.batting?.["sh"]?.toString() || "0") +
+                Number.parseInt(stats.batting?.["bb"]?.toString() || "0") +
+                Number.parseInt(stats.batting?.["sf"]?.toString() || "0")
+        }
+    }
+
+    return playerStatistics
+}
 
 export const getPlayerWithStats = async (name: string): Promise<Player | undefined> => {
-    const player = getPlayer(name)
+    const player = await getPlayer(name)
 
     if (!player) {
         return
-    }
-
-    if (!currentStats) {
-        currentStats = (await fetchApi("bbl_2023_stats.json")) as { [key: string]: PlayerStats }
     }
 
     const playerStats = player?.stats
@@ -65,37 +79,17 @@ export const getPlayerWithStats = async (name: string): Promise<Player | undefin
         return
     }
 
-    const currentPlayerStats: any = currentStats[name]
-
-    if (currentPlayerStats) {
-        if (currentPlayerStats[CURRENT_YEAR] && !currentPlayerStats?.[CURRENT_YEAR]?.batting?.["PA"]) {
-            const yearValue = currentPlayerStats[CURRENT_YEAR]?.batting
-
-            if (yearValue) {
-                yearValue["PA"] =
-                    Number.parseInt(currentPlayerStats?.[CURRENT_YEAR]?.batting?.["AB"]?.toString() || "0") +
-                    Number.parseInt(currentPlayerStats?.[CURRENT_YEAR]?.batting?.["SF"]?.toString() || "0") +
-                    Number.parseInt(currentPlayerStats?.[CURRENT_YEAR]?.batting?.["SH"]?.toString() || "0") +
-                    Number.parseInt(currentPlayerStats?.[CURRENT_YEAR]?.batting?.["BB"]?.toString() || "0") +
-                    Number.parseInt(currentPlayerStats?.[CURRENT_YEAR]?.batting?.["SF"]?.toString() || "0")
-            }
-        }
-
-        player.stats = {
-            ...(playerStats || {}),
-            ...currentPlayerStats,
-        }
-    }
+    player.stats = playerStats ? enhanceStats(playerStats) : {}
 
     return player
 }
 
-export const getPlayer = (name: string): Player | undefined => {
+const getPlayer = async (name: string): Promise<Player | undefined> => {
     if (playerCache[name]) {
         return playerCache[name]
     }
 
-    const playerStats = allStats[name]
+    const playerStats = await StatisticsRepository.findByLeagueAndActivePlayerName("bbl", name)
     const playerData = playerDataByName[name]
 
     if (!playerData) {
@@ -122,21 +116,6 @@ export const getPlayer = (name: string): Player | undefined => {
     playerCache[name] = player
 
     return player
-}
-
-export const getAllActivePlayers = (): Player[] => {
-    const names = Object.keys(playerDataByName)
-    const players: Player[] = []
-
-    for (const name of names) {
-        const player = getPlayer(name)
-
-        if (player) {
-            players.push(player)
-        }
-    }
-
-    return players.filter((player) => player.active !== false)
 }
 
 export const getAllActivePlayersWithStats = async (): Promise<Player[]> => {

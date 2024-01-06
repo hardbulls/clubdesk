@@ -1,5 +1,6 @@
 import type { League } from "../model/League"
 import LEAGUES from "../../config/leagues.json"
+import { NotFoundError } from "../exception/not-found-error"
 
 export class LeagueRepository {
     public static findAll(): League[] {
@@ -10,7 +11,7 @@ export class LeagueRepository {
         const league = this.findAll().find((league) => (league.id = id))
 
         if (!league) {
-            throw new Error(`League ${id} not found.`)
+            throw new NotFoundError("League", id)
         }
 
         return league
