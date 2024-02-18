@@ -23,30 +23,30 @@ function DOMparseChildren(children: Array<HTMLElement | string>) {
 }
 
 const booleanAttributes = [
-   'allowfullscreen',
-   'async',
-   'autofocus',
-   'autoplay',
-   'checked',
-   'controls',
-   'default',
-   'defer',
-   'disabled',
-   'formnovalidate',
-   'inert',
-   'ismap',
-   'itemscope',
-   'loop',
-   'multiple',
-   'muted',
-   'nomodule',
-   'novalidate',
-   'open',
-   'playsinline',
-   'readonly',
-   'required',
-   'reversed',
-   'selected',
+    'allowfullscreen',
+    'async',
+    'autofocus',
+    'autoplay',
+    'checked',
+    'controls',
+    'default',
+    'defer',
+    'disabled',
+    'formnovalidate',
+    'inert',
+    'ismap',
+    'itemscope',
+    'loop',
+    'multiple',
+    'muted',
+    'nomodule',
+    'novalidate',
+    'open',
+    'playsinline',
+    'readonly',
+    'required',
+    'reversed',
+    'selected',
 ]
 
 /**
@@ -55,7 +55,9 @@ const booleanAttributes = [
  * 2. We apply all properties from JSX to this DOM node
  * 3. If available, we append all children.
  */
-function DOMparseNode(element: string, properties: { [key: string]: string }, children: Array<HTMLElement | string>): HTMLElement {
+function DOMparseNode(element: string, properties: {
+    [key: string]: string
+}, children: Array<HTMLElement | string>): HTMLElement {
     const el = document.createElement(element) as HTMLElement;
 
     Object.keys(nonNull(properties)).forEach(key => {
@@ -64,7 +66,10 @@ function DOMparseNode(element: string, properties: { [key: string]: string }, ch
         if (booleanAttributes.includes(key.toLowerCase())) {
             el.setAttribute(key.toLowerCase(), key.toLowerCase());
         } else if (value) {
-            if (key.startsWith("on") && key.toLowerCase() in window && typeof value === 'function') {
+
+            if (key === 'title') {
+                el.setAttribute('title', value.replace('\\n', '\\a'))
+            } else if (key.startsWith("on") && key.toLowerCase() in window && typeof value === 'function') {
                 el.addEventListener(key.toLowerCase().substring(2, key.length), value);
             } else if (key === 'className') {
                 el.className = value.trim()
@@ -102,7 +107,7 @@ function DOMparseNode(element: string, properties: { [key: string]: string }, ch
 export function DOMcreateElement(
     // eslint-disable-next-line
     element: ((props: any, ...children: Array<HTMLElement | string>) => HTMLElement) | string,
-    properties: { [key: string]: string }, ...children: Array<HTMLElement | string>): HTMLElement  {
+    properties: { [key: string]: string }, ...children: Array<HTMLElement | string>): HTMLElement {
     if (typeof element === 'function') {
         return element({
             ...nonNull(properties),

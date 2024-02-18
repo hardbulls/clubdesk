@@ -4,6 +4,7 @@ div.hardbulls-player-container {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 div.hardbulls-player-card {
     padding: 15px;
     margin: 15px;
@@ -60,21 +61,33 @@ div.hardbulls-player-card-statistics {
     color: var(--color-light-gray);
 }
 
-.hardbulls-player-card-icons {
+.hardbulls-player-card-top-left {
     position: absolute;
-
     left: 15px;
-    bottom: 0;
+    top: 0;
 }
+
 .hardbulls-player-card-icons > div
 {
     font-weight: lighter;
     font-size: 32px;
 }
 
+.hardbulls-player-card-icons {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+}
+
+
+div.hardbulls-player-card-gold svg {
+    color: #efc55a;
+}
+
 div.hardbulls-player-card-cooperation {
     color: var(--color-light-blue);
 }
+
 
 div.hardbulls-player-card-import {
     color: var(--color-light-green);

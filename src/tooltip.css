@@ -4,8 +4,9 @@
 
 .has-tooltip::before {
     content: attr(title);
+    white-space: pre-wrap;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     position: absolute;
     bottom: 50%;
     background: var(--text-color);
@@ -13,12 +14,12 @@
     padding: 0 6px;
     border-radius: 5px;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.4s;
     overflow: hidden;
     font-size: var(--font-size-normal);
     pointer-events: none;
     width: max-content;
-    max-width: 200px;
+    max-width: 350px;
     z-index: 1;
 }
 

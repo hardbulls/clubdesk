@@ -18,6 +18,7 @@
     "yearOfBirth": 1983,
     "hits": "S",
     "throws": "R",
+    "active": false,
     "image": "Clayton Carson.png",
     "nationality": "us"
   },
@@ -293,6 +294,7 @@
     "yearOfBirth": 1997,
     "number": 32,
     "isImport": true,
+    "active": false,
     "positions": [
       "Pitcher",
       "Outfield"
@@ -307,6 +309,7 @@
     "isImport": true,
     "image": "Jackson Murphy.png",
     "yearOfBirth": 1998,
+    "active": false,
     "positions": [
       "Catcher",
       "1st. Base"
@@ -326,6 +329,43 @@
     ]
   },
   {
+    "name": "Lukas Bickel",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "at",
+    "number": 39,
+    "yearOfBirth": 1998,
+    "isImport": true,
+    "positions": [
+      "Pitcher",
+      "1st. Base"
+    ]
+  },
+  {
+    "name": "Lucas Traut",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "de",
+    "number": 45,
+    "yearOfBirth": 1998,
+    "isImport": true,
+    "positions": [
+      "Utility"
+    ]
+  },
+  {
+    "name": "David Brandt",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "us",
+    "number": 22,
+    "yearOfBirth": 1990,
+    "isImport": true,
+    "positions": [
+      "Utility"
+    ]
+  },
+  {
     "name": "Moritz Widemschek",
     "hits":"R",
     "throws": "R",
@@ -334,6 +374,7 @@
     "yearOfBirth": 1997,
     "image": "Moritz Widemschek.png",
     "number": 55,
+    "active": false,
     "positions": [
       "Pitcher",
       "2nd. Base",
@@ -346,6 +387,7 @@
     "throws": "R",
     "yearOfBirth": 1979,
     "nationality": "ca",
+    "active": false,
     "number": 33,
     "positions": [
       "Utility",

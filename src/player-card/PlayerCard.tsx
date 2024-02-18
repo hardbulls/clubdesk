@@ -12,6 +12,7 @@ import type {Modal} from "../create-modal";
 import type {Player} from "../model/Player";
 import {CooperationIcon} from "./CooparationIcon";
 import {ImportIcon} from "./ImportIcon";
+import {AwardsSection} from "./AwardSection";
 
 const playerImageMapping = loadFiles(
     require.context("../../config/images/players/?as=webp&width=220&height=220", false, /\.png$/)
@@ -34,6 +35,9 @@ export const PlayerCard = ({player, modal}: Props): JSX.Element => {
             {player.isCoach ?
                 <CoachCardContent name={name}/> :
                 <PlayerCardContent name={name} positions={player.positions} hits={player.hits} throws={player.throws}/>}
+            <div className="hardbulls-player-card-top-left">
+                {player.awards && <AwardsSection awards={player.awards}/> }
+            </div>
             <div className="hardbulls-player-card-icons">
                 {player.isImport && <ImportIcon/>}
                 {player.cooperationPlayer && <CooperationIcon value={player.cooperationPlayer}/>}
@@ -41,7 +45,7 @@ export const PlayerCard = ({player, modal}: Props): JSX.Element => {
             </div>
             <div className="hardbulls-player-card-footer">
                 {player.nationality && <CountryFlag code={player.nationality}/>}
-                {player.number && <div className="hardbulls-player-card-number">{player.number}</div> }
+                {player.number && <div className="hardbulls-player-card-number">{player.number}</div>}
             </div>
         </div>
     )

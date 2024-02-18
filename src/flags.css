@@ -13,6 +13,11 @@
     background: url(./assets/flags/ca.svg) 0 0/contain no-repeat;
 }
 
+.hb-flag.flag-de {
+    background: url(./assets/flags/de.svg) 0 0/contain no-repeat;
+}
+
+
 .hb-flag.flag-nl {
     background: url(./assets/flags/nl.svg) 0 0/contain no-repeat;
 }
