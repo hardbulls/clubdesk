@@ -39,7 +39,7 @@ export const StandingsTableComponent = ({standing}: Props) => {
                             </td>
                             <td>{row.wins || '0'}</td>
                             <td>{row.loses || '0'}</td>
-                            <td>{row.winsPercentage.toFixed(3)}</td>
+                            <td>{row.winsPercentage?.toFixed(3) || '0.000'}</td>
                         </tr>
                     );
                 })}

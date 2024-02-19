@@ -6,11 +6,11 @@ import {API_BASE_URL} from "../config";
 import {GamesRepository} from "../repository/games-repository";
 import {GameCardComponent} from "../game-card-component/game-card-component";
 import {
-    CALENDAR_IMPORT, GAME_SCHEDULE, SEASON, SELECT_SEASON,
+    CALENDAR_IMPORT, GAME_SCHEDULE, SEASON, SELECT_SEASON, STANDINGS_EAST,
     STANDINGS_FINAL,
-    STANDINGS_GROUP, STANDINGS_HEADER,
+    STANDINGS_GROUP, STANDINGS_HEADER, STANDINGS_MIDDLE,
     STANDINGS_PLAYOFFS,
-    STANDINGS_REGULAR, STANDINGS_UNKNOWN
+    STANDINGS_REGULAR, STANDINGS_UNKNOWN, STANDINGS_WEST
 } from "../translations";
 import {TabsComponent} from "../tabs-component/tabs-component";
 import {StandingsRepository} from "../repository/standings-repository";
@@ -53,6 +53,18 @@ const getStandingsTitle = (standing: Standing) => {
         return `${STANDINGS_REGULAR}`
     }
 
+    if (standing.type === 'WEST') {
+        return `${STANDINGS_WEST}`
+    }
+
+    if (standing.type === 'EAST') {
+        return `${STANDINGS_EAST}`
+    }
+
+    if (standing.type === 'MIDDLE') {
+        return `${STANDINGS_MIDDLE}`
+    }
+
     return `${STANDINGS_UNKNOWN}`
 }
 
@@ -81,15 +93,15 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                             {
                                 league.seasons.length > 1 ?
                                     (<SelectComponent
-                                    selected={season}
-                                    onChange={(selectedSeason) => {
-                                        handleSeasonChange(Number.parseInt(selectedSeason), league, container)
-                                    }}
-                                    label={SELECT_SEASON}
-                                    options={league.seasons.map(leagueSeason => {
-                                            return {value: leagueSeason, label: leagueSeason}
-                                        }
-                                    )}/>) : (
+                                        selected={season}
+                                        onChange={(selectedSeason) => {
+                                            handleSeasonChange(Number.parseInt(selectedSeason), league, container)
+                                        }}
+                                        label={SELECT_SEASON}
+                                        options={league.seasons.map(leagueSeason => {
+                                                return {value: leagueSeason, label: leagueSeason}
+                                            }
+                                        )}/>) : (
                                         <span className={`${CN}-season`}>{SEASON} {season}</span>
                                     )
                             }

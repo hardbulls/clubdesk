@@ -126,5 +126,17 @@
     "abbreviation": "AA",
     "keywords": ["Attnang-Puchheim Athletics", "Attnang Athletics", "ASAK Athletics"],
     "logo": "logo_aa.png"
+  },
+  {
+    "name": "Centurions Wels",
+    "abbreviation": "CW",
+    "keywords": ["Centurions Wels", "Centurions"],
+    "logo": "logo_centurions.png"
+  },
+  {
+    "name": "Dirty Sox Graz",
+    "abbreviation": "DS",
+    "keywords": ["Dirty Sox", "Dirty Sox Graz"],
+    "logo": "logo_dirty-sox.png"
   }
 ]

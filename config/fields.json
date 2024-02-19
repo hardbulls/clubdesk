@@ -89,5 +89,12 @@
     "location": "Wels",
     "image": "wels.png",
     "keywords": ["Chickensfield, Wels", "Wels"]
+  },
+  {
+    "teams": ["Dirty Sox Graz"],
+    "venue": "Ballpark Graz",
+    "location": "Graz",
+    "image": "graz.png",
+    "keywords": ["Dirty Sox Graz", "Graz"]
   }
 ]

@@ -10,5 +10,5 @@ export type Standing = {
         winsPercentage: number
         gamesBehind?: number
     }>
-    type: "FINAL" | "GROUP_A" | "GROUP_B" | "GROUP_C" | "REGULAR" | "PLAYOFF" | "UNKNOWN"
+    type: "FINAL" | "GROUP_A" | "GROUP_B" | "GROUP_C" | "REGULAR" | "PLAYOFF" | "UNKNOWN" | "WEST" | "EAST" | "MIDDLE"
 }

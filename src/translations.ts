@@ -9,5 +9,8 @@ export const STANDINGS_REGULAR = "Reguläre Saison"
 export const STANDINGS_GROUP = "Gruppe"
 
 export const STANDINGS_UNKNOWN = "Stand"
+export const STANDINGS_WEST = "West"
+export const STANDINGS_EAST = "Ost"
+export const STANDINGS_MIDDLE = "Mitte"
 export const STANDINGS_HEADER = "Tabelle"
 export const GAME_SCHEDULE = "Spielplan"
