@@ -2,10 +2,6 @@
     padding: 0;
 }
 
-div.cd-block-content:has(table) {
-    overflow-x: auto;
-}
-
 a {
     white-space: nowrap;
 }
