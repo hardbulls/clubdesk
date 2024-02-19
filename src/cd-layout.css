@@ -11,5 +11,5 @@ a {
 }
 
 strong {
-    text-shadow: 0px 0px 0px currentColor;
+    text-shadow: 0 0 0 currentcolor;
 }

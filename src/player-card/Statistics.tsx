@@ -15,7 +15,7 @@ export const Statistics = ({name, modal}: Props): JSX.Element => {
 
     return (
         <div className="hardbulls-player-card-statistics">
-            <a className="has-tooltip" title="Statistik" onClick={handleClick} data-modal="hardbulls-statistics-modal" data-player={name}>
+            <a className="has-tooltip" data-tooltip="Statistik" onClick={handleClick} data-modal="hardbulls-statistics-modal" data-player={name}>
                 <span className="fas fa-chart-bar">
                 </span>
             </a>

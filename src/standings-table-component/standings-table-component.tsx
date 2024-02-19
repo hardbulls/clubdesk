@@ -17,11 +17,11 @@ export const StandingsTableComponent = ({standing}: Props) => {
             <table className={`${CN}-table`}>
                 <thead>
                 <tr>
-                    <th><abbr className="has-tooltip" title="Place">#</abbr></th>
+                    <th><abbr className="has-tooltip" data-tooltip="Place">#</abbr></th>
                     <th>Team</th>
-                    <th><abbr className="has-tooltip" title="Wins">W</abbr></th>
-                    <th><abbr className="has-tooltip" title="Losses">L</abbr></th>
-                    <th><abbr className="has-tooltip" title="Wins percentile">PCT</abbr></th>
+                    <th><abbr className="has-tooltip" data-tooltip="Wins">W</abbr></th>
+                    <th><abbr className="has-tooltip" data-tooltip="Losses">L</abbr></th>
+                    <th><abbr className="has-tooltip" data-tooltip="Wins percentile">PCT</abbr></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,7 +33,7 @@ export const StandingsTableComponent = ({standing}: Props) => {
                         <tr>
                             <td>{row.position}</td>
                             <td>
-                                    <span className="has-tooltip" title={row.team.name}>
+                                    <span className="has-tooltip" data-tooltip={row.team.name}>
                                         {logo}
                                     </span>
                             </td>

@@ -20,7 +20,7 @@ export const BestPitcherIcon = ({awards, type}: Props): JSX.Element => {
     }
 
     return (
-        <div className="has-tooltip" title={title}>
+        <div className="has-tooltip" data-tooltip={title}>
             <span className="icon-baseball-pitcher" style={{color: color}}/>
         </div>
     )

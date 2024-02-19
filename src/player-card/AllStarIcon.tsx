@@ -11,7 +11,7 @@ export const AllStarIcon = ({awards}: Props): JSX.Element => {
     }).join('\n')
 
     return (
-        <div className="has-tooltip" title={title}>
+        <div className="has-tooltip" data-tooltip={title}>
             <span className="icon-star" style={{color: "#ffe08c"}}/>
         </div>
     )

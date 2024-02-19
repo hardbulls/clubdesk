@@ -17,7 +17,7 @@ const TableHeader = ({headers}: { headers: StatisticProperty[] }) => {
             <th>Jahr</th>
             {headers.map(property => (
                 <th>
-                    <abbr className="has-tooltip" title={property.name}>{property.abbreviation.toUpperCase()}</abbr>
+                    <abbr className="has-tooltip" data-tooltip={property.name}>{property.abbreviation.toUpperCase()}</abbr>
                 </th>
             ))}
         </tr>
