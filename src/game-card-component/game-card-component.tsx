@@ -19,7 +19,7 @@ interface Props {
 
 export const GameCardComponent = ({game}: Props): JSX.Element => {
     const CN = "hb-game-card-component";
-    const image = game.venue?.image ? fieldImageMapping[`./${game.venue.image}`] : undefined;
+    const image = game.venue?.image ? fieldImageMapping[`./${game.venue.image}`] : fieldImageMapping[`./unknown.png`];
 
     const now = new Date()
 
@@ -76,11 +76,11 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
             <div className={`${CN}-date ${game.status === 'canceled' ? `${CN}-date-canceled` : ''}`}>
                 {dateTimeFormatter.format(game.date)}
             </div>
-            {game.venue &&
+            {game.venue ?
                 <div className={`${CN}-location`}>
                     <GoogleMapsLink
                         venue={game.venue.venue ? `${game.venue.venue}, ${game.venue.location}` : `${game.venue.location}`}/>
-                </div>
+                </div> : <div className={`${CN}-location`}>&nbsp;</div>
             }
         </div>
     )

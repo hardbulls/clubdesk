@@ -3,10 +3,6 @@
     "fullName": "Baseball Bundesliga",
     "name": "BBL",
     "id": "bbl",
-    "table": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/standings",
-    "battingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/batting",
-    "pitchingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/pitching",
-    "fieldingStats": "https://www.baseballsoftball.at/de/events/baseball-bundesliga-2023/stats/general/team/24492/all/fielding",
     "isActive": true,
     "seasons": [2024, 2023, 2022, 2021]
   },
@@ -28,22 +24,22 @@
     "fullName": "Landesliga Vorarlberg",
     "name": "LLV",
     "id": "llv",
-    "isActive": false,
-    "seasons": [2023]
+    "isActive": true,
+    "seasons": [2023, 2024]
   },
   {
     "fullName": "Jugendliga Vorarlberg U16",
     "name": "U16",
     "id": "u16",
     "isActive": false,
-    "seasons": [2023]
+    "seasons": [2023, 2024]
   },
   {
     "fullName": "Ponyliga Vorarlberg U14",
     "name": "U14",
     "id": "u14",
-    "isActive": false,
-    "seasons": [2023]
+    "isActive": true,
+    "seasons": [2023, 2024]
   },
   {
     "fullName": "Schülerliga Vorarlberg U13",
@@ -53,24 +49,31 @@
     "seasons": [2023]
   },
   {
+    "fullName": "Schülerliga Vorarlberg U12",
+    "name": "U12",
+    "id": "u12",
+    "isActive": true,
+    "seasons": [2024]
+  },
+  {
     "fullName": "Schülerliga Vorarlberg U10",
     "name": "U10",
     "id": "u10",
-    "isActive": false,
-    "seasons": [2023]
+    "isActive": true,
+    "seasons": [2023, 2024]
   },
   {
     "fullName": "Beeball Vorarlberg U8",
     "name": "U8",
     "id": "u8",
-    "isActive": false,
-    "seasons": [2023]
+    "isActive": true,
+    "seasons": [2023, 2024]
   },
   {
     "fullName": "Vorarlberger Slowpitch League",
     "name": "VSL",
     "id": "vsl",
-    "isActive": false,
-    "seasons": [2023]
+    "isActive": true,
+    "seasons": [2023, 2024]
   }
 ]

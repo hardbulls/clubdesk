@@ -98,7 +98,7 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                             handleSeasonChange(Number.parseInt(selectedSeason), league, container)
                                         }}
                                         label={SELECT_SEASON}
-                                        options={league.seasons.map(leagueSeason => {
+                                        options={league.seasons.sort().reverse().map(leagueSeason => {
                                                 return {value: leagueSeason, label: leagueSeason}
                                             }
                                         )}/>) : (

@@ -63,11 +63,11 @@
     "keywords": ["Schwaz", "Tigers"]
   },
   {
-    "teams": ["Feldkirch Cardinals"],
+    "teams": ["Feldkirch Cardinals", "Feldkirch Angry Balls"],
     "venue": "Ballpark Feldkirch",
     "location": "Feldkirch",
     "image": "feldkirch.png",
-    "keywords": ["Feldkirch", "Cardinals"]
+    "keywords": ["Feldkirch", "Cardinals", "Ballpark Feldkirch, Feldkirch"]
   },
   {
     "teams": ["Stockerau Cubs"],
