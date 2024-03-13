@@ -6,7 +6,7 @@ import {API_BASE_URL} from "../config";
 import {GamesRepository} from "../repository/games-repository";
 import {GameCardComponent} from "../game-card-component/game-card-component";
 import {
-    CALENDAR_IMPORT, GAME_SCHEDULE, SEASON, SELECT_SEASON, STANDINGS_EAST,
+    CALENDAR_IMPORT, GAME_SCHEDULE, OFFICIAL_SCHEDULE, SEASON, SELECT_SEASON, STANDINGS_EAST,
     STANDINGS_FINAL,
     STANDINGS_GROUP, STANDINGS_HEADER, STANDINGS_MIDDLE,
     STANDINGS_PLAYOFFS,
@@ -107,10 +107,20 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                             }
                             {
                                 season === getCurrentSeason() && hasFutureGames &&
-                                <div>
-                                    <span className="fa fa-calendar-alt"></span>&nbsp;
-                                    <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
-                                </div>
+                                (<div>
+                                    <div>
+                                        <span className="fa fa-calendar-alt"></span>&nbsp;
+                                        <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
+                                    </div>
+                                    {
+                                        league.url && (
+                                            <div>
+                                                <span className="fa fa-external-link-alt"></span>&nbsp;
+                                                <a target="_blank" href={league.url}>{OFFICIAL_SCHEDULE}</a>
+                                            </div>
+                                        )
+                                    }
+                                </div>)
                             }
                             {
                                 LogoMapping[`./${league.id}.svg`] && (

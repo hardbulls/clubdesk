@@ -1,5 +1,7 @@
 export const GAME_CANCELED = "Abgesagt"
 export const CALENDAR_IMPORT = "Termine im Kalender importieren"
+export const OFFICIAL_SCHEDULE = "Spielplan auf baseballsoftball.at"
+
 export const SELECT_SEASON = "Saison auswählen"
 export const SEASON = "Saison"
 
