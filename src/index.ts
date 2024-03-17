@@ -63,7 +63,7 @@ const addBannerVideo = () => {
 }
 
 const addBullsLogo = () => {
-    if (window.location.pathname !== "/") {
+    if (!isRootPage()) {
         return
     }
 
@@ -100,8 +100,12 @@ const addBullsLogo = () => {
     }
 }
 
+const isRootPage = () => {
+    return window.location.pathname === "/" && window.location.search === ""
+}
+
 const applyTheme = () => {
-    if (window.location.pathname !== "/") {
+    if (!isRootPage()) {
         return
     }
 
@@ -117,6 +121,7 @@ const applyTheme = () => {
             document.querySelectorAll("table"),
             document.querySelectorAll(".cd-totop-button"),
             document.querySelectorAll(".bulls-club-name"),
+            document.querySelectorAll(".cd-tile-v-main-heading"),
         ].filter(Boolean)
     }
     const now = new Date()
