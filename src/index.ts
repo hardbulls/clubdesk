@@ -63,11 +63,16 @@ const addBannerVideo = () => {
 }
 
 const addBullsLogo = () => {
+    if (window.location.pathname !== "/") {
+        return
+    }
+
     const container = document.querySelector(".bulls-banner-logo") as HTMLImageElement
 
     if (container) {
         const date = new Date()
         const img = new Image()
+        const stPatricksDay = new Date(date.getFullYear(), 2, 17)
 
         if (date.getMonth() === 3 && date.getDate() > 6 && date.getDate() < 11) {
             if (bullLogos["./easter_bull.png"]) {
@@ -77,6 +82,10 @@ const addBullsLogo = () => {
             if (bullLogos["./santa_bull.svg"]) {
                 img.src = bullLogos["./santa_bull.svg"]
                 img.style.filter = "drop-shadow(0 2px 3px #fff)"
+            }
+        } else if (date.getDate() === stPatricksDay.getDate() && date.getMonth() === stPatricksDay.getMonth()) {
+            if (bullLogos["./st_patrick_bull.svg"]) {
+                img.src = bullLogos["./st_patrick_bull.svg"]
             }
         } else {
             if (bullLogos["./normal_bull_white.png"]) {
@@ -92,20 +101,24 @@ const addBullsLogo = () => {
 }
 
 const applyTheme = () => {
+    if (window.location.pathname !== "/") {
+        return
+    }
+
     const getRecolorElements = () => {
         return [
             document.querySelectorAll(".cd-club-logo"),
-            document.querySelectorAll(".hardbulls-hero-banner"),
+            document.querySelectorAll("#hardbulls-banner-video"),
             document.querySelectorAll("h1"),
             document.querySelectorAll(".hardbulls-team-logo"),
-            document.querySelectorAll("a:not(:has(img))"),
-            document.querySelectorAll(".cd-footer"),
+            document.querySelectorAll("a:not(:has(img, span))"),
+            document.querySelectorAll(".cd-backgroundPane"),
+            document.querySelectorAll("#section_1000000"),
             document.querySelectorAll("table"),
             document.querySelectorAll(".cd-totop-button"),
             document.querySelectorAll(".bulls-club-name"),
         ].filter(Boolean)
     }
-    // const now = new Date()
     const now = new Date()
 
     const getMothersDay = () => {
