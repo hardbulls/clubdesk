@@ -83,5 +83,13 @@
     "isActive": true,
     "url": "https://www.baseballsoftball.at/de/events/vorarlberger-slowpitch-league-2024/schedule-and-results",
     "seasons": [2023, 2024]
+  },
+  {
+    "fullName": "2. Softball Bundesliga",
+    "name": "2. SBL",
+    "id": "2-sbl",
+    "isActive": true,
+    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2024/schedule-and-results",
+    "seasons": [2024]
   }
 ]

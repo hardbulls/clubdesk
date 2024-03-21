@@ -19,7 +19,6 @@
     "hits": "S",
     "throws": "R",
     "active": false,
-    "image": "Clayton Carson.png",
     "nationality": "us"
   },
   {
@@ -307,7 +306,6 @@
     "nationality": "us",
     "number": 20,
     "isImport": true,
-    "image": "Jackson Murphy.png",
     "yearOfBirth": 1998,
     "active": false,
     "positions": [
@@ -372,7 +370,6 @@
     "nationality": "at",
     "cooperationPlayer": "Feldkirch Cardinals",
     "yearOfBirth": 1997,
-    "image": "Moritz Widemschek.png",
     "number": 55,
     "active": false,
     "positions": [

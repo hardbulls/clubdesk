@@ -7,40 +7,28 @@ export const getFields = (): Field[] => {
 
 const fieldCache: { [key: string]: Field } = {}
 
-export const findField = (team: string, search: string): Field | undefined => {
+export const findField = (search: string): Field | undefined => {
     let cachedField = fieldCache[search]
 
     if (cachedField) {
         return cachedField
     }
 
+    if (search.trim() === ",") {
+        return undefined
+    }
+
     cachedField = getFields().find((field) => {
-        if (
-            field.teams.includes(team) &&
-            field.venue &&
-            (field.venue.includes(search) || search.includes(field.venue))
-        ) {
-            return true
+        if (search === "Ducksfield, Wiener Neustadt") {
+            console.log(search, field.keywords)
         }
 
-        if (field.teams.includes(team) && (field.location.includes(search) || search.includes(field.location))) {
-            return true
-        }
-
-        if (field.teams.includes(team) && field.keywords.includes(search)) {
-            return true
-        }
-
-        if (field.venue && (field.venue.includes(search) || search.includes(field.venue))) {
-            return true
-        }
-
-        if (field.location.includes(search) || search.includes(field.location)) {
-            return true
-        }
-
-        return false
+        return field.keywords.includes(search)
     })
+
+    if (!cachedField) {
+        throw new Error(`Cannot find field ${search}`)
+    }
 
     return cachedField
 }

@@ -11,42 +11,42 @@
     "venue": "Hoppersfield",
     "location": "Traiskirchen",
     "image": "hoppersfield.jpg",
-    "keywords": ["Traiskrichen"]
+    "keywords": ["Hoppersfield, Traiskirchen"]
   },
   {
     "teams": ["Vienna Metrostars"],
     "venue": "Ballpark Freudenau",
     "location": "Wien",
     "image": "freudenau.jpg",
-    "keywords": ["Freudenau", "Freudenau, Vienna"]
+    "keywords": ["Freudenau", "Freudenau, Vienna", "Ballpark Freudenau, Vienna"]
   },
   {
     "teams": ["Diving Ducks"],
     "venue": "Ducksfield",
     "location": "Wiener Neustadt",
     "image": "ducksfield.jpg",
-    "keywords": ["Wr. Neustadt"]
+    "keywords": ["Ducksfield, Wiener Neustadt", "Ducksfield", "Wr. Neustadt", "Wiener Neustadt"]
   },
   {
     "teams": ["Dornbirn Indians"],
     "venue": "Sportanlage Rohrbach",
     "location": "Dornbirn",
     "image": "rohrbach.png",
-    "keywords": ["Rohrbach", "Dornbirn"]
+    "keywords": ["Rohrbach", "Dornbirn", "Sportanlage Rohrbach, Dornbirn"]
   },
   {
     "teams": ["Blue Bats"],
     "venue": "Batsfield",
     "location": "Schwechat",
     "image": "batsfield.png",
-    "keywords": ["Schwechat"]
+    "keywords": ["Batsfield, Schwechat"]
   },
   {
     "teams": ["Vienna Wanderers"],
     "venue": "Ballpark Spenadlwiese",
     "location": "Wien",
     "image": "spenadlwiese.png",
-    "keywords": ["Spenadlwiese", "Vienna", "Wien"]
+    "keywords": ["Spenadlwiese", "Ballpark Spenadlwiese, Vienna"]
   },
   {
     "teams": ["Kufstein Vikings"],
@@ -60,7 +60,7 @@
     "venue": "Tigersfield",
     "location": "Schwaz",
     "image": "schwaz.jpg",
-    "keywords": ["Schwaz", "Tigers"]
+    "keywords": ["Schwaz", "Tigersfield, Schwaz"]
   },
   {
     "teams": ["Feldkirch Cardinals", "Feldkirch Angry Balls"],
@@ -81,7 +81,7 @@
     "venue": "Athletics Ballpark",
     "location": "Attnang-Puchheim",
     "image": "attnang.png",
-    "keywords": ["Attnang", "Athletics", "Attnang-Puchheim Athletics"]
+    "keywords": ["Attnang", "Athletics", "Attnang-Puchheim Athletics", "Athletics Ballpark, Attnang-Puchheim"]
   },
   {
     "teams": ["Centurions Wels"],
@@ -96,5 +96,12 @@
     "location": "Graz",
     "image": "graz.png",
     "keywords": ["Dirty Sox Graz", "Graz"]
+  },
+  {
+    "teams": ["Pee Wees St. Pölten"],
+    "venue": "Union Sportanlage",
+    "location": "St. Pölten",
+    "image": "st_poelten.png",
+    "keywords": ["Union Sportanlage St. Pölten", "St. Pölten"]
   }
 ]

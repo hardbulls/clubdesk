@@ -7,6 +7,26 @@
     "logo": "logo_di.png+logo_kv.png"
   },
   {
+    "name": "SG Indians/Bulls",
+    "abbreviation": "DI/HB",
+    "keywords": ["SG Indians/Bulls", "SG Indians - Bulls"],
+    "isCooperation": true,
+    "logo": "logo_di.png+logo_hb.png"
+  },
+  {
+    "name": "SG Crazy Chicklets/Metrostars",
+    "abbreviation": "DI/HB",
+    "keywords": ["SG Crazy Chicklets/Metrostars", "SG Crazy Chicklets - Metrostars"],
+    "isCooperation": true,
+    "logo": "logo_dd.png+logo_vm.png"
+  },
+  {
+    "name": "Pee Wees St. Pölten",
+    "abbreviation": "PW",
+    "keywords": ["Pee Wees St. Pölten"],
+    "logo": "logo_softball_pw.png"
+  },
+  {
     "name": "Hard Bulls",
     "abbreviation": "HB",
     "keywords": ["Hard Bulls"],
@@ -73,6 +93,12 @@
     "logo": "logo_fc.png"
   },
   {
+    "name": "Feldkirch Falcons",
+    "abbreviation": "FC",
+    "keywords": ["Feldkirch Falcons"],
+    "logo": "logo_fc.png"
+  },
+  {
     "name": "Feldkirch Angry Balls",
     "abbreviation": "FC",
     "keywords": ["Feldkirch Angry Balls"],
@@ -94,6 +120,12 @@
     "name": "Vienna Wanderers",
     "abbreviation": "VW",
     "keywords": ["Vienna Wanderers"],
+    "logo": "logo_vw.png"
+  },
+  {
+    "name": "Vienna Wanderers 2",
+    "abbreviation": "VW",
+    "keywords": ["Vienna Wanderers 2"],
     "logo": "logo_vw.png"
   },
   {
@@ -124,7 +156,7 @@
   {
     "name": "Attnang-Puchheim Athletics",
     "abbreviation": "AA",
-    "keywords": ["Attnang-Puchheim Athletics", "Attnang Athletics", "ASAK Athletics"],
+    "keywords": ["Attnang-Puchheim Athletics", "ASAK Athletics", "Attnang Athletics", "ASAK Athletics"],
     "logo": "logo_aa.png"
   },
   {

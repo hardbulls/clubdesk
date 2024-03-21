@@ -29,7 +29,7 @@ export class GamesRepository {
                 awayScore: game.awayScore,
                 homeScore: game.homeScore,
                 status: game.status,
-                venue: findField(game.home, game.venue),
+                venue: findField(game.venue),
             }
         })
     }
@@ -45,7 +45,7 @@ export class GamesRepository {
                 awayScore: game.awayScore,
                 homeScore: game.homeScore,
                 status: game.status,
-                venue: findField(game.home, game.venue),
+                venue: findField(game.venue),
             }
         })
     }
