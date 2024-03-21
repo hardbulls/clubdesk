@@ -13,7 +13,6 @@ import "./Glyphter.css"
 import { PlayerCardsContainer } from "./PlayerCardsContainer"
 import { appendToElement } from "./util/html"
 import { loadFiles } from "./util/files"
-import { optimizeSponsorImages } from "./cd-extensions/optimize-sponsor-images"
 import { alwaysShowMenuOnDesktop } from "./cd-extensions/always-show-menu-on-desktop"
 import { addNameToHeader } from "./cd-extensions/add-name-to-header"
 import { shuffleSponsors } from "./cd-extensions/shuffle-sponsors"
@@ -194,7 +193,6 @@ export const theBulls = () => {
     redirectAlternatePage()
     replaceAlternateLinks()
     replaceLogoLink()
-    optimizeSponsorImages()
     alwaysShowMenuOnDesktop()
     addNameToHeader()
     shuffleSponsors()
