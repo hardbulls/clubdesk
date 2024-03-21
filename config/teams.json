@@ -170,5 +170,17 @@
     "abbreviation": "DS",
     "keywords": ["Dirty Sox", "Dirty Sox Graz"],
     "logo": "logo_dirty-sox.png"
+  },
+  {
+    "name": "Wil Pirates",
+    "abbreviation": "WP",
+    "keywords": ["Wil Pirates", "Wil Devils"],
+    "logo": "logo_ch_pirates.png"
+  },
+  {
+    "name": "Baldham Boars",
+    "abbreviation": "BB",
+    "keywords": ["Baldham Boars"],
+    "logo": "logo_de_boars.png"
   }
 ]

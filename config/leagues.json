@@ -1,5 +1,12 @@
 [
   {
+    "fullName": "Preseason",
+    "name": "Preseason",
+    "id": "preseason",
+    "isActive": true,
+    "seasons": [2024]
+  },
+  {
     "fullName": "Baseball Bundesliga",
     "name": "BBL",
     "id": "bbl",

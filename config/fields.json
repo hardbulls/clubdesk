@@ -103,5 +103,12 @@
     "location": "St. Pölten",
     "image": "st_poelten.png",
     "keywords": ["Union Sportanlage St. Pölten", "St. Pölten"]
+  },
+  {
+    "teams": ["Baldham Boars"],
+    "venue": "Boars Ballpark",
+    "location": "Baldham",
+    "image": "boars_ballpark.png",
+    "keywords": ["Boars Ballpark, Baldham"]
   }
 ]
