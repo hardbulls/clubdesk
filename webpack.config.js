@@ -5,15 +5,19 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const useContentHash = false;
 
-
 module.exports = {
     mode: env,
-    entry: './src/index.ts',
-    devtool: env === 'production' ? undefined : 'inline-source-map',
+    entry: {
+        page: "./src/clubdesk/page.ts",
+        jquery: "./src/clubdesk/jquery.ts",
+        normalize: "./src/clubdesk/normalize.ts",
+    },
+    devtool: false,
     module: {
         rules: [
             {
@@ -89,6 +93,11 @@ module.exports = {
                     },
                 },
             }),
+            new CopyPlugin({
+                patterns: [
+                    { from: "src/clubdesk/page.mustache", to: "[name][ext]" },
+                ]
+            })
         ],
     },
     resolve: {
@@ -104,7 +113,6 @@ module.exports = {
     output: {
         filename: env === 'production' && useContentHash ? '[name].[contenthash].js' : '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        library: 'GodSave',
         clean: true,
     },
     performance: {
