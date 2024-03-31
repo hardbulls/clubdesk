@@ -27,6 +27,7 @@ import { replaceLogoLink } from "./cd-extensions/replace-logo-link"
 import { LeagueContainerComponent } from "./league-container-component/league-container-component"
 import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-games-component"
 import { redirectAlternatePage } from "./cd-extensions/redirect-alternate-page"
+import { getMothersDay, isEasterSunday, yesterday } from "./util/date"
 
 const bullLogos = loadFiles(
     require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg|svg)/)
@@ -73,7 +74,7 @@ const addBullsLogo = () => {
         const img = new Image()
         const stPatricksDay = new Date(date.getFullYear(), 2, 17)
 
-        if (date.getMonth() === 3 && date.getDate() > 6 && date.getDate() < 11) {
+        if (isEasterSunday(date) || isEasterSunday(yesterday())) {
             if (bullLogos["./easter_bull.png"]) {
                 img.src = bullLogos["./easter_bull.png"]
             }
@@ -125,22 +126,7 @@ const applyTheme = () => {
     }
     const now = new Date()
 
-    const getMothersDay = () => {
-        const mayFirst = new Date(now.getFullYear(), 4, 1)
-        const dayOfWeek = mayFirst.getDay()
-
-        let firstSunday
-        if (dayOfWeek == 0) {
-            firstSunday = mayFirst
-        } else {
-            firstSunday = new Date()
-            firstSunday.setDate(1 + (7 - dayOfWeek))
-        }
-
-        return new Date(now.getFullYear(), 4, firstSunday.getDate() + 7)
-    }
-
-    const mothersDay = getMothersDay()
+    const mothersDay = getMothersDay(now)
     const stPatricksDay = new Date(now.getFullYear(), 2, 17)
 
     if (
