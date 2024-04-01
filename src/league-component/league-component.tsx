@@ -134,7 +134,7 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                             <div className={`${CN}-standings`}>
                                 <h3>{STANDINGS_HEADER}</h3>
                                 {standings.length > 1 ? (
-                                        <TabsComponent tabs={standings.map(standing => {
+                                        <TabsComponent links={false} tabs={standings.map(standing => {
                                             return {
                                                 id: standing.type.toLowerCase(),
                                                 title: <TagComponent text={getStandingsTitle(standing)} size={'small'}/>,

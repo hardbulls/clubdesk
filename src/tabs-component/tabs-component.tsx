@@ -5,14 +5,16 @@ import {replaceElementChildren} from "../util/html";
 type Tab = {
     id: string,
     title: JSX.Element,
-    content: (() => JSX.Element)
+    content: (() => JSX.Element),
 }
 
 type Props = {
     tabs: Tab[]
+    activeTab?: string
+    links: boolean
 }
 
-export const TabsComponent = ({tabs}: Props) => {
+export const TabsComponent = ({tabs, activeTab, links}: Props) => {
     const componentId = (Math.random() + 1).toString(36).substring(7);
     const CN = "hb-tabs-component";
 
@@ -21,7 +23,7 @@ export const TabsComponent = ({tabs}: Props) => {
     }
 
     const loadedTabs: string[] = [];
-    const currentActive = tabs[0]?.id;
+    const currentActive = activeTab || tabs[0]?.id;
 
     const switchTab = (currentLink: HTMLElement, selectTabId: string, tab: Tab) => {
         const tabElements = document.querySelectorAll(`#${CN}-${componentId}-tab-content > .${CN}-tab-content`) as NodeListOf<HTMLElement>;
@@ -67,7 +69,15 @@ export const TabsComponent = ({tabs}: Props) => {
         linkElements.push(
             <span
                 className={`${CN}-tab-link ${tab.id === currentActive ? `active-tab` : `inactive-tab`}`}
-                onClick={(event) => switchTab(event.currentTarget, elementId, tab)}
+                onClick={(event) => {
+                    event.preventDefault();
+
+                    if (links) {
+                        window.location.hash = tab.id;
+                    }
+
+                    switchTab(event.currentTarget, elementId, tab)
+                }}
                 >{tab.title}</span>
         )
 

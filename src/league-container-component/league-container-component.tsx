@@ -18,9 +18,11 @@ export const LeagueContainerComponent = () => {
         replaceElement(container, component)
     }
 
+    const activeTab = window.location.hash.substring(1);
+
     return (
         <div className={CN}>
-            <TabsComponent tabs={leagues.map(league => {
+            <TabsComponent links={true} activeTab={activeTab} tabs={leagues.map(league => {
                 return {
                     id: league.id.toLowerCase(),
                     title: <TagComponent text={league.name} size={'large'}/>,

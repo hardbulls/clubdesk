@@ -19,10 +19,6 @@ export const findField = (search: string): Field | undefined => {
     }
 
     cachedField = getFields().find((field) => {
-        if (search === "Ducksfield, Wiener Neustadt") {
-            console.log(search, field.keywords)
-        }
-
         return field.keywords.includes(search)
     })
 

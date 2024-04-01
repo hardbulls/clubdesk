@@ -1,11 +1,5 @@
 [
-  {
-    "fullName": "Preseason",
-    "name": "Preseason",
-    "id": "preseason",
-    "isActive": true,
-    "seasons": [2024]
-  },
+
   {
     "fullName": "Baseball Bundesliga",
     "name": "BBL",
@@ -30,6 +24,14 @@
     "seasons": [2024, 2023]
   },
   {
+    "fullName": "2. Softball Bundesliga",
+    "name": "2. SBL",
+    "id": "2-sbl",
+    "isActive": true,
+    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2024/schedule-and-results",
+    "seasons": [2024]
+  },
+  {
     "fullName": "Landesliga Vorarlberg",
     "name": "LLV",
     "id": "llv",
@@ -38,10 +40,18 @@
     "seasons": [2023, 2024]
   },
   {
+    "fullName": "Vorarlberger Slowpitch League",
+    "name": "VSL",
+    "id": "vsl",
+    "isActive": true,
+    "url": "https://www.baseballsoftball.at/de/events/vorarlberger-slowpitch-league-2024/schedule-and-results",
+    "seasons": [2023, 2024]
+  },
+  {
     "fullName": "Jugendliga Vorarlberg U16",
     "name": "U16",
     "id": "u16",
-    "isActive": false,
+    "isActive": true,
     "seasons": [2023, 2024]
   },
   {
@@ -84,19 +94,10 @@
     "seasons": [2023, 2024]
   },
   {
-    "fullName": "Vorarlberger Slowpitch League",
-    "name": "VSL",
-    "id": "vsl",
+    "fullName": "Preseason",
+    "name": "Preseason",
+    "id": "preseason",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/vorarlberger-slowpitch-league-2024/schedule-and-results",
-    "seasons": [2023, 2024]
-  },
-  {
-    "fullName": "2. Softball Bundesliga",
-    "name": "2. SBL",
-    "id": "2-sbl",
-    "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2024/schedule-and-results",
     "seasons": [2024]
   }
 ]
