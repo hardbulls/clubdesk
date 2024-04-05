@@ -34,7 +34,11 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(png|jpg|jpeg|svg|gif)$/i,
+                test: /(config\/images\/.+\/.+\.(?:png|jpg|jpeg|svg|gif))$/i,
+                type: 'asset/resource'
+            },
+            {
+                test: /(src\/assets\/.+\/.+\.(?:png|jpg|jpeg|svg|gif))$/i,
                 type: 'asset/inline'
             },
             {
@@ -102,6 +106,7 @@ module.exports = {
             new HtmlWebpackPlugin({template: './public/index.html'})
         ],
     output: {
+        publicPath: env === 'production' ? 'https://static.hardbulls.com/' : undefined,
         filename: env === 'production' && useContentHash ? '[name].[contenthash].js' : '[name].js',
         path: path.resolve(__dirname, 'dist'),
         library: 'GodSave',

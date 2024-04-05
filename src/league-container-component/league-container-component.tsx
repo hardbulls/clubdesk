@@ -22,7 +22,7 @@ export const LeagueContainerComponent = () => {
 
     return (
         <div className={CN}>
-            <TabsComponent links={true} activeTab={activeTab} tabs={leagues.map(league => {
+            <TabsComponent links={false} activeTab={activeTab} tabs={leagues.map(league => {
                 return {
                     id: league.id.toLowerCase(),
                     title: <TagComponent text={league.name} size={'large'}/>,
