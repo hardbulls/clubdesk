@@ -4,7 +4,7 @@
     "nickname": "AB",
     "positions": [],
     "isCoach": true,
-    "image": "Anthony Bennett.png",
+    "image": "Anthony_Bennett.png",
     "nationality": "us"
   },
   {
@@ -110,7 +110,7 @@
     "throws": "R",
     "nationality": "at",
     "number": 6,
-    "image": "Jakob Gruber.png"
+    "image": "Jakob_Gruber.png"
   },
   {
     "name": "Pascal Campregher",
@@ -124,7 +124,7 @@
     "yearOfBirth": 2001,
     "hits": "R",
     "throws": "R",
-    "image": "Pascal Campregher.png",
+    "image": "Pascal_Campregher.png",
     "nationality": "at"
   },
   {
@@ -136,7 +136,7 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "image": "Patrick Kueng.png",
+    "image": "Patrick_Kueng.png",
     "yearOfBirth": 2001,
     "number": 5
   },
@@ -161,6 +161,7 @@
     ],
     "number": 10,
     "hits": "R",
+    "image": "Matthias Lutter.png",
     "yearOfBirth": 2005,
     "throws": "R",
     "nationality": "at"
@@ -177,7 +178,8 @@
     "throws": "R",
     "image": "Matthias Lutter.png",
     "yearOfBirth": 2003,
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Yanik Mäser",
@@ -190,7 +192,7 @@
     "hits": "S",
     "yearOfBirth": 2003,
     "throws": "R",
-    "image": "Yanik Maeser.png",
+    "image": "Yanik_Maeser.png",
     "nationality": "at"
   },
   {
@@ -202,7 +204,7 @@
     "number": 29,
     "hits": "R",
     "throws": "R",
-    "image": "Luca Maeser.png",
+    "image": "Luca_Maeser.png",
     "yearOfBirth": 2001,
     "nationality": "at"
   },
@@ -217,7 +219,8 @@
     "throws": "R",
     "yearOfBirth": 2000,
     "image": "Marvin Glassen.png",
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Jonas Zimmermann",
@@ -229,7 +232,7 @@
     "hits": "R",
     "throws": "R",
     "yearOfBirth": 2004,
-    "image": "Jonas Zimmermann.png",
+    "image": "Jonas_Zimmermann.png",
     "nationality": "at"
   },
   {
@@ -242,7 +245,7 @@
     "hits": "S",
     "throws": "R",
     "yearOfBirth": 1988,
-    "image": "Erwin Frias.png",
+    "image": "Erwin_Frias.png",
     "nationality": "do"
   },
   {
@@ -257,7 +260,7 @@
     "hits": "R",
     "throws": "R",
     "yearOfBirth": 1986,
-    "image": "Hubert Boehler.png",
+    "image": "Hubert_Boehler.png",
     "nationality": "at"
   },
   {
@@ -331,7 +334,8 @@
     "hits":"R",
     "throws": "R",
     "nationality": "at",
-    "number": 39,
+    "image": "Lukas_Bickel.png",
+    "number": 22,
     "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
@@ -344,7 +348,8 @@
     "hits":"R",
     "throws": "R",
     "nationality": "de",
-    "number": 45,
+    "number": 27,
+    "image": "Lucas_Traut.png",
     "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
@@ -352,11 +357,24 @@
     ]
   },
   {
+    "name": "Roman Guthrie",
+    "hits":"R",
+    "throws": "R",
+    "nationality": "ca",
+    "number": 3,
+    "yearOfBirth": 1998,
+    "isImport": true,
+    "positions": [
+      "Catcher"
+    ]
+  },
+  {
     "name": "David Brandt",
     "hits":"R",
     "throws": "R",
     "nationality": "us",
-    "number": 22,
+    "image": "David_Brandt.png",
+    "number": 11,
     "yearOfBirth": 1990,
     "isImport": true,
     "positions": [

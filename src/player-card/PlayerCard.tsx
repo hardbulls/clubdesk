@@ -15,7 +15,7 @@ import {ImportIcon} from "./ImportIcon";
 import {AwardsSection} from "./AwardSection";
 
 const playerImageMapping = loadFiles(
-    require.context("../../config/images/players/?as=webp&width=220&height=220", false, /\.png$/)
+    require.context("../../config/images/players/?as=webp&width=220&height=220", false, /\.(png|jpg)$/)
 )
 interface Props {
     player: Player,
@@ -25,12 +25,13 @@ interface Props {
 export const PlayerCard = ({player, modal}: Props): JSX.Element => {
     const name = player.name
     const imageName = player.image || "default.png"
-    const image = playerImageMapping[`./${imageName}`] || defaultPlayer
+    const playerImage = playerImageMapping[`./${imageName}`];
+    const image = playerImage || defaultPlayer
 
     return (
         <div className="hardbulls-player-card">
             <div className="hardbulls-player-card-image-container">
-                <img src={image} alt={name} width={220} height={220}/>
+                <img className={`${player.image && playerImage ? 'has-image' : ''}`} src={image} alt={name} width={220} height={220}/>
             </div>
             {player.isCoach ?
                 <CoachCardContent name={name}/> :
