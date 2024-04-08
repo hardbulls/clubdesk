@@ -1,29 +1,28 @@
-@import "cd-button.css";
-@import "cd-layout.css";
-@import "tooltip.css";
-@import "animations.css";
+@import url("cd-button.css");
+@import url("cd-layout.css");
+@import url("tooltip.css");
+@import url("animations.css");
 
 :root {
     --light-box-shadow: rgb(0 0 0 / 12%) 0px 0.125rem 0.25rem 0px;
     --heavy-box-shadow: rgb(0 0 0 / 42%) 0px 0.125rem 0.25rem 0px;
     --card-box-shadow: rgb(0 0 0 / 10%) 0px 0.08rem 0.1rem 0px;
-    --color-bulls-red: rgba(226, 5, 20, 1.0);
+    --color-bulls-red: rgb(226 5 20 / 100%);
     --color-warning: #ff9a00;
-    --color-bulls-dark-red: rgb(166, 0, 41);
-    --color-bulls-light-red: rgba(226, 5, 20, 0.3);
-    --color-bulls-very-light-red: rgba(226, 5, 20, 0.05);
-    --color-light-gray: rgba(204, 204, 204, 1.0);
-    --color-light-blue: rgb(110, 190, 217);
-    --color-light-green: rgb(117, 217, 110);
-    --color-very-light-gray: rgb(243, 243, 243);
+    --color-bulls-dark-red: rgb(166 0 41);
+    --color-bulls-light-red: rgb(226 5 20 / 30%);
+    --color-bulls-very-light-red: rgb(226 5 20 / 5%);
+    --color-light-gray: rgb(204 204 204 / 100%);
+    --color-light-blue: rgb(110 190 217);
+    --color-light-green: rgb(117 217 110);
+    --color-very-light-gray: rgb(243 243 243);
     --carousel-item-max-height: 150px;
     --carousel-item-max-width: 150px;
     --container-width: 1200px;
     --news-container-width: 820px;
     --owl-carousel-width: 600px;
-    --text-color: rgba(51, 51, 51, 1.0);
+    --text-color: rgb(51 51 51 / 100%);
     --nav-bar-height: 90px;
-
     --gap-xs: 12px;
     --gap-sm: 16px;
     --gap-md: 32px;
@@ -31,22 +30,28 @@
     --font-size-sm: 18px;
     --font-size-md: 22px;
     --font-size-lg: 32px;
-    --background-gray-transparent: rgba(220, 220, 220, 0.7);
-    --background-inverted-transparent: rgba(86, 86, 86, 0.24);
-    --stroke-gray: rgba(220, 220, 220);
+    --background-gray-transparent: rgb(220 220 220 / 70%);
+    --background-inverted-transparent: rgb(86 86 86 / 24%);
+    --stroke-gray: rgb(220 220 220);
     --stroke-black: #000;
-    --text-dark-red: rgb(166, 0, 41);
-    --icon-dark-red: rgb(166, 0, 41);
-    --text-default: rgba(51,51,51,1.0);
-    --text-inverted: rgb(255, 255, 255);
+    --text-dark-red: rgb(166 0 41);
+    --icon-dark-red: rgb(166 0 41);
+    --text-default: rgb(51 51 51 / 100%);
+    --text-inverted: rgb(255 255 255);
+
+    @media only screen and (max-width: 756px) {
+        --gap-xs: 12px;
+        --gap-sm: 16px;
+        --gap-md: 24px;
+    }
 }
 
 html, body, td, div, p {
-    font-family: Neue Aachen Book, sans-serif !important;
+    font-family: "Neue Aachen Book", sans-serif !important;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: Neue Aachen Regular, sans-serif !important;
+    font-family: "Neue Aachen Regular", sans-serif !important;
 }
 
 .hardbulls-game-card {
@@ -65,16 +70,13 @@ h1, h2, h3, h4, h5 {
 
 
 
-#section_1000049:before {
+#section_1000049::before {
     content: "";
-    background-image: url(./assets/baseballer_hit.png?as=webp), url(./assets/baseballer_throw.png?as=webp);
+    background-image: url("./assets/baseballer_hit.png?as=webp"), url("./assets/baseballer_throw.png?as=webp");
     background-position: left, right;
     background-repeat: no-repeat, no-repeat;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    inset: 0;
     opacity: 0.2;
 }
 
@@ -83,7 +85,7 @@ div.bulls-banner-logo {
 }
 
 div.bulls-banner-logo img {
-    filter: drop-shadow(0px 3px 0px #000);
+    filter: drop-shadow(0 3px 0 #000);
 }
 
 h1 {

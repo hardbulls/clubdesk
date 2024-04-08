@@ -1,3 +1,14 @@
+.hb-upcoming-games-components {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-md);
+    justify-content: flex-start;
+    justify-items: center;
+    margin-top: var(--gap-md);
+
+}
+
+
 .hb-upcoming-games-components-team-logo {
     display: inline-block;
 }
@@ -5,4 +16,5 @@
 .hb-upcoming-games-components-game {
     display: flex;
     align-items: center;
+
 }

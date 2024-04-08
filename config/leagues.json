@@ -97,7 +97,7 @@
     "fullName": "Preseason",
     "name": "Preseason",
     "id": "preseason",
-    "isActive": true,
+    "isActive": false,
     "seasons": [2024]
   }
 ]
