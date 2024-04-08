@@ -8,7 +8,7 @@ export class LeagueRepository {
     }
 
     public static findById(id: string): League {
-        const league = this.findAll().find((league) => (league.id = id))
+        const league = this.findAll().find((league) => league.id === id)
 
         if (!league) {
             throw new NotFoundError("League", id)
