@@ -4,7 +4,7 @@
     "venue": "Ballpark am See",
     "location": "Hard",
     "image": "ballpark_am_see.jpg",
-    "keywords": ["Hard", "Ballpark am See, Hard"]
+    "keywords": ["Hard", "Ballpark am See, Hard", "Ballpark am See, Hard am Bodensee"]
   },
   {
     "teams": ["Traiskirchen Grasshoppers"],
@@ -71,10 +71,10 @@
   },
   {
     "teams": ["Stockerau Cubs"],
-    "venue": "Stock City Cubs Field",
+    "venue": "Cubsfield",
     "location": "Stockerau",
     "image": "stockerau.jpg",
-    "keywords": ["Stockerau", "Stock City Cubs", "Cubs"]
+    "keywords": ["Stockerau", "Stock City Cubs", "Cubs", "Cubsfield, Stockerau"]
   },
   {
     "teams": ["Attnang-Puchheim Athletics"],
