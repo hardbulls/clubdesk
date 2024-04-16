@@ -2,13 +2,11 @@
 
 const env = process.env.NODE_ENV;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require('path');
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const useContentHash = false;
-
 
 module.exports = {
     mode: env,
@@ -56,7 +54,7 @@ module.exports = {
                 generator: [{
                     preset: "webp",
                     implementation: ImageMinimizerPlugin.sharpGenerate,
-                    filename: () => "[name]_[width]x[height]_[contenthash][ext]",
+                    filename: () => `[name]_[width]x[height]${useContentHash ? '_[contenthash]' : ''}[ext]`,
                     options: {
                         resize: {
                             fit: 'contain',
@@ -67,15 +65,14 @@ module.exports = {
                         },
                         encodeOptions: {
                             webp: {
-                                quality: 80,
-                                lossless: false,
+                                lossless: true,
                             },
                         }
                     }
                 }],
                 minimizer: {
                     implementation: ImageMinimizerPlugin.sharpMinify,
-                    filename: () => "[name]_[width]x[height]_[contenthash][ext]",
+                    filename: () => `[name]_[width]x[height]${useContentHash ? '_[contenthash]' : ''}[ext]`,
                     options: {
                         encodeOptions: {
                             jpeg: {
@@ -103,11 +100,11 @@ module.exports = {
             new MiniCssExtractPlugin({
                 filename: env === 'production' && useContentHash ? '[name].[contenthash].css' : '[name].css'
             }),
-            new HtmlWebpackPlugin({template: './public/index.html'})
         ],
     output: {
         publicPath: env === 'production' ? 'https://static.hardbulls.com/' : undefined,
         filename: env === 'production' && useContentHash ? '[name].[contenthash].js' : '[name].js',
+        assetModuleFilename: `${useContentHash ? '[hash]' : '[name]'}[ext][query]`,
         path: path.resolve(__dirname, 'dist'),
         library: 'GodSave',
         clean: true,
