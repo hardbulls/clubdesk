@@ -67,7 +67,9 @@ export const UpcomingGamesComponent = () => {
                 elements.push(
                     <div>
                         <strong>{league.fullName}</strong>
-                        {gameElements}
+                        <div className={`${CN}-games`}>
+                            {gameElements}
+                        </div>
                     </div>
                 )
             }

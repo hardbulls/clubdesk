@@ -35,7 +35,7 @@ const bullLogos = loadFiles(
 
 const addBannerVideo = () => {
     if (window.location.host.includes("hardbulls.com")) {
-        const container = document.querySelector(".cd-header:has(.hardbulls-hero-banner)") as HTMLElement
+        const container = document.querySelector(".cd-header") as HTMLElement
 
         if (container) {
             const heroBanner = document.querySelector(".hardbulls-hero-banner") as HTMLElement

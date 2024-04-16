@@ -8,13 +8,14 @@
 
 }
 
-
 .hb-upcoming-games-components-team-logo {
     display: inline-block;
+    min-width: 32px;
 }
 
 .hb-upcoming-games-components-game {
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
+    padding-bottom: 6px;
 }
