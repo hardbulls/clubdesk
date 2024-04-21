@@ -7,7 +7,7 @@ import {GamesRepository} from "../repository/games-repository";
 import {GameCardComponent} from "../game-card-component/game-card-component";
 import {
     CALENDAR_IMPORT, GAME_SCHEDULE, OFFICIAL_SCHEDULE, SEASON, SELECT_SEASON, STANDINGS_EAST,
-    STANDINGS_FINAL,
+    STANDINGS_FINAL, STANDINGS_FINAL_TOURNAMENT,
     STANDINGS_GROUP, STANDINGS_HEADER, STANDINGS_MIDDLE,
     STANDINGS_PLAYOFFS,
     STANDINGS_REGULAR, STANDINGS_UNKNOWN, STANDINGS_WEST
@@ -31,6 +31,10 @@ type Props = {
 const getStandingsTitle = (standing: Standing) => {
     if (standing.type === 'FINAL') {
         return STANDINGS_FINAL;
+    }
+
+    if (standing.type === 'FINAL_TOURNAMENT') {
+        return STANDINGS_FINAL_TOURNAMENT;
     }
 
     if (standing.type === 'GROUP_A') {

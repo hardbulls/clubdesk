@@ -6,6 +6,7 @@ export const SELECT_SEASON = "Saison auswählen"
 export const SEASON = "Saison"
 
 export const STANDINGS_FINAL = "Endklassement"
+export const STANDINGS_FINAL_TOURNAMENT = "Finalturnier"
 export const STANDINGS_PLAYOFFS = "Play-offs"
 export const STANDINGS_REGULAR = "Reguläre Saison"
 export const STANDINGS_GROUP = "Gruppe"
