@@ -5,7 +5,8 @@
     "positions": [],
     "isCoach": true,
     "image": "Anthony_Bennett.png",
-    "nationality": "us"
+    "nationality": "us",
+    "number": 42
   },
   {
     "name": "Clayton Carson",
@@ -159,7 +160,7 @@
       "Pitcher",
       "2nd. Base"
     ],
-    "number": 10,
+    "number": 8,
     "hits": "R",
     "image": "Matthias Lutter.png",
     "yearOfBirth": 2005,
@@ -184,11 +185,11 @@
   {
     "name": "Yanik Mäser",
     "positions": [
-      "2nd. Base",
+      "Outfield",
       "3nd. Base",
       "Shortstop"
     ],
-    "number": 3,
+    "number": 10,
     "hits": "S",
     "yearOfBirth": 2003,
     "throws": "R",
