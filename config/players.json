@@ -157,12 +157,11 @@
     "name": "Levin Maier",
     "nickname": "Lele",
     "positions": [
-      "Pitcher",
-      "2nd. Base"
+      "Pitcher"
     ],
     "number": 8,
     "hits": "R",
-    "image": "Matthias Lutter.png",
+    "image": "Levin Maier.png",
     "yearOfBirth": 2005,
     "throws": "R",
     "nationality": "at"
@@ -364,6 +363,7 @@
     "throws": "R",
     "nationality": "ca",
     "number": 3,
+    "image": "Roman Guthrie.png",
     "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
