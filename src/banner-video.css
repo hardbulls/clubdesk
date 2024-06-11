@@ -27,7 +27,7 @@ video#hardbulls-banner-video::-webkit-media-controls-start-playback-button {
 
 
 .cd-header:has(.hardbulls-hero-banner) {
-    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/field_poster.webp");
+    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/field_poster_c.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
