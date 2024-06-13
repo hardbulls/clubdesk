@@ -70,6 +70,11 @@ async function main() {
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>${BASE_URL}/after-game</loc>
+  <lastmod>${currentMonthISO}</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>${BASE_URL}/ballpark</loc>
   <lastmod>${currentMonthISO}</lastmod>
   <priority>0.70</priority>
@@ -105,9 +110,19 @@ async function main() {
   <priority>0.20</priority>
 </url>
 <url>
+  <loc>${BASE_URL}/media</loc>
+  <lastmod>${currentMonthISO}</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
   <loc>${BASE_URL}/teams/bulls</loc>
   <lastmod>${currentMonthISO}</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>${BASE_URL}/mitgliedschaft</loc>
+  <lastmod>${currentMonthISO}</lastmod>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>${BASE_URL}/${escapeHtmlEntities("?b=100326&amp;c=NL")}</loc>
