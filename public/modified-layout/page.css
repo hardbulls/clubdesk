@@ -323,22 +323,6 @@ a.cd-club-logo-link {
     }
 }
 
-a.cd-club-name, a.cd-club-name:visited, a.cd-club-name:hover {
-    font-family: 'Brush Script Std', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    text-align: left;
-    text-transform: none;
-    margin: 0 10px;
-    overflow-wrap: break-word;
-}
-
-a.cd-club-name, a.cd-club-name:visited, a.cd-club-name:hover {
-    color: rgba(51, 51, 51, 1.0);
-}
-
 @media (max-width: 576px) {
     a.cd-club-name, a.cd-club-name:visited, a.cd-club-name:hover {
         font-size: 5.5vmin;

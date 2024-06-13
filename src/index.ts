@@ -14,7 +14,6 @@ import { PlayerCardsContainer } from "./PlayerCardsContainer"
 import { appendToElement } from "./util/html"
 import { loadFiles } from "./util/files"
 import { alwaysShowMenuOnDesktop } from "./cd-extensions/always-show-menu-on-desktop"
-import { addNameToHeader } from "./cd-extensions/add-name-to-header"
 import { shuffleSponsors } from "./cd-extensions/shuffle-sponsors"
 import { moveNewsSubheading, newsOverviewAuthorSubheading, replaceAlternateLinks } from "./cd-extensions/news"
 import { addImageFallback } from "./cd-extensions/add-image-fallback"
@@ -180,7 +179,6 @@ export const theBulls = () => {
     replaceAlternateLinks()
     replaceLogoLink()
     alwaysShowMenuOnDesktop()
-    addNameToHeader()
     shuffleSponsors()
     addImageFallback()
     moveNewsSubheading()

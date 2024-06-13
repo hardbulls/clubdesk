@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'Brush Script Std';
-    src: url(assets/fonts/BrushScriptStd.woff2) format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: "Neue Aachen Bold";
