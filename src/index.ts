@@ -87,8 +87,8 @@ const addBullsLogo = () => {
                 img.src = bullLogos["./st_patrick_bull.svg"]
             }
         } else {
-            if (bullLogos["./normal_bull_white.png"]) {
-                img.src = bullLogos["./normal_bull_white.png"]
+            if (bullLogos["./normal_bull.png"]) {
+                img.src = bullLogos["./normal_bull.png"]
             }
         }
 
