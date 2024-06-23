@@ -22,15 +22,16 @@
 
 .hb-upcoming-games-components-game-canceled {
     position: relative;
+    text-decoration: line-through;
+    text-decoration-color: var(--color-bulls-dark-red);
+    text-decoration-thickness: 2px;
 }
 
-.hb-upcoming-games-components-game-canceled::after {
-    position: absolute;
-    left: 0;
-    top: 40%;
-    height: 2px;
-    background: var(--color-bulls-dark-red);
-    content: "";
-    width: 100%;
-    display: block;
+.hb-upcoming-games-components-game-canceled a {
+    color: var(--text-default)
+}
+
+.hb-upcoming-games-components-game-canceled img {
+    filter: grayscale(0.5);
+    opacity: 0.8;
 }
