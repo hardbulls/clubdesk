@@ -45,7 +45,7 @@ export const UpcomingGamesComponent = () => {
                     const homeLogo = (home.isCooperation ? <CooperationTeamLogoComponent width={32} height={32} team={home}/> : <TeamLogoComponent width={32} height={32} team={home}/>)
                     const awayLogo = (away.isCooperation ? <CooperationTeamLogoComponent width={32} height={32} team={away}/> : <TeamLogoComponent width={32} height={32} team={away}/>)
 
-                    const canceledClass = game.status === 'scheduled' ? `${CN}-game-canceled` : '';
+                    const canceledClass = game.status === 'canceled' ? `${CN}-game-canceled` : '';
 
                     const gameElement = (
                         <div className={`${CN}-game ${canceledClass}`}>
