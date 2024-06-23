@@ -19,3 +19,18 @@
     flex-wrap: wrap;
     padding-bottom: 6px;
 }
+
+.hb-upcoming-games-components-game-canceled {
+    position: relative;
+}
+
+.hb-upcoming-games-components-game-canceled::after {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    height: 2px;
+    background: var(--color-bulls-dark-red);
+    content: "";
+    width: 100%;
+    display: block;
+}

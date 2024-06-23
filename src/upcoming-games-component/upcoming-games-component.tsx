@@ -8,6 +8,7 @@ import {replaceElementChildren} from "../util/html";
 import {dateTimeFormatter, dateTimeFormatterShort} from "../util/date";
 import {TeamLogoComponent} from "../team-logo-component/team-logo-component";
 import {CooperationTeamLogoComponent} from "../team-logo-component/cooperation-team-logo-component";
+import {GAME_CANCELED} from "../translations";
 
 export const UpcomingGamesComponent = () => {
     const CN = "hb-upcoming-games-components"
@@ -44,8 +45,10 @@ export const UpcomingGamesComponent = () => {
                     const homeLogo = (home.isCooperation ? <CooperationTeamLogoComponent width={32} height={32} team={home}/> : <TeamLogoComponent width={32} height={32} team={home}/>)
                     const awayLogo = (away.isCooperation ? <CooperationTeamLogoComponent width={32} height={32} team={away}/> : <TeamLogoComponent width={32} height={32} team={away}/>)
 
+                    const canceledClass = game.status === 'scheduled' ? `${CN}-game-canceled` : '';
+
                     const gameElement = (
-                        <div className={`${CN}-game`}>
+                        <div className={`${CN}-game ${canceledClass}`}>
                             <div className={`${CN}-team-logo`}>{awayLogo}</div>
                             vs.
                             <div className={`${CN}-team-logo`}>{homeLogo}</div>
