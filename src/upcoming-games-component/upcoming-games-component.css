@@ -1,11 +1,15 @@
 .hb-upcoming-games-components {
-    display: flex;
-    flex-wrap: wrap;
     gap: var(--gap-md);
-    justify-content: flex-start;
-    justify-items: center;
     margin-top: var(--gap-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+}
+
+@media (max-width: 756px) {
+    .hb-upcoming-games-components {
+        grid-template-columns: 1fr;
+    }
 }
 
 .hb-upcoming-games-components-team-logo {

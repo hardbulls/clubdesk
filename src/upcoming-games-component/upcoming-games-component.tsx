@@ -8,7 +8,6 @@ import {replaceElementChildren} from "../util/html";
 import {dateTimeFormatter, dateTimeFormatterShort} from "../util/date";
 import {TeamLogoComponent} from "../team-logo-component/team-logo-component";
 import {CooperationTeamLogoComponent} from "../team-logo-component/cooperation-team-logo-component";
-import {GAME_CANCELED} from "../translations";
 
 export const UpcomingGamesComponent = () => {
     const CN = "hb-upcoming-games-components"
