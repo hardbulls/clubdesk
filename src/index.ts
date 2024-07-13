@@ -28,6 +28,8 @@ import { UpcomingGamesComponent } from "./upcoming-games-component/upcoming-game
 import { redirectAlternatePage } from "./cd-extensions/redirect-alternate-page"
 import { getMothersDay, isEasterSunday, yesterday } from "./util/date"
 
+import "./components"
+
 const bullLogos = loadFiles(
     require.context("./assets/bulls_logos/?as=webp&width=160&height=150", false, /\.(png|jpg|svg)/)
 )
