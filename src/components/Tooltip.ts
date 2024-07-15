@@ -1,18 +1,18 @@
-import {register} from "./framework/register";
+import { register } from "./framework/register"
 
 export class Tooltip extends HTMLElement {
-    private readonly tooltip: HTMLDivElement;
-    private readonly tooltipContent: HTMLDivElement;
+    private readonly tooltip: HTMLDivElement
+    private readonly tooltipContent: HTMLDivElement
 
-    static tooltipIds = new Set();
+    static tooltipIds = new Set()
 
     constructor() {
-        super();
+        super()
         // Attach the shadow root
-        const shadow = this.attachShadow({mode: 'open'});
+        const shadow = this.attachShadow({ mode: "open" })
 
         // Create a style element
-        const style = document.createElement('style');
+        const style = document.createElement("style")
         style.textContent = `
             :host [popover] {
                 opacity: 0;
@@ -41,69 +41,64 @@ export class Tooltip extends HTMLElement {
               }
             }
             
-        `;
+        `
 
         // Append the style to the shadow root
-        shadow.appendChild(style);
+        shadow.appendChild(style)
 
-        this.tooltip = document.createElement('div');
+        this.tooltip = document.createElement("div")
 
-        this.tooltip.classList.add('tooltip');
-        this.tooltip.setAttribute('popover', '')
+        this.tooltip.classList.add("tooltip")
+        this.tooltip.setAttribute("popover", "")
 
-        this.tooltip.textContent = this.getAttribute('value');
+        this.tooltip.textContent = this.getAttribute("value")
 
         if (!this.tooltip.id) {
-            this.tooltip.id = Tooltip.generateTooltipId();
+            this.tooltip.id = Tooltip.generateTooltipId()
         }
 
-
-        this.tooltipContent = document.createElement('div')
+        this.tooltipContent = document.createElement("div")
 
         shadow.append(this.tooltipContent)
         shadow.append(this.tooltip)
 
-
-
         if (!this.tooltipContent.id) {
-            this.tooltipContent.id = Tooltip.generateTooltipId();
+            this.tooltipContent.id = Tooltip.generateTooltipId()
         }
 
-        this.tooltip.setAttribute('anchor', this.tooltipContent.id)
+        this.tooltip.setAttribute("anchor", this.tooltipContent.id)
 
-        this.addEventListener('touchstart', () => {
-            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`;
-            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`;
+        this.addEventListener("touchstart", () => {
+            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`
+            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`
 
             // @ts-ignore API is not recognized
-            this.tooltip.togglePopover();
+            this.tooltip.togglePopover()
         })
 
-
-        this.addEventListener('mouseenter', () => {
-            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`;
-            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`;
+        this.addEventListener("mouseenter", () => {
+            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`
+            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`
 
             // @ts-ignore API is not recognized
-            this.tooltip.showPopover();
-
+            this.tooltip.showPopover()
         })
 
-        this.addEventListener('mouseleave', () => {
+        this.addEventListener("mouseleave", () => {
             // @ts-ignore API is not recognized
-            this.tooltip.hidePopover();
+            this.tooltip.hidePopover()
         })
 
         const child = this.firstElementChild || this.firstChild
 
         if (child) {
             if (child instanceof HTMLElement) {
-                child.setAttribute('popovertarget', this.tooltip.id);
+                child.setAttribute("popovertarget", this.tooltip.id)
 
                 this.tooltipContent.append(child)
             } else {
-                const wrapSpan = document.createElement('span')
-                wrapSpan.setAttribute('popovertarget', this.tooltip.id);
+                const wrapSpan = document.createElement("span")
+                wrapSpan.setAttribute("popovertarget", this.tooltip.id)
 
                 wrapSpan.append(child)
 
@@ -113,38 +108,39 @@ export class Tooltip extends HTMLElement {
     }
 
     private static generateTooltipId() {
-        const length = 8;
-        let hash = this.generateRandomString(length);
+        const length = 8
+        let hash = this.generateRandomString(length)
         while (this.tooltipIds.has(hash)) {
-            hash = this.generateRandomString(length);
+            hash = this.generateRandomString(length)
         }
 
-        this.tooltipIds.add(hash);
-        return hash;
+        this.tooltipIds.add(hash)
+        return hash
     }
 
     private static generateRandomString(length) {
-        return Math.random().toString(36).substring(2, length + 2);
+        return Math.random()
+            .toString(36)
+            .substring(2, length + 2)
     }
 
     set value(value: string) {
-        this.setAttribute('value', value);
+        this.setAttribute("value", value)
     }
 
     get value() {
-        return this.getAttribute('value') || '';
+        return this.getAttribute("value") || ""
     }
 
     static get observedAttributes() {
-        return ["value"];
+        return ["value"]
     }
 
     attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
         if (name === "value" && oldValue !== newValue) {
-            this.tooltip.textContent = newValue;
+            this.tooltip.textContent = newValue
         }
     }
-
 }
 
-register('tooltip', Tooltip);
+register("tooltip", Tooltip)

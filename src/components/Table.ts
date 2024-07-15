@@ -1,13 +1,12 @@
-import {register} from "./framework/register";
-import {InvalidChildrenError} from "./framework/InvalidChildrenError";
+import { register } from "./framework/register"
+import { InvalidChildrenError } from "./framework/InvalidChildrenError"
 
 export class Table extends HTMLElement {
-
     constructor() {
-        super();
+        super()
 
-        const shadow = this.attachShadow({mode: 'open'});
-        const style = document.createElement('style');
+        const shadow = this.attachShadow({ mode: "open" })
+        const style = document.createElement("style")
         style.textContent = `
             :host {
                 background: red;
@@ -45,18 +44,18 @@ export class Table extends HTMLElement {
             :host table tr td:last-child,th:last-child {
                 border-right: 0;
             }
-        `;
+        `
 
-        shadow.appendChild(style);
+        shadow.appendChild(style)
 
-        const table = this.querySelector('table');
+        const table = this.querySelector("table")
 
         if (!table) {
-            throw new InvalidChildrenError(this, ['table'])
+            throw new InvalidChildrenError(this, ["table"])
         }
 
         shadow.appendChild(table)
     }
 }
 
-register('table', Table);
+register("table", Table)

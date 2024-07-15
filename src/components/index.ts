@@ -1,3 +1,4 @@
-export {Chip} from './Chip'
-export {Table} from './Table'
-export {Tooltip} from './Tooltip'
+export { Chip } from "./Chip"
+export { Table } from "./Table"
+export { Tooltip } from "./Tooltip"
+export { Select } from "./Select"

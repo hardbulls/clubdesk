@@ -1,17 +1,17 @@
-import {register} from "./framework/register";
+import { register } from "./framework/register"
 
 type ChipSize = "small" | "large"
 
 export class Chip extends HTMLElement {
-    private readonly chipContent: HTMLDivElement;
+    private readonly chipContent: HTMLDivElement
 
     constructor() {
-        super();
+        super()
         // Attach the shadow root
-        const shadow = this.attachShadow({mode: 'open'});
+        const shadow = this.attachShadow({ mode: "open" })
 
         // Create a style element
-        const style = document.createElement('style');
+        const style = document.createElement("style")
         style.textContent = `
             :host {
                 align-items: center;
@@ -44,86 +44,86 @@ export class Chip extends HTMLElement {
                 padding-block: 7px;
                 padding-inline: 18px;
             }
-        `;
+        `
 
         // Append the style to the shadow root
-        shadow.appendChild(style);
+        shadow.appendChild(style)
 
         // Create a div to hold the chip content
-        this.chipContent = document.createElement('div');
-        shadow.appendChild(this.chipContent);
+        this.chipContent = document.createElement("div")
+        shadow.appendChild(this.chipContent)
 
         // Set initial content
-        this.updateContent();
+        this.updateContent()
 
-        if (!this.hasAttribute('size')) {
-            this.setAttribute('size', "small");
+        if (!this.hasAttribute("size")) {
+            this.setAttribute("size", "small")
         }
     }
 
     // Observe changes to 'value' and 'active' attributes
     static get observedAttributes() {
-        return ["value", "active", "size"];
+        return ["value", "active", "size"]
     }
 
     // Handle changes to attributes
     attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
         if (name === "value" && oldValue !== newValue) {
-            this.updateContent();
+            this.updateContent()
         } else if (name === "active" && oldValue !== newValue) {
-            this.updateActiveState();
+            this.updateActiveState()
         } else if (name === "size" && oldValue !== newValue) {
-            this.updateSize();
+            this.updateSize()
         }
     }
 
     private updateContent() {
-        this.chipContent.textContent = this.value;
+        this.chipContent.textContent = this.value
     }
 
     private updateActiveState() {
         if (this.active) {
-            this.setAttribute('active', '');
+            this.setAttribute("active", "")
         } else {
-            this.removeAttribute('active');
+            this.removeAttribute("active")
         }
     }
 
     private updateSize() {
         if (this.size) {
-            this.setAttribute('size', this.size);
+            this.setAttribute("size", this.size)
         } else {
-            this.removeAttribute('size');
+            this.removeAttribute("size")
         }
     }
 
     set active(value: boolean) {
         if (value) {
-            this.setAttribute('active', '');
+            this.setAttribute("active", "")
         } else {
-            this.removeAttribute('active');
+            this.removeAttribute("active")
         }
     }
 
     get active() {
-        return this.hasAttribute('active');
+        return this.hasAttribute("active")
     }
 
     set value(value: string) {
-        this.setAttribute('value', value);
+        this.setAttribute("value", value)
     }
 
     get value() {
-        return this.getAttribute('value') || '';
+        return this.getAttribute("value") || ""
     }
 
     set size(value: ChipSize) {
-        this.setAttribute('size', value);
+        this.setAttribute("size", value)
     }
 
     get size(): ChipSize {
-        return (this.getAttribute('size') as ChipSize) || 'small';
+        return (this.getAttribute("size") as ChipSize) || "small"
     }
 }
 
-register('chip', Chip);
+register("chip", Chip)
