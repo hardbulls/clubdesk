@@ -13,6 +13,7 @@ export class Spinner extends HTMLElement {
                 display: inline-block;
                 width: 50px;
                 height: 50px;
+                overflow: hidden;
             }
 
             :host([size="small"]) {
