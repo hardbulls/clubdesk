@@ -20,11 +20,10 @@ export class Tooltip extends HTMLElement {
                 margin: 0;
                 white-space: pre-wrap;
                 text-align: left;
-                background: var(--text-color);
-                color: #fff;
-                padding: 0 6px;
+                background: rgb(from var(--semantic-background-inverted) r g b / 75%);
+                color: var(--semantic-text-inverted);
+                padding-inline: var(--hb-gap-4xs);
                 border-radius: 5px;
-                font-size: var(--font-size-normal);
                 width: max-content;
                 max-width: 350px;
                 border: 0;
@@ -32,7 +31,7 @@ export class Tooltip extends HTMLElement {
             }
             
             :host [popover]:popover-open {
-                opacity: 0.9;
+                opacity: 1;
             }
             
             @starting-style {
@@ -62,23 +61,17 @@ export class Tooltip extends HTMLElement {
         shadow.append(this.tooltipContent)
         shadow.append(this.tooltip)
 
+        this.tooltipContent.style.display = 'inline';
+
         if (!this.tooltipContent.id) {
             this.tooltipContent.id = Tooltip.generateTooltipId()
         }
 
         this.tooltip.setAttribute("anchor", this.tooltipContent.id)
 
-        this.addEventListener("touchstart", () => {
-            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`
-            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`
-
-            // @ts-ignore API is not recognized
-            this.tooltip.togglePopover()
-        })
-
         this.addEventListener("mouseenter", () => {
-            this.tooltip.style.top = `${this.tooltipContent.offsetTop + 70}px`
-            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + 50}px`
+            this.tooltip.style.top = `${this.tooltipContent.offsetTop - 36}px`
+            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + (this.tooltipContent.offsetWidth / 2)}px`
 
             // @ts-ignore API is not recognized
             this.tooltip.showPopover()

@@ -1,5 +1,5 @@
 import { register } from "./framework/register"
-import { InvalidChildrenError } from "./framework/InvalidChildrenError"
+import {InvalidChildrenError} from "./framework/InvalidChildrenError";
 
 export class Table extends HTMLElement {
     constructor() {
@@ -8,33 +8,32 @@ export class Table extends HTMLElement {
         const shadow = this.attachShadow({ mode: "open" })
         const style = document.createElement("style")
         style.textContent = `
-            :host {
-                background: red;
-            }
-            
             :host table {
                 width: 100%;
                 border: 0;
                 border-spacing: 0;
             }
 
-            :host th {
-                border-bottom: 2px solid var(--color-bulls-light-red);
+            :host table th {
+                border-bottom: 2px solid rgb(from var(--semantic-stroke-highlight) r g b / 40%);
+                color: var(--semantic-text-default);
             }
 
-            :host th, :host td  {
+            :host table th, :host table td  {
                 text-align: left;
                 border-collapse: collapse;
-                padding: 3px;
-                border-right: 1px solid var(--color-light-gray);
+                padding: var(--hb-gap-5xs);
+                border-right: 1px solid var(--semantic-stroke-default);
+                color: var(--semantic-text-default);
             }
 
-            :host td {
-                border-bottom: 1px solid var(--color-light-gray);
+            :host table > tbody > tr > td {
+                border-bottom: 1px solid var(--semantic-stroke-default);
+                color: var(--semantic-text-default);
             }
 
-            :host tbody > tr:hover {
-                background-color: var(--color-bulls-very-light-red);
+            :host table tbody > tr:hover {
+                background-color: rgb(from var(--semantic-stroke-highlight) r g b / 5%);
             }
 
             :host table tr:last-child td {

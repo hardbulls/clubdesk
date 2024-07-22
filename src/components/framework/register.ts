@@ -7,3 +7,7 @@ export function register(
 ): void {
     window.customElements.define(`${PREFIX}-${name}`, constructor, options)
 }
+
+export function getPrefix() {
+    return PREFIX;
+}

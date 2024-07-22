@@ -1,5 +1,10 @@
+export { Theme } from './Theme'
 export { Chip } from "./Chip"
 export { Table } from "./Table"
 export { Tooltip } from "./Tooltip"
 export { Select } from "./Select"
 export { Card } from "./Card"
+export { Spinner } from './Spinner'
+export { Link } from './Link'
+export { Typography } from './Typography'
+export { Container } from './Container'

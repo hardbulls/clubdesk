@@ -15,7 +15,7 @@ export class Chip extends HTMLElement {
         style.textContent = `
             :host {
                 align-items: center;
-                border: 1px solid var(--stroke-gray);
+                border: 1px solid var(--semantic-stroke-default);
                 border-radius: 30px;
                 display: flex;
                 justify-content: center;
@@ -29,20 +29,20 @@ export class Chip extends HTMLElement {
 
             :host(:hover),
             :host([active]) {
-                color: var(--text-inverted);
-                background-color: var(--color-bulls-red);
+                color: var(--semantic-text-inverted);
+                background-color: var(--semantic-stroke-highlight);
             }
             
             :host([size="small"]) {
-                font-size: var(--font-size-sm);
-                padding-block: 5px;
-                padding-inline: 16px;
+                font-size: var(--hb-font-size-sm);
+                padding-block: var(--hb-gap-5xs);
+                padding-inline: var(--hb-gap-2xs);
             }
             
             :host([size="large"]) {
-                font-size: var(--font-size-md);
-                padding-block: 7px;
-                padding-inline: 18px;
+                font-size: var(--hb-font-size-md);
+                padding-block: var(--hb-gap-5xs);
+                padding-inline: var(--hb-gap-2xs);
             }
         `
 
