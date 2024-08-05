@@ -10,6 +10,6 @@ export type Game = {
     venue: Field | undefined
     homeScore: number
     awayScore: number
-    status: "finished" | "canceled" | "scheduled" | "forfeit"
+    status: "finished" | "canceled" | "scheduled" | "forfeit" | "suspended"
     date: Date
 }
