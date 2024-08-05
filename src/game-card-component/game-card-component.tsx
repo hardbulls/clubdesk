@@ -4,7 +4,7 @@ import {loadFiles} from "../util/files";
 import type {Game} from "../model/Game";
 import {GoogleMapsLink} from "../GoogleMapsLink";
 import {dateTimeFormatter} from "../util/date";
-import {GAME_CANCELED} from "../translations";
+import {GAME_CANCELED, GAME_FORFEIT} from "../translations";
 import {CooperationTeamLogoComponent} from "../team-logo-component/cooperation-team-logo-component";
 import {TeamLogoComponent} from "../team-logo-component/team-logo-component";
 
@@ -26,7 +26,7 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
     now.setHours(0)
     now.setMinutes(0)
 
-    const isGrayedOut = game.status === 'canceled';
+    const isGrayedOut = game.status === 'canceled' || game.status === "forfeit";
 
     return (
         <div className={`${CN}`}>
@@ -68,6 +68,14 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
                         (
                             <div className={`${CN}-canceled`}>
                                 <span>{`${GAME_CANCELED}`}</span>
+                            </div>
+                        ) : undefined
+                }
+                {
+                    game.status === 'forfeit' ?
+                        (
+                            <div className={`${CN}-canceled`}>
+                                <span>{`${game.awayScore} : ${game.homeScore} (${GAME_FORFEIT})`}</span>
                             </div>
                         ) : undefined
                 }

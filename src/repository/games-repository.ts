@@ -13,7 +13,7 @@ type ApiGame = {
     away: string
     homeScore: number
     awayScore: number
-    status: "finished" | "canceled" | "scheduled"
+    status: "finished" | "canceled" | "scheduled" | "forfeit"
     date: string
 }
 
