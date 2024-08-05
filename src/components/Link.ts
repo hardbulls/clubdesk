@@ -32,7 +32,7 @@ export class Link extends HTMLElement {
 
         shadow.appendChild(style)
 
-        const slot = document.createElement('slot')
+        const slot = document.createElement("slot")
         shadow.append(slot)
     }
 }

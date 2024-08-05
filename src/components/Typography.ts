@@ -1,9 +1,22 @@
 import { register } from "./framework/register"
 
-type Display = "h1"|"h2"|"h3"|"h4"|"h5"|"h6"|"subtitle1"|"subtitle2"|"body1"|"body2"|"button"|"caption"|"overline";
+type Display =
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
+    | "subtitle1"
+    | "subtitle2"
+    | "body1"
+    | "body2"
+    | "button"
+    | "caption"
+    | "overline"
 export class Typography extends HTMLElement {
-    private shadow: ShadowRoot;
-    private content?: HTMLElement = undefined;
+    private shadow: ShadowRoot
+    private content?: HTMLElement = undefined
 
     constructor() {
         super()
@@ -85,7 +98,7 @@ export class Typography extends HTMLElement {
         `
         this.shadow.appendChild(style)
 
-        this.updateContent();
+        this.updateContent()
     }
 
     set display(display: Display) {
@@ -108,14 +121,13 @@ export class Typography extends HTMLElement {
         return ["tag", "display"]
     }
 
-    private updateContent()
-    {
+    private updateContent() {
         if (this.content) {
-            this.shadow.removeChild(this.content);
+            this.shadow.removeChild(this.content)
         }
 
         this.content = document.createElement(this.tag)
-        const slot = document.createElement('slot')
+        const slot = document.createElement("slot")
 
         this.content.append(slot)
         this.shadow.append(this.content)
@@ -123,9 +135,9 @@ export class Typography extends HTMLElement {
 
     attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
         if (name === "tag" && oldValue !== newValue) {
-            this.updateContent();
+            this.updateContent()
         } else if (name === "display" && oldValue !== newValue) {
-            this.updateContent();
+            this.updateContent()
         }
     }
 }

@@ -61,7 +61,7 @@ export class Tooltip extends HTMLElement {
         shadow.append(this.tooltipContent)
         shadow.append(this.tooltip)
 
-        this.tooltipContent.style.display = 'inline';
+        this.tooltipContent.style.display = "inline"
 
         if (!this.tooltipContent.id) {
             this.tooltipContent.id = Tooltip.generateTooltipId()
@@ -71,7 +71,7 @@ export class Tooltip extends HTMLElement {
 
         this.addEventListener("mouseenter", () => {
             this.tooltip.style.top = `${this.tooltipContent.offsetTop - 36}px`
-            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + (this.tooltipContent.offsetWidth / 2)}px`
+            this.tooltip.style.left = `${this.tooltipContent.offsetLeft + this.tooltipContent.offsetWidth / 2}px`
 
             // @ts-ignore API is not recognized
             this.tooltip.showPopover()

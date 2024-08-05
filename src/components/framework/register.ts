@@ -9,5 +9,5 @@ export function register(
 }
 
 export function getPrefix() {
-    return PREFIX;
+    return PREFIX
 }

@@ -1,6 +1,6 @@
 import { register } from "./framework/register"
 
-export class Container extends HTMLElement {
+export class CardContent extends HTMLElement {
     constructor() {
         super()
         // Attach the shadow root
@@ -10,17 +10,18 @@ export class Container extends HTMLElement {
         const style = document.createElement("style")
         style.textContent = `
             :host {
-                display: block;
-                background-color: var(--semantic-background-default);
-                color: var(--semantic-text-default);
-                font-family: var(--hb-font-family-default);
+                display: flex;
+                flex-direction: column;
+                padding: var(--hb-gap-2xs);
+                flex: 1;
             }
         `
         shadow.appendChild(style)
 
+        // Create a slot for the content
         const slot = document.createElement("slot")
-        shadow.append(slot)
+        shadow.appendChild(slot)
     }
 }
 
-register("container", Container)
+register("card-content", CardContent)

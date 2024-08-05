@@ -1,4 +1,5 @@
-import { register } from "./framework/register"
+import { getPrefix, register } from "./framework/register"
+import { CardContent } from "./CardContent"
 
 export class Card extends HTMLElement {
     constructor() {
@@ -12,16 +13,38 @@ export class Card extends HTMLElement {
             :host {
                 border: 1px solid var(--semantic-stroke-default);
                 border-radius: 15px;
-                padding: var(--hb-gap-2xs);
                 display: flex;
                 flex-direction: column;
+                overflow: hidden;
+                max-width: 100%;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            card-media {
+                display: block;
+                width: 100%;
             }
         `
-
         shadow.appendChild(style)
 
-        const slot = document.createElement('slot')
-        shadow.append(slot)
+        let cardContentElement = this.querySelector(`${getPrefix()}-card-content`)
+
+        if (!cardContentElement) {
+            cardContentElement = new CardContent()
+        }
+
+        shadow.append(cardContentElement)
+
+        const slot = document.createElement("slot")
+
+        const cardMedia = this.querySelector(`${getPrefix()}-card-media`)
+
+        if (!cardMedia) {
+            cardContentElement.append(slot)
+        } else {
+            this.removeChild(cardMedia)
+            shadow.prepend(cardMedia)
+        }
     }
 }
 

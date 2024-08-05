@@ -1,5 +1,5 @@
 import { register } from "./framework/register"
-import {InvalidChildrenError} from "./framework/InvalidChildrenError";
+import { InvalidChildrenError } from "./framework/InvalidChildrenError"
 
 export class Table extends HTMLElement {
     constructor() {
