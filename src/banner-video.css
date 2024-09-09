@@ -4,15 +4,15 @@ video#hardbulls-banner-video::-webkit-media-controls-start-playback-button {
 
 #hardbulls-banner-video-wrapper {
     width: 100%;
-    min-height: 280px;
+    min-height: 300px;
     position: relative;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 400px;
-    height: 40vh;
+    max-height: 480px;
+    height: 45vh;
 }
 
 #hardbulls-banner-video {
@@ -26,8 +26,15 @@ video#hardbulls-banner-video::-webkit-media-controls-start-playback-button {
 }
 
 
-.cd-header:has(.hardbulls-hero-banner) {
-    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/field_poster_c.webp");
+.cd-header:has(.hardbulls-hero-banner[data-video="field"]) {
+    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/field_poster.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.cd-header:has(.hardbulls-hero-banner[data-video="lineup"]) {
+    background-image: url("https://www.hardbulls.com/clubdesk/wwwfiles/lineup_poster.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
