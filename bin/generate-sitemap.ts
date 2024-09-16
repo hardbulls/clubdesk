@@ -70,7 +70,7 @@ async function main() {
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>${BASE_URL}/after-game</loc>
+  <loc>${BASE_URL}/events</loc>
   <lastmod>${currentMonthISO}</lastmod>
   <priority>0.80</priority>
 </url>
@@ -102,7 +102,7 @@ async function main() {
 <url>
   <loc>${BASE_URL}/live</loc>
   <lastmod>${currentMonthISO}</lastmod>
-  <priority>0.90</priority>
+  <priority>0.10</priority>
 </url>
 <url>
   <loc>${BASE_URL}/impressum</loc>
