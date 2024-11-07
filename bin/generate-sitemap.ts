@@ -9,7 +9,9 @@ const BASE_URL = "https://www.hardbulls.com"
 const writeFileAsync = promisify(writeFile)
 
 async function downloadNews() {
-    const html = await fetch(`${BASE_URL}/?b=100326&c=NL`).then((response) => response.text())
+    const html = await fetch(`${BASE_URL}/?b=100326&c=NL&s=djEt6359R0cItTBp-Cp2EqrjtXYts5XosM1ILmMJMivhyQM=`).then(
+        (response) => response.text()
+    )
 
     const dom = new JSDOM(html)
     const rows = dom.window.document.querySelector("div.cd-newslist-tile-v.cd-tile-v")
