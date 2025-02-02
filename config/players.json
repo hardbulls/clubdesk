@@ -48,7 +48,8 @@
     "throws": "R",
     "image": "Leon Noebl.png",
     "yearOfBirth": 2000,
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Daniel Hotz",
@@ -164,7 +165,8 @@
     "image": "Levin Maier.png",
     "yearOfBirth": 2005,
     "throws": "R",
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Matthias Lutter",
@@ -193,7 +195,8 @@
     "yearOfBirth": 2003,
     "throws": "R",
     "image": "Yanik_Maeser.png",
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Luca Mäser",
@@ -206,7 +209,8 @@
     "throws": "R",
     "image": "Luca_Maeser.png",
     "yearOfBirth": 2001,
-    "nationality": "at"
+    "nationality": "at",
+    "active": false
   },
   {
     "name": "Marvin Glassen",
@@ -342,7 +346,8 @@
     "positions": [
       "Pitcher",
       "1st. Base"
-    ]
+    ],
+    "active": false
   },
   {
     "name": "Lucas Traut",
@@ -355,7 +360,8 @@
     "isImport": true,
     "positions": [
       "Utility"
-    ]
+    ],
+    "active": false
   },
   {
     "name": "Roman Guthrie",
@@ -368,7 +374,8 @@
     "isImport": true,
     "positions": [
       "Catcher"
-    ]
+    ],
+    "active": false
   },
   {
     "name": "David Brandt",
