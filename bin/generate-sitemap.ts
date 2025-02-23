@@ -127,7 +127,9 @@ async function main() {
   <priority>0.70</priority>
 </url>
 <url>
-  <loc>${BASE_URL}/${escapeHtmlEntities("?b=100326&amp;c=NL&amp;s=djEt6359R0cItTBp-Cp2EqrjtXYts5XosM1ILmMJMivhyQM=")}</loc>
+  <loc>${BASE_URL}/${escapeHtmlEntities(
+        "?b=100326&amp;c=NL&amp;s=djEt6359R0cItTBp-Cp2EqrjtXYts5XosM1ILmMJMivhyQM="
+    )}</loc>
   <lastmod>${currentMonthISO}</lastmod>
   <priority>0.80</priority>
 </url>

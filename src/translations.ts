@@ -1,7 +1,7 @@
 export const GAME_CANCELED = "Abgesagt"
 export const GAME_FORFEIT = "Spielaufgabe"
 export const GAME_SUSPENDED = "Spielabbruch"
-export const CALENDAR_IMPORT = "Termine im Kalender importieren"
+export const CALENDAR_IMPORT = "Kalender URL:"
 export const OFFICIAL_SCHEDULE = "Spielplan auf baseballsoftball.at"
 
 export const SELECT_SEASON = "Saison auswählen"

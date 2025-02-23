@@ -113,8 +113,22 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                 season === getCurrentSeason() && hasFutureGames &&
                                 (<div>
                                     <div>
-                                        <span className="fa fa-calendar-alt"></span>&nbsp;
-                                        <a href={calendarUrl}>{CALENDAR_IMPORT}</a>
+                                        <span className="fa fa-calendar-alt" ></span>&nbsp;
+                                        {CALENDAR_IMPORT} <input type="text" dir="rtl" readOnly value={calendarUrl}/>
+                                        {' '}
+                                        <button style={{ cursor: "pointer" }}> 
+                                            <span className="fa fa-copy" 
+                                                title="Kalender URL in die Zwischenablage zu kopieren"
+                                                onClick={() => {
+                                                    navigator.clipboard.writeText(calendarUrl)
+                                                }}
+                                            >   
+                                            </span>
+                                        </button>
+                                        {' '}
+                                        <a href="/spielplan/kalender-anleitung" target="_blank">
+                                            <span className="fa fa-info-circle" style={{ color: '#000000'}}></span>
+                                        </a>
                                     </div>
                                     {
                                         league.url && (
