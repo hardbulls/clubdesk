@@ -20,48 +20,48 @@
     "name": "2. BLW",
     "id": "2-blw",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/baseball-2-bundesliga-west-2024/schedule-and-results",
-    "seasons": [2024, 2023]
+    "url": "https://www.baseballsoftball.at/de/events/baseball-2-bundesliga-west-2025/schedule-and-results",
+    "seasons": [2023, 2024, 2025]
   },
   {
     "fullName": "2. Softball Bundesliga",
     "name": "2. SBL",
     "id": "2-sbl",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2024/schedule-and-results",
-    "seasons": [2024]
+    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2025/schedule-and-results",
+    "seasons": [2024, 2025]
   },
   {
     "fullName": "Landesliga Vorarlberg",
     "name": "LLV",
     "id": "llv",
-    "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/baseball-landesliga-vorarlberg-2024/schedule-and-results",
-    "seasons": [2023, 2024]
+    "isActive": false,
+    "url": "https://www.baseballsoftball.at/de/events/baseball-landesliga-vorarlberg-2025/schedule-and-results",
+    "seasons": [2023, 2024, 2025]
   },
   {
     "fullName": "Vorarlberger Slowpitch League",
     "name": "VSL",
     "id": "vsl",
-    "isActive": true,
+    "isActive": false,
     "url": "https://www.baseballsoftball.at/de/events/vorarlberger-slowpitch-league-2024/schedule-and-results",
-    "seasons": [2023, 2024]
+    "seasons": [2023, 2024, 2025]
   },
   {
-    "fullName": "Jugendliga Vorarlberg U16",
+    "fullName": "Jugendliga West U16",
     "name": "U16",
     "id": "u16",
-    "link": "https://www.baseballsoftball.at/de/events/baseball-jugendliga-vorarlberg-u16-2024/schedule-and-results",
-    "isActive": true,
-    "seasons": [2023, 2024]
+    "link": "https://www.baseballsoftball.at/de/events/baseball-jugendliga-west-u16-2025/schedule-and-results",
+    "isActive": false,
+    "seasons": [2023, 2024, 2025]
   },
   {
-    "fullName": "Ponyliga Vorarlberg U14",
+    "fullName": "Ponyliga West U14",
     "name": "U14",
     "id": "u14",
-    "url": "https://www.baseballsoftball.at/de/events/baseball-ponyliga-vorarlberg-u14-2024/schedule-and-results",
-    "isActive": true,
-    "seasons": [2023, 2024]
+    "url": "https://www.baseballsoftball.at/de/events/baseball-ponyliga-west-u14-2025/schedule-and-results",
+    "isActive": false,
+    "seasons": [2023, 2024, 2025]
   },
   {
     "fullName": "Schülerliga Vorarlberg U13",
@@ -74,31 +74,31 @@
     "fullName": "Schülerliga Vorarlberg U12",
     "name": "U12",
     "id": "u12",
-    "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u12-2024/schedule-and-results",
-    "isActive": true,
-    "seasons": [2024]
+    "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u12-2025/schedule-and-results",
+    "isActive": false,
+    "seasons": [2024, 2025]
   },
   {
     "fullName": "Schülerliga Vorarlberg U10",
     "name": "U10",
     "id": "u10",
-    "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u10-2024/schedule-and-results",
-    "isActive": true,
-    "seasons": [2023, 2024]
+    "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u10-2025/schedule-and-results",
+    "isActive": false,
+    "seasons": [2023, 2024, 2025]
   },
   {
-    "fullName": "Beeball Vorarlberg U8",
+    "fullName": "T-Ball Vorarlberg U8",
     "name": "U8",
     "id": "u8",
-    "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/baseball-t-ball-vorarlberg-u8-2024/schedule-and-results",
+    "isActive": false,
+    "url": "https://www.baseballsoftball.at/de/events/baseball-t-ball-vorarlberg-u8-2025/schedule-and-results",
     "seasons": [2023, 2024]
   },
   {
-    "fullName": "Preseason",
-    "name": "Preseason",
+    "fullName": "Bulls Preseason",
+    "name": "Bulls Preseason",
     "id": "preseason",
-    "isActive": false,
-    "seasons": [2024]
+    "isActive": true,
+    "seasons": [2024, 2025]
   }
 ]

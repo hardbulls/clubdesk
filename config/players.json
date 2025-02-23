@@ -16,7 +16,6 @@
       "Shortstop"
     ],
     "number": 11,
-    "yearOfBirth": 1983,
     "hits": "S",
     "throws": "R",
     "active": false,
@@ -29,7 +28,6 @@
       "Pitcher",
       "Utility"
     ],
-    "yearOfBirth": 1989,
     "number": 24,
     "hits": "R",
     "throws": "R",
@@ -47,7 +45,6 @@
     "hits": "R",
     "throws": "R",
     "image": "Leon Noebl.png",
-    "yearOfBirth": 2000,
     "nationality": "at",
     "active": false
   },
@@ -59,7 +56,6 @@
     ],
     "hits": "R",
     "throws": "R",
-    "yearOfBirth": 1994,
     "nationality": "at",
     "number": 50,
     "active": false
@@ -71,7 +67,6 @@
       "Utility"
     ],
     "hits": "R",
-    "yearOfBirth": 1996,
     "throws": "R",
     "nationality": "at",
     "number": 51,
@@ -96,7 +91,6 @@
       "Outfield"
     ],
     "hits": "R",
-    "yearOfBirth": 2006,
     "throws": "R",
     "nationality": "at",
     "image": "Nick Jaeger.png",
@@ -108,7 +102,6 @@
       "Outfield"
     ],
     "hits": "R",
-    "yearOfBirth": 2006,
     "throws": "R",
     "nationality": "at",
     "number": 6,
@@ -123,7 +116,6 @@
       "Outfield"
     ],
     "number": 4,
-    "yearOfBirth": 2001,
     "hits": "R",
     "throws": "R",
     "image": "Pascal_Campregher.png",
@@ -139,7 +131,6 @@
     "throws": "R",
     "nationality": "at",
     "image": "Patrick_Kueng.png",
-    "yearOfBirth": 2001,
     "number": 5
   },
   {
@@ -149,7 +140,6 @@
     ],
     "number": 17,
     "hits": "R",
-    "yearOfBirth": 2006,
     "throws": "R",
     "image": "Laurin Schedler.png",
     "nationality": "at"
@@ -163,7 +153,6 @@
     "number": 8,
     "hits": "R",
     "image": "Levin Maier.png",
-    "yearOfBirth": 2005,
     "throws": "R",
     "nationality": "at",
     "active": false
@@ -179,7 +168,6 @@
     "hits": "R",
     "throws": "R",
     "image": "Matthias Lutter.png",
-    "yearOfBirth": 2003,
     "nationality": "at",
     "active": false
   },
@@ -192,7 +180,6 @@
     ],
     "number": 10,
     "hits": "S",
-    "yearOfBirth": 2003,
     "throws": "R",
     "image": "Yanik_Maeser.png",
     "nationality": "at",
@@ -208,7 +195,6 @@
     "hits": "R",
     "throws": "R",
     "image": "Luca_Maeser.png",
-    "yearOfBirth": 2001,
     "nationality": "at",
     "active": false
   },
@@ -221,7 +207,6 @@
     "number": 13,
     "hits": "R",
     "throws": "R",
-    "yearOfBirth": 2000,
     "image": "Marvin Glassen.png",
     "nationality": "at",
     "active": false
@@ -235,7 +220,6 @@
     "number": 16,
     "hits": "R",
     "throws": "R",
-    "yearOfBirth": 2004,
     "image": "Jonas_Zimmermann.png",
     "nationality": "at"
   },
@@ -248,7 +232,6 @@
     "number": 23,
     "hits": "S",
     "throws": "R",
-    "yearOfBirth": 1988,
     "image": "Erwin_Frias.png",
     "nationality": "do"
   },
@@ -263,7 +246,6 @@
     "number": 19,
     "hits": "R",
     "throws": "R",
-    "yearOfBirth": 1986,
     "image": "Hubert_Boehler.png",
     "nationality": "at"
   },
@@ -275,7 +257,6 @@
     ],
     "number": 21,
     "hits": "R",
-    "yearOfBirth": 1993,
     "throws": "R",
     "image": "Arjan Frans.png",
     "nationality": "nl",
@@ -287,7 +268,6 @@
     "throws": "R",
     "nationality": "at",
     "image": "Hannes_Schnetzer.png",
-    "yearOfBirth": 2007,
     "number": 7,
     "positions": [
       "Pitcher"
@@ -298,7 +278,6 @@
     "hits":"L",
     "throws": "R",
     "nationality": "us",
-    "yearOfBirth": 1997,
     "number": 32,
     "isImport": true,
     "active": false,
@@ -314,7 +293,6 @@
     "nationality": "us",
     "number": 20,
     "isImport": true,
-    "yearOfBirth": 1998,
     "active": false,
     "positions": [
       "Catcher",
@@ -328,7 +306,6 @@
     "nationality": "ve",
     "image": "Kelvis Palma.png",
     "number": 12,
-    "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
       "Pitcher"
@@ -341,7 +318,6 @@
     "nationality": "at",
     "image": "Lukas_Bickel.png",
     "number": 22,
-    "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
       "Pitcher",
@@ -356,7 +332,6 @@
     "nationality": "de",
     "number": 27,
     "image": "Lucas_Traut.png",
-    "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
       "Utility"
@@ -370,7 +345,6 @@
     "nationality": "ca",
     "number": 3,
     "image": "Roman Guthrie.png",
-    "yearOfBirth": 1998,
     "isImport": true,
     "positions": [
       "Catcher"
@@ -384,7 +358,6 @@
     "nationality": "us",
     "image": "David_Brandt.png",
     "number": 11,
-    "yearOfBirth": 1990,
     "isImport": true,
     "positions": [
       "Utility"
@@ -396,7 +369,6 @@
     "throws": "R",
     "nationality": "at",
     "cooperationPlayer": "Feldkirch Cardinals",
-    "yearOfBirth": 1997,
     "number": 55,
     "active": false,
     "positions": [
@@ -409,7 +381,6 @@
     "name": "Joe Kirby",
     "hits":"L",
     "throws": "R",
-    "yearOfBirth": 1979,
     "nationality": "ca",
     "active": false,
     "number": 33,
