@@ -21,6 +21,13 @@
     "logo": "logo_dd.png+logo_vm.png"
   },
   {
+    "name": "SG Indians/Cardinals",
+    "abbreviation": "DI/FC",
+    "keywords": ["Team SG Indians - Cardinals U16"],
+    "isCooperation": true,
+    "logo": "logo_di.png+logo_fc.png"
+  },
+  {
     "name": "Pee Wees St. Pölten",
     "abbreviation": "PW",
     "keywords": ["Pee Wees St. Pölten"],
@@ -54,6 +61,12 @@
     "name": "Hard Bandidos",
     "abbreviation": "HB",
     "keywords": ["Hard Bandidos"],
+    "logo": "logo_hb.png"
+  },
+  {
+    "name": "Hard Bulls Future Team",
+    "abbreviation": "HB",
+    "keywords": ["Hard Bulls Future Team", "Bulls FT", "Bulls Future Team"],
     "logo": "logo_hb.png"
   },
   {

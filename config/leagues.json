@@ -35,7 +35,7 @@
     "fullName": "Landesliga Vorarlberg",
     "name": "LLV",
     "id": "llv",
-    "isActive": false,
+    "isActive": true,
     "url": "https://www.baseballsoftball.at/de/events/baseball-landesliga-vorarlberg-2025/schedule-and-results",
     "seasons": [2023, 2024, 2025]
   },
@@ -52,7 +52,7 @@
     "name": "U16",
     "id": "u16",
     "link": "https://www.baseballsoftball.at/de/events/baseball-jugendliga-west-u16-2025/schedule-and-results",
-    "isActive": false,
+    "isActive": true,
     "seasons": [2023, 2024, 2025]
   },
   {
