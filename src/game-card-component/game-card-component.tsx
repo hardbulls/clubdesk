@@ -52,6 +52,7 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
                             <TeamLogoComponent team={game.home}/>) : '?'
                     }
                 </div>
+
             </div>
 
             <div className={`${CN}-overlay-wrapper`}>
@@ -87,6 +88,18 @@ export const GameCardComponent = ({game}: Props): JSX.Element => {
                             </div>
                         ) : undefined
                 }
+            </div>
+
+            <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
+                <strong>
+                    {game.away?.name}
+                </strong>
+                <strong>
+                    &nbsp;-&nbsp;
+                </strong>
+                <strong>
+                    {game.home?.name}
+                </strong>
             </div>
 
             <div className={`${CN}-date ${game.status === 'canceled' ? `${CN}-date-canceled` : ''}`}>

@@ -23,7 +23,7 @@
   {
     "name": "SG Indians/Cardinals",
     "abbreviation": "DI/FC",
-    "keywords": ["Team SG Indians - Cardinals U16"],
+    "keywords": ["SG Indians - Cardinals U16"],
     "isCooperation": true,
     "logo": "logo_di.png+logo_fc.png"
   },
@@ -36,7 +36,7 @@
   {
     "name": "Hard Bulls",
     "abbreviation": "HB",
-    "keywords": ["Hard Bulls"],
+    "keywords": ["Hard Bulls", "Hard Bulls U16", "Hard Bulls U14", "Hard Bulls U12", "Hard Bulls U10", "Hard Bulls U8"],
     "logo": "logo_hb.png"
   },
   {
@@ -48,7 +48,7 @@
   {
     "name": "Hard Bullets",
     "abbreviation": "HB",
-    "keywords": ["Hard Bullets"],
+    "keywords": ["Hard Bullets", "Hard Bulls Bullets"],
     "logo": "logo_hb.png"
   },
   {
@@ -60,7 +60,7 @@
   {
     "name": "Hard Bandidos",
     "abbreviation": "HB",
-    "keywords": ["Hard Bandidos"],
+    "keywords": ["Hard Bandidos", "Hard Bulls Bandidos"],
     "logo": "logo_hb.png"
   },
   {
@@ -72,7 +72,7 @@
   {
     "name": "Dornbirn Indians",
     "abbreviation": "DI",
-    "keywords": ["Dornbirn Indians", "Dornbirn Little Indians", "Dornbirn indians Minis"],
+    "keywords": ["Dornbirn Indians", "Dornbirn Little Indians", "Dornbirn indians Minis", "Dornbirn Indians 2", "Dornbirn Indians 3"],
     "logo": "logo_di.png"
   },
   {
@@ -96,13 +96,13 @@
   {
     "name": "Kufstein Vikings",
     "abbreviation": "KV",
-    "keywords": ["Kufstein Vikings", "Pirmoser Vikings"],
+    "keywords": ["Kufstein Vikings", "Pirmoser Vikings", "Kufstein Vikings U16"],
     "logo": "logo_kv.png"
   },
   {
     "name": "Feldkirch Cardinals",
     "abbreviation": "FC",
-    "keywords": ["Feldkirch Cardinals"],
+    "keywords": ["Feldkirch Cardinals", "Feldkirch Cardinals 2", "Feldkirch Cardinals U16", "Feldkirch Cardinals U14", "Feldkirch Cardinals U12", "Feldkirch Cardinals U10", "Feldkirch Cardinals U8"],
     "logo": "logo_fc.png"
   },
   {
@@ -126,7 +126,7 @@
   {
    "name": "Diving Ducks",
     "abbreviation": "DD",
-    "keywords": ["Diving Ducks", "Wr. Neustadt Diving Ducks"],
+    "keywords": ["Diving Ducks", "Wr. Neustadt Diving Ducks", "Diving Ducks Wr. Neustadt", "Diving Ducks Wiener Neustadt"],
     "logo": "logo_dd.png"
   },
   {
@@ -142,9 +142,9 @@
     "logo": "logo_vw.png"
   },
   {
-   "name": "Blue Bats",
+   "name": "Schwechat Blue Bats",
     "abbreviation": "BB",
-    "keywords": ["Blue Bats"],
+    "keywords": ["Blue Bats", "Schwechat Blue Bats", "Blue Bats Schwechat"],
     "logo": "logo_bb.png"
   },
   {
