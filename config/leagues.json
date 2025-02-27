@@ -60,7 +60,7 @@
     "name": "U14",
     "id": "u14",
     "url": "https://www.baseballsoftball.at/de/events/baseball-ponyliga-west-u14-2025/schedule-and-results",
-    "isActive": false,
+    "isActive": true,
     "seasons": [2023, 2024, 2025]
   },
   {
@@ -75,7 +75,7 @@
     "name": "U12",
     "id": "u12",
     "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u12-2025/schedule-and-results",
-    "isActive": false,
+    "isActive": true,
     "seasons": [2024, 2025]
   },
   {
@@ -83,16 +83,16 @@
     "name": "U10",
     "id": "u10",
     "url": "https://www.baseballsoftball.at/de/events/baseball-schuelerliga-vorarlberg-u10-2025/schedule-and-results",
-    "isActive": false,
+    "isActive": true,
     "seasons": [2023, 2024, 2025]
   },
   {
     "fullName": "T-Ball Vorarlberg U8",
     "name": "U8",
     "id": "u8",
-    "isActive": false,
+    "isActive": true,
     "url": "https://www.baseballsoftball.at/de/events/baseball-t-ball-vorarlberg-u8-2025/schedule-and-results",
-    "seasons": [2023, 2024]
+    "seasons": [2023, 2024, 2025]
   },
   {
     "fullName": "Bulls Preseason",
