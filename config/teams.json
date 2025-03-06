@@ -2,198 +2,302 @@
   {
     "name": "SG Indians/Vikings",
     "abbreviation": "DI/KV",
-    "keywords": ["SG Indians/Vikings", "SG Indians - Vikings U16"],
+    "keywords": [
+      "SG Indians/Vikings",
+      "SG Indians - Vikings U16"
+    ],
     "isCooperation": true,
     "logo": "logo_di.png+logo_kv.png"
   },
   {
     "name": "SG Indians/Bulls",
     "abbreviation": "DI/HB",
-    "keywords": ["SG Indians/Bulls", "SG Indians - Bulls"],
+    "keywords": [
+      "SG Indians/Bulls",
+      "SG Indians - Bulls"
+    ],
     "isCooperation": true,
     "logo": "logo_di.png+logo_hb.png"
   },
   {
     "name": "SG Crazy Chicklets/Metrostars",
     "abbreviation": "DI/HB",
-    "keywords": ["SG Crazy Chicklets/Metrostars", "SG Crazy Chicklets - Metrostars"],
+    "keywords": [
+      "SG Crazy Chicklets/Metrostars",
+      "SG Crazy Chicklets - Metrostars"
+    ],
     "isCooperation": true,
     "logo": "logo_dd.png+logo_vm.png"
   },
   {
     "name": "SG Indians/Cardinals",
     "abbreviation": "DI/FC",
-    "keywords": ["SG Indians - Cardinals U16"],
+    "keywords": [
+      "SG Indians - Cardinals U16"
+    ],
     "isCooperation": true,
     "logo": "logo_di.png+logo_fc.png"
   },
   {
     "name": "Pee Wees St. Pölten",
     "abbreviation": "PW",
-    "keywords": ["Pee Wees St. Pölten"],
+    "keywords": [
+      "Pee Wees St. Pölten"
+    ],
     "logo": "logo_softball_pw.png"
   },
   {
     "name": "Hard Bulls",
     "abbreviation": "HB",
-    "keywords": ["Hard Bulls", "Hard Bulls U16", "Hard Bulls U14", "Hard Bulls U12", "Hard Bulls U10", "Hard Bulls U8"],
+    "keywords": [
+      "Hard Bulls",
+      "Hard Bulls U16",
+      "Hard Bulls U14",
+      "Hard Bulls U12",
+      "Hard Bulls U10",
+      "Hard Bulls U8"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Hard Barons",
     "abbreviation": "HB",
-    "keywords": ["Hard Barons"],
+    "keywords": [
+      "Hard Barons"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Hard Bullets",
     "abbreviation": "HB",
-    "keywords": ["Hard Bullets", "Hard Bulls Bullets"],
+    "keywords": [
+      "Hard Bullets",
+      "Hard Bulls Bullets"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Hard Bandidas",
     "abbreviation": "HB",
-    "keywords": ["Hard Bandidas"],
+    "keywords": [
+      "Hard Bandidas"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Hard Bandidos",
     "abbreviation": "HB",
-    "keywords": ["Hard Bandidos", "Hard Bulls Bandidos"],
+    "keywords": [
+      "Hard Bandidos",
+      "Hard Bulls Bandidos"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Hard Bulls Future Team",
     "abbreviation": "HB",
-    "keywords": ["Hard Bulls Future Team", "Bulls FT", "Bulls Future Team"],
+    "keywords": [
+      "Hard Bulls Future Team",
+      "Bulls FT",
+      "Bulls Future Team"
+    ],
     "logo": "logo_hb.png"
   },
   {
     "name": "Dornbirn Indians",
     "abbreviation": "DI",
-    "keywords": ["Dornbirn Indians", "Dornbirn Little Indians", "Dornbirn indians Minis", "Dornbirn Indians 2", "Dornbirn Indians 3"],
+    "keywords": [
+      "Dornbirn Indians",
+      "Dornbirn Little Indians",
+      "Dornbirn indians Minis",
+      "Dornbirn Indians 2",
+      "Dornbirn Indians 3",
+      "Dornbirn Indians Ponies U14",
+      "Dornbirn Little Indians U12",
+      "Dornbirn Indians Kids U10",
+      "Dornbirn Indians Minis U8"
+    ],
     "logo": "logo_di.png"
   },
   {
     "name": "Dornbirn Legends",
     "abbreviation": "DI",
-    "keywords": ["Dornbirn Legends"],
+    "keywords": [
+      "Dornbirn Legends"
+    ],
     "logo": "logo_di.png"
   },
   {
     "name": "Dornbirn Redhawks",
     "abbreviation": "DI",
-    "keywords": ["Dornbirn Redhawks"],
+    "keywords": [
+      "Dornbirn Redhawks"
+    ],
     "logo": "logo_di.png"
   },
   {
     "name": "Dornbirn Bears",
     "abbreviation": "DI",
-    "keywords": ["Dornbirn Bears"],
+    "keywords": [
+      "Dornbirn Bears"
+    ],
     "logo": "logo_di.png"
   },
   {
     "name": "Kufstein Vikings",
     "abbreviation": "KV",
-    "keywords": ["Kufstein Vikings", "Pirmoser Vikings", "Kufstein Vikings U16"],
+    "keywords": [
+      "Kufstein Vikings",
+      "Pirmoser Vikings",
+      "Kufstein Vikings U16",
+      "Kufstein Vikings U14"
+    ],
     "logo": "logo_kv.png"
   },
   {
     "name": "Feldkirch Cardinals",
     "abbreviation": "FC",
-    "keywords": ["Feldkirch Cardinals", "Feldkirch Cardinals 2", "Feldkirch Cardinals U16", "Feldkirch Cardinals U14", "Feldkirch Cardinals U12", "Feldkirch Cardinals U10", "Feldkirch Cardinals U8"],
+    "keywords": [
+      "Feldkirch Cardinals",
+      "Feldkirch Cardinals 2",
+      "Feldkirch Cardinals U16",
+      "Feldkirch Cardinals U14",
+      "Feldkirch Cardinals U12",
+      "Feldkirch Cardinals U10",
+      "Feldkirch Cardinals U8"
+    ],
     "logo": "logo_fc.png"
   },
   {
     "name": "Feldkirch Falcons",
     "abbreviation": "FC",
-    "keywords": ["Feldkirch Falcons"],
+    "keywords": [
+      "Feldkirch Falcons"
+    ],
     "logo": "logo_fc.png"
   },
   {
     "name": "Feldkirch Angry Balls",
     "abbreviation": "FC",
-    "keywords": ["Feldkirch Angry Balls"],
+    "keywords": [
+      "Feldkirch Angry Balls"
+    ],
     "logo": "logo_fc.png"
   },
   {
     "name": "Schwaz Tigers",
     "abbreviation": "ST",
-    "keywords": ["Schwaz Tigers"],
+    "keywords": [
+      "Schwaz Tigers"
+    ],
     "logo": "logo_st.png"
   },
   {
-   "name": "Diving Ducks",
+    "name": "Diving Ducks",
     "abbreviation": "DD",
-    "keywords": ["Diving Ducks", "Wr. Neustadt Diving Ducks", "Diving Ducks Wr. Neustadt", "Diving Ducks Wiener Neustadt"],
+    "keywords": [
+      "Diving Ducks",
+      "Wr. Neustadt Diving Ducks",
+      "Diving Ducks Wr. Neustadt",
+      "Diving Ducks Wiener Neustadt"
+    ],
     "logo": "logo_dd.png"
   },
   {
     "name": "Vienna Wanderers",
     "abbreviation": "VW",
-    "keywords": ["Vienna Wanderers"],
+    "keywords": [
+      "Vienna Wanderers"
+    ],
     "logo": "logo_vw.png"
   },
   {
     "name": "Vienna Wanderers 2",
     "abbreviation": "VW",
-    "keywords": ["Vienna Wanderers 2"],
+    "keywords": [
+      "Vienna Wanderers 2"
+    ],
     "logo": "logo_vw.png"
   },
   {
-   "name": "Schwechat Blue Bats",
+    "name": "Schwechat Blue Bats",
     "abbreviation": "BB",
-    "keywords": ["Blue Bats", "Schwechat Blue Bats", "Blue Bats Schwechat"],
+    "keywords": [
+      "Blue Bats",
+      "Schwechat Blue Bats",
+      "Blue Bats Schwechat"
+    ],
     "logo": "logo_bb.png"
   },
   {
     "name": "Vienna Metrostars",
     "abbreviation": "VM",
-    "keywords": ["Vienna Metrostars"],
+    "keywords": [
+      "Vienna Metrostars"
+    ],
     "logo": "logo_vm.png"
-
   },
   {
     "name": "Traiskirchen Grasshoppers",
     "abbreviation": "GH",
-    "keywords": ["Traiskirchen Grasshoppers"],
+    "keywords": [
+      "Traiskirchen Grasshoppers"
+    ],
     "logo": "logo_gh.png"
   },
   {
     "name": "Stock City Cubs",
     "abbreviation": "CU",
-    "keywords": ["Stockerau Cubs", "Stock City Cubs"],
+    "keywords": [
+      "Stockerau Cubs",
+      "Stock City Cubs"
+    ],
     "logo": "logo_cu.png"
   },
   {
     "name": "Attnang-Puchheim Athletics",
     "abbreviation": "AA",
-    "keywords": ["Attnang-Puchheim Athletics", "ASAK Athletics", "Attnang Athletics", "ASAK Athletics"],
+    "keywords": [
+      "Attnang-Puchheim Athletics",
+      "ASAK Athletics",
+      "Attnang Athletics",
+      "ASAK Athletics"
+    ],
     "logo": "logo_aa.png"
   },
   {
     "name": "Centurions Wels",
     "abbreviation": "CW",
-    "keywords": ["Centurions Wels", "Centurions"],
+    "keywords": [
+      "Centurions Wels",
+      "Centurions"
+    ],
     "logo": "logo_centurions.png"
   },
   {
     "name": "Dirty Sox Graz",
     "abbreviation": "DS",
-    "keywords": ["Dirty Sox", "Dirty Sox Graz"],
+    "keywords": [
+      "Dirty Sox",
+      "Dirty Sox Graz"
+    ],
     "logo": "logo_dirty-sox.png"
   },
   {
     "name": "Wil Pirates",
     "abbreviation": "WP",
-    "keywords": ["Wil Pirates", "Wil Devils"],
+    "keywords": [
+      "Wil Pirates",
+      "Wil Devils"
+    ],
     "logo": "logo_ch_pirates.png"
   },
   {
     "name": "Baldham Boars",
     "abbreviation": "BB",
-    "keywords": ["Baldham Boars"],
+    "keywords": [
+      "Baldham Boars"
+    ],
     "logo": "logo_de_boars.png"
   }
 ]
