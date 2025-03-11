@@ -299,5 +299,21 @@
       "Baldham Boars"
     ],
     "logo": "logo_de_boars.png"
+  },
+  {
+    "name": "Heidenheim Heideköpfe",
+    "abbreviation": "HH",
+    "keywords": [
+      "Heidenheim Heideköpfe"
+    ],
+    "logo": "logo_de_heidenheim.png"
+  },
+  {
+    "name": "Stuttgart Reds",
+    "abbreviation": "SR",
+    "keywords": [
+      "Stuttgart Reds"
+    ],
+    "logo": "logo_de_stuttgart-reds.png"
   }
 ]

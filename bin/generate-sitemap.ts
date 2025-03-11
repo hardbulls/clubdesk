@@ -82,6 +82,11 @@ async function main() {
   <priority>0.70</priority>
 </url>
 <url>
+  <loc>${BASE_URL}/sommercamp</loc>
+  <lastmod>${currentMonthISO}</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
   <loc>${BASE_URL}/trainingszeiten</loc>
   <lastmod>${currentMonthISO}</lastmod>
   <priority>0.70</priority>

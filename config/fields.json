@@ -110,5 +110,19 @@
     "location": "Baldham",
     "image": "boars_ballpark.png",
     "keywords": ["Boars Ballpark, Baldham"]
+  },
+  {
+    "teams": ["Heidenheim Heideköpfe"],
+    "venue": "Ballpark Heidenheim",
+    "location": "Heidenheim an der Brenz",
+    "image": "heidenheim.png",
+    "keywords": ["HellensteinEnergie Ballpark", "Ballpark Heidenheim", "Heidenheim", "Heidenheim an der Brenz", "Ballpark Heidenheim, Heidenheim an der Brenz"]
+  },
+  {
+    "teams": ["Stuttgart Reds"],
+    "venue": "Stuttgart Reds Baseball Field",
+    "location": "Stuttgart",
+    "image": "stuttgart.png",
+    "keywords": ["Stuttgart Reds Baseball Field", "Stuttgart", "Stuttgart Reds"]
   }
 ]

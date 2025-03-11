@@ -1,13 +1,9 @@
-import fields from "../config/fields.json"
 import type { Field } from "./model/Field"
-
-export const getFields = (): Field[] => {
-    return fields as Field[]
-}
+import { FieldRepository } from "./repository/field-repository"
 
 const fieldCache: { [key: string]: Field } = {}
 
-export const findField = (search: string): Field | undefined => {
+export const findField = async (search: string): Promise<Field | undefined> => {
     let cachedField = fieldCache[search]
 
     if (cachedField) {
@@ -18,7 +14,7 @@ export const findField = (search: string): Field | undefined => {
         return undefined
     }
 
-    cachedField = getFields().find((field) => {
+    cachedField = (await FieldRepository.findAll()).find((field) => {
         return field.keywords.includes(search)
     })
 

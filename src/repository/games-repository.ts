@@ -19,34 +19,42 @@ type ApiGame = {
 
 export class GamesRepository {
     public static async findByLeagueAndSeason(league: League, season: number): Promise<Game[]> {
-        return ((await fetchV2Api(`seasons/${season}/${league.id}/games.json`)) as ApiGame[]).map((game) => {
-            return {
-                season: season,
-                league: league,
-                home: findTeam(game.home),
-                away: findTeam(game.away),
-                date: new Date(game.date),
-                awayScore: game.awayScore,
-                homeScore: game.homeScore,
-                status: game.status,
-                venue: findField(game.venue),
-            }
-        })
+        const result: Game[] = []
+
+        for (const apiGame of (await fetchV2Api(`seasons/${season}/${league.id}/games.json`)) as ApiGame[]) {
+            result.push({
+                season: apiGame.season,
+                league: LeagueRepository.findById(apiGame.league),
+                home: findTeam(apiGame.home),
+                away: findTeam(apiGame.away),
+                date: new Date(apiGame.date),
+                awayScore: apiGame.awayScore,
+                homeScore: apiGame.homeScore,
+                status: apiGame.status,
+                venue: await findField(apiGame.venue),
+            })
+        }
+
+        return result
     }
 
     public static async findWeeklyGames(): Promise<Game[]> {
-        return ((await fetchV2Api(`weekly-games.json`)) as ApiGame[]).map((game) => {
-            return {
-                season: game.season,
-                league: LeagueRepository.findById(game.league),
-                home: findTeam(game.home),
-                away: findTeam(game.away),
-                date: new Date(game.date),
-                awayScore: game.awayScore,
-                homeScore: game.homeScore,
-                status: game.status,
-                venue: findField(game.venue),
-            }
-        })
+        const result: Game[] = []
+
+        for (const apiGame of (await fetchV2Api(`weekly-games.json`)) as ApiGame[]) {
+            result.push({
+                season: apiGame.season,
+                league: LeagueRepository.findById(apiGame.league),
+                home: findTeam(apiGame.home),
+                away: findTeam(apiGame.away),
+                date: new Date(apiGame.date),
+                awayScore: apiGame.awayScore,
+                homeScore: apiGame.homeScore,
+                status: apiGame.status,
+                venue: await findField(apiGame.venue),
+            })
+        }
+
+        return result
     }
 }
