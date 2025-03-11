@@ -182,5 +182,13 @@
       "season": 2018,
       "title": "2. Best Pitcher (West)"
     }
+  ],
+  "David Brandt": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2024,
+      "title": "Gold Glove Centerfield"
+    }
   ]
 }
