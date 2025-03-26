@@ -20,7 +20,7 @@ export const Ballpark = () => {
             <div className="overlay-map-item" style={{top: '334px', left: '71px'}}>Nachwuchsfeld/Softballfeld 1</div>
             <div className="overlay-map-item" style={{top: '353px', left: '300px'}}>Gäste Dugout</div>
             <div className="overlay-map-item" style={{top: '284px', left: '284px'}}>Heim Dugout</div>
-            <div className="overlay-map-item" style={{top: '646px', left: '397px'}}>Nachwuchsfeld/Softballfeld 2</div>
+            <div className="overlay-map-item" style={{top: '646px', left: '397px'}}>Leftfield/Softballfeld 2</div>
             <div className="overlay-map-item" style={{top: '723px', left: '359px'}}>Gäste Dugout</div>
             <div className="overlay-map-item" style={{top: '701px', left: '591px'}}>Heim Dugout</div>
             <div className="overlay-map-item" style={{top: '271px', left: '701px'}}>WC/Umkleide</div>
