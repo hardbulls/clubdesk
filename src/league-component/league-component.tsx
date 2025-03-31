@@ -116,19 +116,32 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                         <span className="fa fa-calendar-alt" ></span>&nbsp;
                                         {CALENDAR_IMPORT} <input type="text" dir="rtl" readOnly value={calendarUrl}/>
                                         {' '}
-                                        <button style={{ cursor: "pointer" }}> 
-                                            <span className="fa fa-copy" 
-                                                title="Kalender URL in die Zwischenablage zu kopieren"
-                                                onClick={() => {
-                                                    navigator.clipboard.writeText(calendarUrl)
-                                                }}
-                                            >   
-                                            </span>
-                                        </button>
-                                        {' '}
-                                        <a href="/spielplan/kalender-anleitung" target="_blank">
-                                            <span className="fa fa-info-circle" style={{ color: '#000000'}}></span>
-                                        </a>
+                                        <div style={{ gap: '8px', display: 'inline-flex' }}>
+                                            <button style={{ cursor: "pointer" }}>
+                                                <span className="fa fa-copy"
+                                                    title="Kalender URL in die Zwischenablage zu kopieren"
+                                                    onClick={() => {
+                                                        navigator.clipboard.writeText(calendarUrl)
+                                                    }}
+                                                >
+                                                </span>
+                                            </button>
+                                            {' '}
+                                            <a href="/spielplan/kalender-anleitung" target="_blank">
+                                                <span
+                                                    title="Anleitung Spielplan im Kalender importieren"
+                                                    className="fa fa-info-circle" style={{ color: '#000000'}}>
+                                                </span>
+                                            </a>
+                                            {' '}
+                                            <a href={calendarUrl} target="_blank">
+                                                <span
+                                                    title="Kalender downloaden"
+                                                    className="fa fa-download" style={{ color: '#000000'}}>
+
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
                                     {
                                         league.url && (
