@@ -1,22 +1,16 @@
 import {DOMcreateElement} from "../jsx";
 import "../player-card.css"
-// @ts-ignore since typescript doesn't support multiple wildcards
-import defaultPlayer from "../../config/images/players/default.png?as=webp&width=220&height=220"
-
 import {CoachCardContent} from "./CoachCardContent"
 import {PlayerCardContent} from "./PlayerCardContent"
 import {CountryFlag} from "./CountryFlag"
-import {loadFiles} from "../util/files"
 import {Statistics} from "./Statistics"
 import type {Modal} from "../create-modal";
 import type {Player} from "../model/Player";
 import {CooperationIcon} from "./CooparationIcon";
 import {ImportIcon} from "./ImportIcon";
 import {AwardsSection} from "./AwardSection";
+import {ASSETS_BASE_URL} from "../config";
 
-const playerImageMapping = loadFiles(
-    require.context("../../config/images/players/?as=webp&width=220&height=220", false, /\.(png|jpg)$/)
-)
 interface Props {
     player: Player,
     modal: Modal
@@ -25,21 +19,18 @@ interface Props {
 export const PlayerCard = ({player, modal}: Props): JSX.Element => {
     const name = player.name
     const imageName = player.image || "default.png"
-    // const playerImage = playerImageMapping[`./${imageName}`];
-    // const image = playerImage || defaultPlayer
-    const playerImage = undefined;
-    const image = defaultPlayer
+    const playerImage = `${ASSETS_BASE_URL}players/${imageName}`;
 
     return (
         <div className="hardbulls-player-card">
             <div className="hardbulls-player-card-image-container">
-                <img className={`${player.image && playerImage ? 'has-image' : ''}`} src={image} alt={name} width={220} height={220}/>
+                <img className={`${player.image && playerImage ? 'has-image' : ''}`} src={playerImage} alt={name} width={200}/>
             </div>
             {player.isCoach ?
                 <CoachCardContent name={name}/> :
                 <PlayerCardContent name={name} positions={player.positions} hits={player.hits} throws={player.throws}/>}
             <div className="hardbulls-player-card-top-left">
-                {player.awards && <AwardsSection awards={player.awards}/> }
+                {player.awards && <AwardsSection awards={player.awards}/>}
             </div>
             <div className="hardbulls-player-card-icons">
                 {player.isImport && <ImportIcon/>}

@@ -4,7 +4,7 @@
     "nickname": "AB",
     "positions": [],
     "isCoach": true,
-    "image": "Anthony_Bennett.png",
+    "image": "anthony_bennett.jpg",
     "nationality": "us",
     "number": 42
   },
@@ -31,7 +31,7 @@
     "number": 24,
     "hits": "R",
     "throws": "R",
-    "image": "Marcel Winder.png",
+    "image": "marcel_winder.jpg",
     "nationality": "at"
   },
   {
@@ -44,7 +44,6 @@
     "number": 9,
     "hits": "R",
     "throws": "R",
-    "image": "Leon Noebl.png",
     "nationality": "at",
     "active": false
   },
@@ -93,7 +92,7 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "image": "nick_jaeger.png",
+    "image": "nick_jaeger.jpg",
     "number": 99
   },
   {
@@ -105,7 +104,7 @@
     "throws": "R",
     "nationality": "at",
     "number": 6,
-    "image": "jakob_gruber.png"
+    "image": "jakob_gruber.jpg"
   },
   {
     "name": "Pascal Campregher",
@@ -118,7 +117,7 @@
     "number": 4,
     "hits": "R",
     "throws": "R",
-    "image": "Pascal_Campregher.png",
+    "active": false,
     "nationality": "at"
   },
   {
@@ -130,11 +129,10 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "image": "Patrick_Kueng.png",
     "number": 5
   },
   {
-    "name": "Janik Rudigier",
+    "name": "Jannik Rudigier",
     "positions": [
       "Infield",
       "Catcher"
@@ -142,7 +140,7 @@
     "number": 13,
     "hits": "R",
     "throws": "R",
-    "image": "janik_rudigier.png",
+    "image": "jannik_rudigier.jpg",
     "nationality": "at"
   },
   {
@@ -154,7 +152,7 @@
     "number": 9,
     "hits": "L",
     "throws": "L",
-    "image": "caleb_topper.png",
+    "image": "caleb_topper.jpg",
     "nationality": "at"
   },
   {
@@ -167,7 +165,7 @@
     "number": 17,
     "hits": "R",
     "throws": "R",
-    "image": "Laurin Schedler.png",
+    "image": "laurin_schedler.jpg",
     "nationality": "at"
   },
   {
@@ -181,7 +179,7 @@
     "hits": "L",
     "throws": "L",
     "isImport": true,
-    "image": "kenta_toyokawa.png",
+    "image": "kenta_toyokawa.jpg",
     "nationality": "jp"
   },
   {
@@ -193,7 +191,7 @@
     "number": 14,
     "hits": "L",
     "throws": "L",
-    "image": "gaabriele_sicari.png",
+    "image": "gabriele_sicari.jpg",
     "nationality": "it"
   },
   {
@@ -204,7 +202,7 @@
     "number": 7,
     "hits": "R",
     "throws": "R",
-    "image": "carlos_frias.png",
+    "image": "carlos_frias.jpg",
     "nationality": "kn"
   },
   {
@@ -216,7 +214,6 @@
     "number": 10,
     "hits": "R",
     "throws": "R",
-    "image": "theo_schaehle.png",
     "nationality": "at"
   },
   {
@@ -229,7 +226,7 @@
     "hits": "L",
     "throws": "L",
     "isImport": true,
-    "image": "koshiro_kurima.png",
+    "image": "koshiro_kurima.jpg",
     "nationality": "jp"
   },
   {
@@ -240,7 +237,6 @@
     ],
     "number": 8,
     "hits": "R",
-    "image": "Levin Maier.png",
     "throws": "R",
     "nationality": "at",
     "active": false
@@ -255,34 +251,6 @@
     "number": 18,
     "hits": "R",
     "throws": "R",
-    "image": "Matthias Lutter.png",
-    "nationality": "at",
-    "active": false
-  },
-  {
-    "name": "Yanik Mäser",
-    "positions": [
-      "Outfield",
-      "3rd. Base",
-      "Shortstop"
-    ],
-    "number": 10,
-    "hits": "S",
-    "throws": "R",
-    "image": "Yanik_Maeser.png",
-    "nationality": "at",
-    "active": false
-  },
-  {
-    "name": "Luca Mäser",
-    "positions": [
-      "Catcher",
-      "Outfield"
-    ],
-    "number": 29,
-    "hits": "R",
-    "throws": "R",
-    "image": "Luca_Maeser.png",
     "nationality": "at",
     "active": false
   },
@@ -295,7 +263,6 @@
     "number": 13,
     "hits": "R",
     "throws": "R",
-    "image": "Marvin Glassen.png",
     "nationality": "at",
     "active": false
   },
@@ -308,7 +275,6 @@
     "number": 16,
     "hits": "R",
     "throws": "R",
-    "image": "Jonas_Zimmermann.png",
     "nationality": "at"
   },
   {
@@ -320,7 +286,7 @@
     "number": 23,
     "hits": "S",
     "throws": "R",
-    "image": "Erwin_Frias.png",
+    "image": "erwin_frias.jpg",
     "nationality": "do"
   },
   {
@@ -334,7 +300,6 @@
     "number": 19,
     "hits": "R",
     "throws": "R",
-    "image": "Hubert_Boehler.png",
     "nationality": "at",
     "active": false
   },
@@ -347,7 +312,6 @@
     "number": 21,
     "hits": "R",
     "throws": "R",
-    "image": "Arjan Frans.png",
     "nationality": "nl",
     "active": false
   },
@@ -356,64 +320,10 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "image": "Hannes_Schnetzer.png",
     "number": 7,
     "positions": [
       "Pitcher"
     ]
-  },
-  {
-    "name": "Pearce Howard",
-    "hits": "L",
-    "throws": "R",
-    "nationality": "us",
-    "number": 32,
-    "isImport": true,
-    "active": false,
-    "positions": [
-      "Pitcher",
-      "Outfield"
-    ]
-  },
-  {
-    "name": "Jackson Murphy",
-    "hits": "R",
-    "throws": "R",
-    "nationality": "us",
-    "number": 20,
-    "isImport": true,
-    "active": false,
-    "positions": [
-      "Catcher",
-      "1st. Base"
-    ]
-  },
-  {
-    "name": "Kelvis Palma",
-    "hits": "R",
-    "throws": "R",
-    "nationality": "ve",
-    "image": "Kelvis Palma.png",
-    "number": 12,
-    "isImport": true,
-    "positions": [
-      "Pitcher"
-    ],
-    "active": false
-  },
-  {
-    "name": "Lukas Bickel",
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "image": "Lukas_Bickel.png",
-    "number": 22,
-    "isImport": true,
-    "positions": [
-      "Pitcher",
-      "1st. Base"
-    ],
-    "active": false
   },
   {
     "name": "Jed Downham",
@@ -421,7 +331,7 @@
     "throws": "R",
     "nationality": "us",
     "number": 26,
-    "image": "jed_downham.png",
+    "image": "jed_downham.jpg",
     "isImport": true,
     "positions": [
       "1st. Base",
@@ -435,7 +345,7 @@
     "throws": "R",
     "nationality": "at",
     "number": 8,
-    "image": "nathan_buechele.png",
+    "image": "nathan_buechele.jpg",
     "positions": [
       "2nd. Base",
       "Pitcher"
@@ -447,7 +357,7 @@
     "throws": "R",
     "nationality": "at",
     "number": 12,
-    "image": "julius_barta.png",
+    "image": "julius_barta.jpg",
     "positions": [
       "Outfield"
     ]
@@ -457,9 +367,9 @@
     "hits": "R",
     "throws": "R",
     "nationality": "us",
-    "image": "David_Brandt.png",
     "number": 11,
     "isImport": true,
+    "active": false,
     "positions": [
       "Utility"
     ]
@@ -470,6 +380,7 @@
     "throws": "R",
     "nationality": "at",
     "cooperationPlayer": "Feldkirch Cardinals",
+    "image": "levin_heinzle.jpg",
     "number": 18,
     "positions": [
       "Pitcher",
@@ -483,7 +394,6 @@
     "throws": "R",
     "nationality": "at",
     "cooperationPlayer": "Schwaz Tigers",
-    "image": "pauL_astl.png",
     "number": 22,
     "positions": [
       "Pitcher",
@@ -495,7 +405,6 @@
     "hits": "L",
     "throws": "R",
     "nationality": "ca",
-    "image": "joe_kirby.png",
     "number": 37,
     "positions": [
       "Utility",

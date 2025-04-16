@@ -20,7 +20,7 @@ div.hardbulls-player-card {
 }
 
 .hardbulls-player-card-image-container img.has-image {
-    filter: drop-shadow(0 0 3px #000);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.65));
 }
 
 div.hardbulls-player-card-name {
