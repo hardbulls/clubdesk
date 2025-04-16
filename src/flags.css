@@ -17,6 +17,9 @@
     background: url(./assets/flags/de.svg) 0 0/contain no-repeat;
 }
 
+.hb-flag.flag-jp {
+    background: url(./assets/flags/jp.svg) 0 0/contain no-repeat;
+}
 
 .hb-flag.flag-nl {
     background: url(./assets/flags/nl.svg) 0 0/contain no-repeat;
@@ -36,4 +39,12 @@
 
 .hb-flag.flag-ve {
     background: url(./assets/flags/ve.svg) 0 0/contain no-repeat;
+}
+
+.hb-flag.flag-it {
+    background: url(./assets/flags/it.svg) 0 0/contain no-repeat;
+}
+
+.hb-flag.flag-kn {
+    background: url(./assets/flags/kn.svg) 0 0/contain no-repeat;
 }

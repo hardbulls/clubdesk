@@ -6,6 +6,7 @@ div.hardbulls-player-container {
 }
 
 div.hardbulls-player-card {
+    background: rgba(251, 251, 251, 0.9);
     padding: 15px;
     margin: 15px;
     box-shadow: var(--light-box-shadow);

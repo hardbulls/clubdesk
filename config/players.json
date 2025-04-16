@@ -180,6 +180,7 @@
     "number": 3,
     "hits": "L",
     "throws": "L",
+    "isImport": true,
     "image": "kenta_toyokawa.png",
     "nationality": "jp"
   },
@@ -204,7 +205,7 @@
     "hits": "R",
     "throws": "R",
     "image": "carlos_frias.png",
-    "nationality": "xx"
+    "nationality": "kn"
   },
   {
     "name": "Theo Schähle",
@@ -227,8 +228,9 @@
     "number": 4,
     "hits": "L",
     "throws": "L",
+    "isImport": true,
     "image": "koshiro_kurima.png",
-    "nationality": "at"
+    "nationality": "jp"
   },
   {
     "name": "Levin Maier",

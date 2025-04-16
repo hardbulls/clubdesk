@@ -25,8 +25,10 @@ interface Props {
 export const PlayerCard = ({player, modal}: Props): JSX.Element => {
     const name = player.name
     const imageName = player.image || "default.png"
-    const playerImage = playerImageMapping[`./${imageName}`];
-    const image = playerImage || defaultPlayer
+    // const playerImage = playerImageMapping[`./${imageName}`];
+    // const image = playerImage || defaultPlayer
+    const playerImage = undefined;
+    const image = defaultPlayer
 
     return (
         <div className="hardbulls-player-card">
