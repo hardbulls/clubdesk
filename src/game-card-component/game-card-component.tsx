@@ -1,25 +1,30 @@
 import './game-card-component.css'
 import {DOMcreateElement} from "../jsx";
-import {loadFiles} from "../util/files";
 import type {Game} from "../model/Game";
 import {GoogleMapsLink} from "../GoogleMapsLink";
 import {dateTimeFormatter} from "../util/date";
 import {GAME_CANCELED, GAME_FORFEIT, GAME_SUSPENDED} from "../translations";
 import {CooperationTeamLogoComponent} from "../team-logo-component/cooperation-team-logo-component";
 import {TeamLogoComponent} from "../team-logo-component/team-logo-component";
-
-const fieldImageMapping = loadFiles(
-    require.context("../../config/images/fields/?as=webp&width=260&height=200", false, /\.(png|jpg)$/)
-)
+import type {Field} from "../model/Field";
+import {ASSETS_BASE_URL} from "../config";
 
 interface Props {
     game: Game
 }
 
+function getFieldImage(field: Field): string | undefined {
+    if (field.image) {
+        return `${ASSETS_BASE_URL}fields/_resized/${field.image}_640x.webp`;
+    }
+
+    return;
+}
+
 
 export const GameCardComponent = ({game}: Props): JSX.Element => {
     const CN = "hb-game-card-component";
-    const image = game.venue?.image ? fieldImageMapping[`./${game.venue.image}`] : fieldImageMapping[`./unknown.png`];
+    const image = game.venue && getFieldImage(game.venue)
 
     const now = new Date()
 
