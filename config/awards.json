@@ -39,6 +39,14 @@
       "title": "2. Best Pitcher"
     }
   ],
+  "Kenta Toyokawa": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2025,
+      "title": "Gold Glove 1st Base"
+    }
+  ],
   "Kirian Pichler": [
     {
       "type": "gold_glove",
@@ -189,6 +197,14 @@
       "league": "bbl",
       "season": 2024,
       "title": "Gold Glove Centerfield"
+    }
+  ],
+    "Marcel Winder": [
+    {
+      "type": "gold_glove",
+      "league": "bbl",
+      "season": 2025,
+      "title": "Gold Glove Rightfield"
     }
   ]
 }
