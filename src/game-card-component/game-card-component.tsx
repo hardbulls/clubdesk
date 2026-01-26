@@ -15,7 +15,7 @@ interface Props {
 
 function getFieldImage(field: Field): string | undefined {
     if (field.image) {
-        return `${ASSETS_BASE_URL}fields/_resized/${field.image}_640x.webp`;
+        return `${ASSETS_BASE_URL}${field.image}_640x.webp`;
     }
 
     return;
