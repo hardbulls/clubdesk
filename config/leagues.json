@@ -20,24 +20,24 @@
     "name": "2. BLW",
     "id": "2-blw",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/baseball-2-bundesliga-west-2025/schedule-and-results",
-    "seasons": [2023, 2024, 2025]
+    "url": "https://www.baseballsoftball.at/de/events/2026-baseball-2-bundesliga-west-2026/schedule-and-results",
+    "seasons": [2023, 2024, 2025, 2026]
   },
   {
     "fullName": "2. Softball Bundesliga",
     "name": "2. SBL",
     "id": "2-sbl",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2025/schedule-and-results",
-    "seasons": [2024, 2025]
+    "url": "https://www.baseballsoftball.at/de/events/softball-2-bundesliga-2026/schedule-and-results",
+    "seasons": [2024, 2025, 2026]
   },
   {
     "fullName": "Landesliga Vorarlberg",
     "name": "LLV",
     "id": "llv",
     "isActive": true,
-    "url": "https://www.baseballsoftball.at/de/events/baseball-landesliga-vorarlberg-2025/schedule-and-results",
-    "seasons": [2023, 2024, 2025]
+    "url": "https://www.baseballsoftball.at/de/events/baseball-landesliga-vorarlberg-2026/schedule-and-results",
+    "seasons": [2023, 2024, 2025, 2026]
   },
   {
     "fullName": "Vorarlberger Slowpitch League",
