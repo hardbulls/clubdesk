@@ -19,9 +19,19 @@
     "isCooperation": true,
     "logo": "logo_di.png+logo_hb.png"
   },
+    {
+    "name": "SG Crazy Chicklets/Grasshoppers",
+    "abbreviation": "CC/GH",
+    "keywords": [
+      "SG Crazy Chicklets/Grasshoppers",
+      "SG Crazy Chicklets - Grasshoppers"
+    ],
+    "isCooperation": true,
+    "logo": "logo_dd.png+logo_gh.png"
+  },
   {
     "name": "SG Crazy Chicklets/Metrostars",
-    "abbreviation": "DI/HB",
+    "abbreviation": "CC/VM",
     "keywords": [
       "SG Crazy Chicklets/Metrostars",
       "SG Crazy Chicklets - Metrostars"
@@ -165,7 +175,8 @@
       "Feldkirch Cardinals U14",
       "Feldkirch Cardinals U12",
       "Feldkirch Cardinals U10",
-      "Feldkirch Cardinals U8"
+      "Feldkirch Cardinals U8",
+      "Feldkirch Cardinals U18"
     ],
     "logo": "logo_fc.png"
   },
