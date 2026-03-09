@@ -64,7 +64,7 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                                 </span>
                                             </button>
                                             {' '}
-                                            <a href="/spielplan/kalender-anleitung" target="_blank">
+                                            <a href="/termine/kalender-anleitung" target="_blank">
                                                 <span
                                                     title="Anleitung Spielplan im Kalender importieren"
                                                     className="fa fa-info-circle" style={{color: '#000000'}}>
