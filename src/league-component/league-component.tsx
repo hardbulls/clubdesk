@@ -3,23 +3,9 @@ import {replaceElementChildren} from "../util/html";
 import {DOMcreateElement} from "../jsx";
 import type {League} from "../model/League";
 import {API_BASE_URL} from "../config";
-import {GamesRepository} from "../repository/games-repository";
-import {GameCardComponent} from "../game-card-component/game-card-component";
-import {
-    CALENDAR_IMPORT, GAME_SCHEDULE, OFFICIAL_SCHEDULE, SEASON, SELECT_SEASON, STANDINGS_EAST,
-    STANDINGS_FINAL, STANDINGS_FINAL_TOURNAMENT,
-    STANDINGS_GROUP, STANDINGS_HEADER, STANDINGS_MIDDLE,
-    STANDINGS_PLAYOFFS,
-    STANDINGS_REGULAR, STANDINGS_UNKNOWN, STANDINGS_WEST
-} from "../translations";
-import {TabsComponent} from "../tabs-component/tabs-component";
-import {StandingsRepository} from "../repository/standings-repository";
-import type {Standing} from "../model/Standing";
-import {StandingsTableComponent} from "../standings-table-component/standings-table-component";
-import {TagComponent} from "../tag-component/tag-component";
+import {CALENDAR_IMPORT, GAME_SCHEDULE, OFFICIAL_SCHEDULE, SEASON, SELECT_SEASON} from "../translations";
 import {SelectComponent} from "../select-component/select-component";
 import {getCurrentSeason} from "../current-season";
-import {LogoMapping} from "../logos";
 
 
 type Props = {
@@ -28,60 +14,11 @@ type Props = {
     handleSeasonChange: (season: number, league: League, container: JSX.Element) => void
 }
 
-const getStandingsTitle = (standing: Standing) => {
-    if (standing.type === 'FINAL') {
-        return STANDINGS_FINAL;
-    }
-
-    if (standing.type === 'FINAL_TOURNAMENT') {
-        return STANDINGS_FINAL_TOURNAMENT;
-    }
-
-    if (standing.type === 'GROUP_A') {
-        return `${STANDINGS_GROUP} A`
-    }
-
-    if (standing.type === 'GROUP_B') {
-        return `${STANDINGS_GROUP} B`
-    }
-
-    if (standing.type === 'GROUP_C') {
-        return `${STANDINGS_GROUP} C`
-    }
-
-    if (standing.type === 'PLAYOFF') {
-        return `${STANDINGS_PLAYOFFS}`
-    }
-
-    if (standing.type === 'REGULAR') {
-        return `${STANDINGS_REGULAR}`
-    }
-
-    if (standing.type === 'WEST') {
-        return `${STANDINGS_WEST}`
-    }
-
-    if (standing.type === 'EAST') {
-        return `${STANDINGS_EAST}`
-    }
-
-    if (standing.type === 'MIDDLE') {
-        return `${STANDINGS_MIDDLE}`
-    }
-
-    return `${STANDINGS_UNKNOWN}`
-}
-
 export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => {
     const CN = 'hb-league-component'
     const container = <div className={CN}></div>
 
     (async () => {
-        const games = await GamesRepository.findByLeagueAndSeason(league, season);
-        const standings = await StandingsRepository.findByLeagueAndSeason(league, season);
-        const now = new Date();
-
-        const hasFutureGames = games.some(game => game.date > now)
         const calendarUrl = `${API_BASE_URL}seasons/${season}/${league.id}/games.ics`
 
         if (!container) {
@@ -110,19 +47,19 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                     )
                             }
                             {
-                                season === getCurrentSeason() && hasFutureGames &&
+                                season === getCurrentSeason() &&
                                 (<div>
                                     <div>
-                                        <span className="fa fa-calendar-alt" ></span>&nbsp;
+                                        <span className="fa fa-calendar-alt"></span>&nbsp;
                                         {CALENDAR_IMPORT} <input type="text" dir="rtl" readOnly value={calendarUrl}/>
                                         {' '}
-                                        <div style={{ gap: '8px', display: 'inline-flex' }}>
-                                            <button style={{ cursor: "pointer" }}>
+                                        <div style={{gap: '8px', display: 'inline-flex'}}>
+                                            <button style={{cursor: "pointer"}}>
                                                 <span className="fa fa-copy"
-                                                    title="Kalender URL in die Zwischenablage zu kopieren"
-                                                    onClick={() => {
-                                                        navigator.clipboard.writeText(calendarUrl)
-                                                    }}
+                                                      title="Kalender URL in die Zwischenablage zu kopieren"
+                                                      onClick={() => {
+                                                          navigator.clipboard.writeText(calendarUrl)
+                                                      }}
                                                 >
                                                 </span>
                                             </button>
@@ -130,14 +67,14 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                             <a href="/spielplan/kalender-anleitung" target="_blank">
                                                 <span
                                                     title="Anleitung Spielplan im Kalender importieren"
-                                                    className="fa fa-info-circle" style={{ color: '#000000'}}>
+                                                    className="fa fa-info-circle" style={{color: '#000000'}}>
                                                 </span>
                                             </a>
                                             {' '}
                                             <a href={calendarUrl} target="_blank">
                                                 <span
                                                     title="Kalender downloaden"
-                                                    className="fa fa-download" style={{ color: '#000000'}}>
+                                                    className="fa fa-download" style={{color: '#000000'}}>
 
                                                 </span>
                                             </a>
@@ -153,34 +90,14 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                                     }
                                 </div>)
                             }
-                            {
-                                LogoMapping[`./${league.id}.svg`] && (
-                                    <div className={`${CN}-logo`}>
-                                        <img alt={`${league.name} Logo`} src={LogoMapping[`./${league.id}.svg`]}/>
-                                    </div>
-                                )
-                            }
                         </div>
-                        {standings.length > 0 && (
-                            <div className={`${CN}-standings`}>
-                                <h3>{STANDINGS_HEADER}</h3>
-                                {standings.length > 1 ? (
-                                        <TabsComponent links={false} tabs={standings.map(standing => {
-                                            return {
-                                                id: standing.type.toLowerCase(),
-                                                title: <TagComponent text={getStandingsTitle(standing)} size={'small'}/>,
-                                                content: () => <StandingsTableComponent standing={standing}/>
-                                            }
-                                        })}/>)
-                                    : (standings[0] && <StandingsTableComponent standing={standings[0]}/>)
-                                }
-                            </div>
-                        )}
                     </div>
                     <div>
                         <h3>{GAME_SCHEDULE}</h3>
                         <div className={`${CN}-games`}>
-                            {games.map(game => <GameCardComponent game={game}/>)}
+                            <iframe src={`https://app.hardbulls.com/embed?league=${league.id}&season=${season}&theme=light`}
+                                    id="hb-games-iframe"
+                            ></iframe>
                         </div>
                     </div>
 
