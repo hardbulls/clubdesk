@@ -14,6 +14,11 @@ type Props = {
     handleSeasonChange: (season: number, league: League, container: JSX.Element) => void
 }
 
+export const HBGamesWidget = ({league, season }: {league: string, season: number}) => {
+    // @ts-ignore custom element
+    return (<hb-games-widget league={league} season={`${season}`} theme="light"></hb-games-widget>)
+}
+
 export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => {
     const CN = 'hb-league-component'
     const container = <div className={CN}></div>
@@ -95,9 +100,7 @@ export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => 
                     <div>
                         <h3>{GAME_SCHEDULE}</h3>
                         <div className={`${CN}-games`}>
-                            <iframe src={`https://app.hardbulls.com/embed?league=${league.id}&season=${season}&theme=light`}
-                                    id="hb-games-iframe"
-                            ></iframe>
+                            <HBGamesWidget league={league.id} season={season}></HBGamesWidget>
                         </div>
                     </div>
 
