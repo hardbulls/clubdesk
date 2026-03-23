@@ -29,6 +29,10 @@
     background: url(./assets/flags/do.svg) 0 0/contain no-repeat;
 }
 
+.hb-flag.flag-fr {
+    background: url(./assets/flags/fr.svg) 0 0/contain no-repeat;
+}
+
 .hb-flag.flag-at {
     background: url(./assets/flags/at.svg) 0 0/contain no-repeat;
 }

@@ -9,7 +9,7 @@ import type {Player} from "../model/Player";
 import {CooperationIcon} from "./CooparationIcon";
 import {ImportIcon} from "./ImportIcon";
 import {AwardsSection} from "./AwardSection";
-import {ASSETS_BASE_URL} from "../config";
+import {BULLS_API_ASSETS_BASE_URL} from "../config";
 
 interface Props {
     player: Player,
@@ -19,7 +19,7 @@ interface Props {
 export const PlayerCard = ({player, modal}: Props): JSX.Element => {
     const name = player.name
     const imageName = player.image || "default.png"
-    const playerImage = `${ASSETS_BASE_URL}players/${imageName}`;
+    const playerImage = `${BULLS_API_ASSETS_BASE_URL}players/${imageName}`;
 
     return (
         <div className="hardbulls-player-card">

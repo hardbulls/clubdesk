@@ -1,32 +1,9 @@
 [
   {
-    "name": "Anthony Bennett",
-    "nickname": "AB",
-    "positions": [],
-    "isCoach": true,
-    "image": "anthony_bennett.jpg",
-    "nationality": "us",
-    "number": 42
-  },
-  {
-    "name": "Clayton Carson",
-    "nickname": "Clay",
-    "positions": [
-      "3rd. Base",
-      "Shortstop"
-    ],
-    "number": 11,
-    "hits": "S",
-    "throws": "R",
-    "active": false,
-    "nationality": "us"
-  },
-  {
     "name": "Marcel Winder",
     "nickname": "Speedy",
     "positions": [
-      "Pitcher",
-      "Utility"
+      "Outfield"
     ],
     "number": 24,
     "hits": "R",
@@ -35,53 +12,15 @@
     "nationality": "at"
   },
   {
-    "name": "Leon Nöbl",
-    "nickname": "Lion",
+    "name": "Jonas Schedler",
     "positions": [
-      "Outfield",
-      "1st. Base"
-    ],
-    "number": 9,
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "active": false
-  },
-  {
-    "name": "Daniel Hotz",
-    "nickname": "Hotz",
-    "positions": [
-      "Pitcher"
-    ],
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "number": 50,
-    "active": false
-  },
-  {
-    "name": "Gregor Paterno",
-    "nickname": "Gregy",
-    "positions": [
-      "Utility"
-    ],
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "number": 51,
-    "active": false
-  },
-  {
-    "name": "Richard Kranabetter",
-    "nickname": "Richy",
-    "positions": [
+      "Pitcher",
       "Outfield"
     ],
-    "number": 25,
-    "active": false,
+    "number": 0,
     "nationality": "at",
-    "hits": "R",
-    "throws": "R"
+    "hits": "L",
+    "throws": "L"
   },
   {
     "name": "Nick Jäger",
@@ -103,22 +42,9 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
+    "isActive": false,
     "number": 6,
     "image": "jakob_gruber.jpg"
-  },
-  {
-    "name": "Pascal Campregher",
-    "nickname": "Basc",
-    "positions": [
-      "Pitcher",
-      "1st. Base",
-      "Outfield"
-    ],
-    "number": 4,
-    "hits": "R",
-    "throws": "R",
-    "active": false,
-    "nationality": "at"
   },
   {
     "name": "Patrick Küng",
@@ -134,7 +60,8 @@
   {
     "name": "Jannik Rudigier",
     "positions": [
-      "Infield",
+      "Shortstop",
+      "Outfield",
       "Catcher"
     ],
     "number": 13,
@@ -144,16 +71,14 @@
     "nationality": "at"
   },
   {
-    "name": "Caleb Topper",
+    "name": "Arthur Illigash",
     "positions": [
-      "Outfield",
-      "Pitcher"
+      "Pitcher",
+      "1st. Base"
     ],
-    "number": 9,
+    "number": 0,
     "hits": "L",
     "throws": "L",
-    "image": "caleb_topper.jpg",
-    "isImport": true,
     "nationality": "at"
   },
   {
@@ -170,18 +95,15 @@
     "nationality": "at"
   },
   {
-    "name": "Kenta Toyokawa",
+    "name": "Stephen West",
     "positions": [
-      "Outfield",
-      "Pitcher",
-      "1st. Base"
+      "Pitcher"
     ],
-    "number": 3,
-    "hits": "L",
-    "throws": "L",
+    "number": 0,
+    "hits": "R",
+    "throws": "R",
     "isImport": true,
-    "image": "kenta_toyokawa.jpg",
-    "nationality": "jp"
+    "nationality": "us"
   },
   {
     "name": "Gabriele Sicari",
@@ -196,21 +118,10 @@
     "nationality": "it"
   },
   {
-    "name": "Carlos Frias",
-    "positions": [
-      "Utility"
-    ],
-    "number": 7,
-    "hits": "R",
-    "throws": "R",
-    "image": "carlos_frias.jpg",
-    "nationality": "kn"
-  },
-  {
     "name": "Theo Schähle",
     "positions": [
-      "Infield",
-      "Pitcher"
+      "2nd. Base",
+      "3rd. Base"
     ],
     "number": 10,
     "hits": "R",
@@ -219,29 +130,16 @@
     "nationality": "at"
   },
   {
-    "name": "Koshiro Kurima",
+    "name": "Sato Yuto",
     "positions": [
       "Outfield",
       "Pitcher"
     ],
-    "number": 4,
+    "number": 0,
     "hits": "L",
-    "throws": "L",
-    "isImport": true,
-    "image": "koshiro_kurima.jpg",
-    "nationality": "jp"
-  },
-  {
-    "name": "Levin Maier",
-    "nickname": "Lele",
-    "positions": [
-      "Pitcher"
-    ],
-    "number": 8,
-    "hits": "R",
     "throws": "R",
-    "nationality": "at",
-    "active": false
+    "isImport": true,
+    "nationality": "jp"
   },
   {
     "name": "Matthias Lutter",
@@ -254,7 +152,7 @@
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "active": false
+    "active": true
   },
   {
     "name": "Marvin Glassen",
@@ -269,53 +167,17 @@
     "active": false
   },
   {
-    "name": "Jonas Zimmermann",
-    "nickname": "JZ",
-    "positions": [
-      "Pitcher"
-    ],
-    "number": 16,
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at"
-  },
-  {
     "name": "Erwin Frias",
     "nickname": "La Máquina",
     "positions": [
-      "Shortstop"
+      "Shortstop",
+      "Pitcher"
     ],
     "number": 23,
     "hits": "S",
     "throws": "R",
     "image": "erwin_frias.jpg",
     "nationality": "do"
-  },
-  {
-    "name": "Hubert Böhler",
-    "nickname": "Hubi",
-    "positions": [
-      "Pitcher",
-      "Catcher",
-      "1st. Base"
-    ],
-    "number": 19,
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "active": false
-  },
-  {
-    "name": "Arjan Frans",
-    "nickname": "Fiets",
-    "positions": [
-      "Outfield"
-    ],
-    "number": 21,
-    "hits": "R",
-    "throws": "R",
-    "nationality": "nl",
-    "active": false
   },
   {
     "name": "Hannes Schnetzer",
@@ -328,17 +190,16 @@
     ]
   },
   {
-    "name": "Jed Downham",
+    "name": "Marc Chamberlain",
     "hits": "L",
     "throws": "R",
-    "nationality": "us",
-    "number": 26,
-    "image": "jed_downham.jpg",
+    "nationality": "fr",
+    "number": 0,
     "isImport": true,
     "positions": [
-      "1st. Base",
-      "3rd. Base",
-      "Catcher"
+      "2nd. Base",
+      "Shortstop",
+      "Putcher"
     ]
   },
   {
@@ -370,47 +231,21 @@
     "throws": "R",
     "nationality": "us",
     "number": 11,
-    "isImport": true,
-    "active": false,
+    "active": true,
+    "isCoach": true,
     "positions": [
-      "Utility"
-    ]
-  },
-  {
-    "name": "Levin Heinzle",
-    "hits": "R",
-    "throws": "R",
-    "nationality": "at",
-    "cooperationPlayer": "Feldkirch Cardinals",
-    "image": "levin_heinzle.jpg",
-    "number": 18,
-    "positions": [
-      "Pitcher",
-      "2nd. Base",
+      "3rd. Base",
       "Outfield"
     ]
   },
   {
-    "name": "Paul Astl",
+    "name": "Noah Brunner",
     "hits": "R",
     "throws": "R",
     "nationality": "at",
-    "cooperationPlayer": "Schwaz Tigers",
-    "number": 22,
+    "number": 0,
     "positions": [
-      "Pitcher",
-      "1st. Base"
-    ]
-  },
-  {
-    "name": "Joe Kirby",
-    "hits": "L",
-    "throws": "R",
-    "nationality": "ca",
-    "number": 37,
-    "positions": [
-      "Utility",
-      "2nd. Base"
+      "Outfield"
     ]
   }
 ]
