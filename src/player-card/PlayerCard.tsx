@@ -9,7 +9,7 @@ import type {Player} from "../model/Player";
 import {CooperationIcon} from "./CooparationIcon";
 import {ImportIcon} from "./ImportIcon";
 import {AwardsSection} from "./AwardSection";
-import {BULLS_API_ASSETS_BASE_URL} from "../config";
+import {BULLS_API_ASSETS_BASE_URL, SHOW_PLAYER_STATISTICS} from "../config";
 
 interface Props {
     player: Player,
@@ -35,7 +35,7 @@ export const PlayerCard = ({player, modal}: Props): JSX.Element => {
             <div className="hardbulls-player-card-icons">
                 {player.isImport && <ImportIcon/>}
                 {player.cooperationPlayer && <CooperationIcon value={player.cooperationPlayer}/>}
-                {!player.isCoach && <Statistics name={name} modal={modal}/>}
+                {SHOW_PLAYER_STATISTICS && !player.isCoach && <Statistics name={name} modal={modal}/>}
             </div>
             <div className="hardbulls-player-card-footer">
                 {player.nationality && <CountryFlag code={player.nationality}/>}
