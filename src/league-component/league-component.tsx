@@ -16,7 +16,7 @@ type Props = {
 
 export const HBGamesWidget = ({league, season }: {league: string, season: number}) => {
     // @ts-ignore custom element
-    return (<hb-games-widget league={league} season={`${season}`} theme="light"></hb-games-widget>)
+    return (<hb-games-widget league={league} season={`${season}`} theme="light" font-family="Neue Aachen Book" font-scale="0.8"></hb-games-widget>)
 }
 
 export const LeagueComponent = ({season, league, handleSeasonChange}: Props) => {
